@@ -13,12 +13,6 @@
       </div>
 
       <div class="about">
-        <!-- ADD BG with text: ABOUT and NUMBERS -->
-        <!-- <div class="about__bg">
-          <div class="about__bg-text"></div>
-          <div class="about__bg-numbers"></div>
-        </div> -->
-
         <div class="container">
           <div class="about__content">
             <h2 class="about__title">

@@ -1,5 +1,5 @@
 
-<footer class="footer">
+    <footer class="footer">
       <div class="footer__nav">
         <div class="footer__nav-item">
           <div class="footer__nav-title">The Family Estate</div>
