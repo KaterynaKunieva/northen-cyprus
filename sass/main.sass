@@ -1,0 +1,688 @@
+@charset "utf-8"
+@import "bourbon"
+
+/* RESET 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+	display: block
+
+body
+	line-height: 1
+
+ol, ul, li
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+*
+	box-sizing: border-box 
+
+a
+	text-decoration: none
+	&:visited
+		color: #000
+
+
+@font-face
+	font-family: "Circe"
+	src: url("../fonts/Circe-Regular.eot")
+	src: local("Circe"), local("Circe-Regular"), url("../fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Regular.woff") format("woff"), url("../fonts/Circe-Regular.ttf") format("truetype")
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: "Circe"
+	src: url("../fonts/Circe-ExtraLight.eot")
+	src: local("Circe ExtraLight"), local("Circe-ExtraLight"), url("../fonts/Circe-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-ExtraLight.woff") format("woff"), url("../fonts/Circe-ExtraLight.ttf") format("truetype")
+	font-weight: 200
+	font-style: normal
+
+@font-face
+	font-family: "Circe"
+	src: url("../fonts/Circe-Thin.eot")
+	src: local("Circe Thin"), local("Circe-Thin"), url("../fonts/Circe-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Thin.woff") format("woff"), url("../fonts/Circe-Thin.ttf") format("truetype")
+	font-weight: 100
+	font-style: normal
+
+@font-face
+	font-family: "Circe"
+	src: url("../fonts/Circe-Light.eot")
+	src: local("Circe Light"), local("Circe-Light"), url("../fonts/Circe-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Light.woff") format("woff"), url("../fonts/Circe-Light.ttf") format("truetype")
+	font-weight: 300
+	font-style: normal
+
+@font-face
+	font-family: "Circe"
+	src: url("../fonts/Circe-Bold.eot")
+	src: local("Circe Bold"), local("Circe-Bold"), url("../fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Bold.woff") format("woff"), url("../fonts/Circe-Bold.ttf") format("truetype")
+	font-weight: bold
+	font-style: normal
+
+@font-face
+	font-family: "Circe"
+	src: url("../fonts/Circe-ExtraBold.eot")
+	src: local("Circe ExtraBold"), local("Circe-ExtraBold"), url("../fonts/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-ExtraBold.woff") format("woff"), url("../fonts/Circe-ExtraBold.ttf") format("truetype")
+	font-weight: 800
+	font-style: normal
+
+html
+	overflow-x: hidden
+
+body
+	font-family: "Circe"
+	font-size: 15px
+	margin: 0 auto
+	overflow-x: hidden
+
+.container
+	padding-left: 170px
+	padding-top: 70px
+	height: 100%
+
+/* HEADER
+
+header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 10px 58px 40px 93px
+	height: 150px
+	width: 100%
+	position: absolute
+	background-image: linear-gradient(180deg, #006264, transparent)
+
+.header__logo
+	/* Потрібно якось поєднати з бекграундом
+
+.header__menu > nav > ul
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	> li
+		margin-left: 20px
+		max-width: 660px
+
+		> a
+			text-decoration: none
+			text-transform: uppercase
+			color: #fff
+			font-weight: bold
+
+			&:hover
+				color: #1e6465
+
+/* FIRST PAGE
+
+.main_start
+	height: 780px
+	background-image: url("../img/main_bg.png"), radial-gradient(circle at 1% 24%, #c9ebfb -17%, #73acc7 62%)
+
+	/* Як визначити розмір круга? scale 150%, angle 128%
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	width: 100%
+
+.main__content
+	padding-top: 300px
+	height: 100%
+
+.main__title
+	font-weight: bold
+	font-size: 42px
+	letter-spacing: 1.68px
+	color: #fff
+	margin-bottom: 68px
+
+.main__btn
+	padding: 19px 24px 21px
+	background-color: #a7857e
+	border: none
+	height: 57px
+	border-radius: 28px
+	-webkit-border-radius: 28px
+	-moz-border-radius: 28px
+	-ms-border-radius: 28px
+	-o-border-radius: 28px
+	font-family: "Circe"
+	font-size: 18px
+	line-height: 1
+	font-weight: bold
+	color: #fff
+	white-space: nowrap
+	text-align: center
+
+	&:hover
+		cursor: pointer
+
+/* Зміна кольору?
+
+/* ABOUT
+
+.about
+	position: relative
+	padding-bottom: 95px
+
+	&::before
+		content: "about"
+		display: block
+		position: absolute
+		z-index: -1
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		-webkit-transform: translate(-50%, -50%)
+		-moz-transform: translate(-50%, -50%)
+		-ms-transform: translate(-50%, -50%)
+		-o-transform: translate(-50%, -50%)
+		max-width: 1320px
+		width: 100%
+		margin: 0 auto
+		margin-top: 75px
+		height: 100%
+		text-align: center
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 211px
+		line-height: 232px
+		color: #315c60
+		opacity: 0.05
+		letter-spacing: 147.7px
+
+.about__content
+	margin-top: 60px
+	padding-right: 102px
+
+.about__title
+	text-transform: uppercase
+	color: #a7857e
+	font-size: 42px
+
+	> span
+		color: #1e6465
+
+.about__list
+	margin: 0 auto
+	margin-top: 120px
+	display: flex
+	justify-content: space-between
+	text-align: center
+	align-items: center
+	max-width: 1500px
+	width: 100%
+
+.about__list_item
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin: 25px
+	max-width: 300px
+	width: 100%
+	height: 300px
+	text-align: center
+
+.about__list-logo
+	height: 80px
+	width: 80px
+
+	> img
+		vertical-align: middle
+
+.about__list-title
+	text-transform: uppercase
+	height: 45px
+	padding: 13px 20px
+	margin: 20px auto
+	background-color: #1e6465
+	border-radius: 22.5px
+	-webkit-border-radius: 22.5px
+	-moz-border-radius: 22.5px
+	-ms-border-radius: 22.5px
+	-o-border-radius: 22.5px
+	font-size: 24px
+	font-weight: bold
+	line-height: 25px
+	color: #fff
+
+.about__list-text
+	color: #1e6465
+	font-size: 17px
+	line-height: 19px
+	width: 245px
+	margin: 0 auto
+
+.about__stat
+	margin-top: 170px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex-wrap: wrap
+
+.about__stat_item
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	height: 120px
+	margin: 0 auto
+	margin-top: 50px
+
+	&::after
+		position: absolute
+		top: -15px
+		z-index: -1
+		color: #a1827c
+		opacity: 0.08
+		font-weight: bold
+		font-size: 185px
+		line-height: 116px
+		text-align: center
+		width: 210%
+
+	&:nth-child(1)::after
+		content: "10"
+
+	&:nth-child(2)::after
+		content: "2000"
+
+	&:nth-child(3)::after
+		content: "224 000"
+
+.about__stat-number
+	font-size: 90px
+	line-height: 25px
+	font-weight: 800
+	color: #a1827c
+
+.about__stat-text
+	font-size: 24px
+	line-height: 25px
+	color: #1e6465
+	width: 240px
+	margin-top: 30px
+	text-align: center
+
+
+/* ADVANTAGES
+
+.advantages
+	padding-bottom: 97px
+	background-image: url("../img/advantages/bg.png")
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	border-radius: 40px
+	width: 100%
+	-webkit-border-radius: 40px
+	-moz-border-radius: 40px
+	-ms-border-radius: 40px
+	-o-border-radius: 40px
+
+.advantages__title
+	font-size: 50px
+	font-weight: bold
+	line-height: 58px
+	text-transform: uppercase
+	color: #ffffff
+
+	> span
+		color: #a1827c
+		display: block
+
+.advantages__list
+	margin: 0 auto
+	margin-top: 82px
+	display: grid
+	width: 1300px
+	grid-column-gap: 74px
+	grid-row-gap: 46px
+	grid-template-columns: repeat(auto-fill, minmax(520px, 1fr))
+
+.advantages__list_item
+	display: flex
+	align-items: center
+	width: 518px
+	height: 93px
+	background-color: #ffffff
+	border-radius: 35px
+	-webkit-border-radius: 35px
+	-moz-border-radius: 35px
+	-ms-border-radius: 35px
+	-o-border-radius: 35px
+	margin: 0 auto
+	padding: 0 25px
+
+.advantages__list-logo
+	max-width: 80px
+	width: 100%
+	height: 60px
+	border-right: 3px solid #88adad
+	text-align: center
+	position: relative
+
+	> img
+		max-height: 100%
+		max-width: 100%
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+
+.advantages__list-text
+	margin: 0 auto
+	width: 370px
+	color: #1e6465
+	font-size: 22px
+	text-align: center
+
+/* SEARCH
+
+.search
+	padding-top: 120px
+	padding-bottom: 69px
+	position: relative
+
+	&::before
+		content: "estate"
+		z-index: -1
+		position: absolute
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 194px
+		color: #315c60
+		opacity: 0.05
+		text-align: center
+		width: 100%
+		letter-spacing: 135.8px
+
+.search__inner
+	padding: 70px 56px
+
+.search__criteria
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-top: 100px
+	margin-bottom: 78px
+
+.search__title
+	margin-left: 115px
+	font-size: 42px
+	letter-spacing: 1.68px
+	font-weight: bold
+	color: #a7857e
+	width: 490px
+	line-height: 100%
+
+	> span
+		color: #1e6465
+
+.select_type
+	width: 197px
+	height: 45px
+	border: 2px solid #1e6465
+	border-radius: 22.5px
+	-webkit-border-radius: 22.5px
+	-moz-border-radius: 22.5px
+	-ms-border-radius: 22.5px
+	-o-border-radius: 22.5px
+	padding-left: 13px
+	margin-right: 41px
+	font-size: 17px
+	line-height: 100%
+	color: #1e6465
+
+	&:hover
+		cursor: pointer
+
+.select_btn
+	width: 197px
+	height: 47px
+	background-color: #1e6465
+	border: none
+	border-radius: 22.5px
+	-webkit-border-radius: 22.5px
+	-moz-border-radius: 22.5px
+	-ms-border-radius: 22.5px
+	-o-border-radius: 22.5px
+	font-family: "Circe"
+	text-transform: uppercase
+	color: #fefefe
+	font-weight: bold
+	font-size: 17px
+	line-height: 43px
+	text-align: center
+
+	&:hover
+		cursor: pointer
+
+.search__cards
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex-wrap: wrap
+	max-width: 1342px
+	width: 100%
+	margin: 0 auto
+
+.search__cards_item
+	margin: 3px
+	border-radius: 6px
+	-webkit-border-radius: 6px
+	-moz-border-radius: 6px
+	-ms-border-radius: 6px
+	-o-border-radius: 6px
+	position: relative
+
+.search__cards_text
+	position: absolute
+	z-index: -1
+	top: 295px
+	display: flex
+	width: 100%
+	justify-content: space-between
+	padding-left: 33px
+	padding-right: 20px
+	color: #ffffff
+	font-size: 28px
+	font-weight: bold
+	transition: 0.2s
+	text-transform: uppercase
+	-webkit-transition: 0.2s
+	-moz-transition: 0.2s
+	-ms-transition: 0.2s
+	-o-transition: 0.2s
+
+.search__cards_item
+	img
+		transition: 0.2s
+		-webkit-transition: 0.2s
+		-moz-transition: 0.2s
+		-ms-transition: 0.2s
+		-o-transition: 0.2s
+
+	&:hover
+		img
+			filter: brightness(50%)
+			-webkit-filter: brightness(50%)
+
+		> .search__cards_text
+			z-index: 2
+
+.more__btn
+	display: block
+	width: 321px
+	height: 64px
+	background-color: #a1827c
+	border: none
+	border-radius: 32px
+	-webkit-border-radius: 32px
+	-moz-border-radius: 32px
+	-ms-border-radius: 32px
+	-o-border-radius: 32px
+	margin: 0 auto
+	margin-top: 78px
+	text-transform: uppercase
+	font-size: 24px
+	font-weight: bold
+	text-align: center
+	color: #ffffff
+	font-family: "Circe"
+
+	&:hover
+		cursor: pointer
+
+/* FOOTER
+
+.footer
+	width: 100%
+	height: 350px
+	padding: 130px 60px 71px 56px
+	background-image: url("../img/footer_bg.png")
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	display: flex
+	justify-content: space-between
+
+.footer__nav
+	display: flex
+	width: 50%
+
+.footer__nav-item
+	width: 100%
+	margin-right: 158px
+
+	&:last-child
+		margin-right: 0
+
+	color: #ffffff
+	font-weight: bold
+	font-size: 18px
+	line-height: 31px
+
+.footer__contacts, .footer__nav-item ul a
+	color: #ffffff
+	font-weight: bold
+	font-size: 18px
+	line-height: 31px
+
+.footer__nav-title, .footer__contacts-title
+	text-transform: uppercase
+	letter-spacing: 1.6px
+
+.footer__contacts
+	display: flex
+	width: 230px
+	flex-direction: column
+	align-items: center
+
+.footer__contacts-title
+	margin-bottom: 21px
+
+.footer__contacts-list
+	ul
+		display: flex
+		width: 100%
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 44px
+
+		li
+			margin-right: 12px
+
+			&:last-child
+				margin-right: 0
+
+	a
+		max-width: 40px
+		max-height: 40px
+		width: 100%
+		height: 100%
+
+	img
+		width: 100%
+		height: 100%
+
+.footer__btn-phone
+	width: 185px
+	height: 36px
+	text-align: center
+	background-color: #a1827c
+	border: none
+	border-radius: 18px
+	-webkit-border-radius: 18px
+	-moz-border-radius: 18px
+	-ms-border-radius: 18px
+	-o-border-radius: 18px
+	color: #fff
+	font-family: "Circe"
+	font-weight: bold
+	font-size: 18px
+	line-height: 35px
+	letter-spacing: 0.72px
+
+/*
+/*
+/* ADAPTIVE
+/* HEADER
+@media screen and (min-width: 1550px)
+	.header__right-side
+		flex-grow: 0.1
+
+@media screen and (max-width: 1510px)
+	.about__list
+		margin: 0 auto
+		margin-top: 120px
+		flex-wrap: wrap
+		max-width: 750px
+		width: 100%
+
+	.about__list_item
+		margin: 0 auto
+		margin-top: 25px
+
+@media screen and (max-width: 1170px)
+	.about__list
+		flex-wrap: wrap
+		margin-top: 120px
+
+	.about__list_item
+		margin: 0 auto
+
+
+//ALWAYS END
+@import "media"
