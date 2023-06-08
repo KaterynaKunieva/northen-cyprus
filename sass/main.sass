@@ -40,39 +40,38 @@
 	font-weight: 800
 	font-style: normal
 
-
-
 @charset "utf-8"
 @import "bourbon"
 @import 'reset.sass'
 
 
-.main_start
+.main_head
 	background-image: url("../img/main_bg.png"), radial-gradient(circle at 1% 24%, #c9ebfb -17%, #73acc7 62%)
 
 /* ABOUT
 
 .about
 	position: relative
-	padding-bottom: 95px
+	padding-top: 152px
+	padding-bottom: 93px 
+	width: 100%
 
 	&::before
 		content: "about"
 		display: block
+		max-width: 1330px
+		width: 100%
+		height: 100%
+		margin-top: 77px 
 		position: absolute
 		z-index: -1
-		top: 50%
+		top: 48%
 		left: 50%
 		transform: translate(-50%, -50%)
 		-webkit-transform: translate(-50%, -50%)
 		-moz-transform: translate(-50%, -50%)
 		-ms-transform: translate(-50%, -50%)
-		-o-transform: translate(-50%, -50%)
-		max-width: 1320px
-		width: 100%
-		margin: 0 auto
-		margin-top: 75px
-		height: 100%
+		-o-transform: translate(-50%, -50%)		
 		text-align: center
 		text-transform: uppercase
 		font-weight: bold
@@ -82,48 +81,56 @@
 		opacity: 0.05
 		letter-spacing: 147.7px
 
-.about__content
-	margin-top: 60px
-	padding-right: 102px
-
 .about__title
+	width: 215px
+	margin-left: 107px
 	text-transform: uppercase
 	color: #a7857e
 	font-size: 42px
-
+	font-weight: bold
+	letter-spacing: 1.68px
+	line-height: 53px
 	> span
 		color: #1e6465
+		white-space: nowrap
 
 .about__list
-	margin: 0 auto
-	margin-top: 120px
+	max-width: 1500px
+	width: 100%
+	margin: 109px auto 170px 
 	display: flex
 	justify-content: space-between
 	text-align: center
 	align-items: center
-	max-width: 1500px
-	width: 100%
 
 .about__list_item
 	display: flex
 	flex-direction: column
-	align-items: center
-	margin: 25px
-	max-width: 300px
+	align-items: center 
+	max-width: 310px
 	width: 100%
-	height: 300px
+	height: 250px
 	text-align: center
 
 .about__list-logo
 	height: 80px
-	width: 80px
-
+	width: 90px 
+	position: relative
 	> img
-		vertical-align: middle
+		vertical-align: middle   
+		max-height: 100%
+		max-width: 100%
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
 
 .about__list-title
 	text-transform: uppercase
 	height: 45px
+	min-width: 247px
 	padding: 13px 20px
 	margin: 20px auto
 	background-color: #1e6465
@@ -144,46 +151,53 @@
 	width: 245px
 	margin: 0 auto
 
-.about__stat
-	margin-top: 170px
+.about__stat 
 	display: flex
 	justify-content: space-between
-	align-items: center
-	flex-wrap: wrap
+	align-items: center  
+	max-height: 125px
+	height: 100%
 
 .about__stat_item
 	position: relative
 	display: flex
 	flex-direction: column
-	align-items: center
-	height: 120px
-	margin: 0 auto
-	margin-top: 50px
+	align-items: center 
+	max-height: 150px
+	height: 100%
+	margin: 0 auto 
 
 	&::after
 		position: absolute
-		top: -15px
 		z-index: -1
 		color: #a1827c
 		opacity: 0.08
-		font-weight: bold
-		font-size: 185px
-		line-height: 116px
+		font-weight: 800
 		text-align: center
+		top: 5px
 		width: 210%
 
 	&:nth-child(1)::after
-		content: "10"
+		content: "10" 
+		font-size: 185px
+		line-height: 116px
 
 	&:nth-child(2)::after
-		content: "2000"
+		content: "2000" 
+		font-size: 175px
+		line-height: 109px
 
 	&:nth-child(3)::after
-		content: "224 000"
+		content: "224 000" 
+		font-size: 139px
+		line-height: 87px
+	&:last-child
+		.about__stat-text
+			max-width: 370px 
 
 .about__stat-number
 	font-size: 90px
-	line-height: 25px
+	line-height: 76px
 	font-weight: 800
 	color: #a1827c
 
@@ -191,21 +205,21 @@
 	font-size: 24px
 	line-height: 25px
 	color: #1e6465
-	width: 240px
-	margin-top: 30px
+	max-width: 255px 
+	width: 100%
 	text-align: center
 
 
 /* ADVANTAGES
 
 .advantages
-	padding-bottom: 97px
+	width: 100%
+	padding: 72px 104px 97px 109px 
 	background-image: url("../img/advantages/bg.png")
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
 	border-radius: 40px
-	width: 100%
 	-webkit-border-radius: 40px
 	-moz-border-radius: 40px
 	-ms-border-radius: 40px
@@ -222,14 +236,14 @@
 		color: #a1827c
 		display: block
 
-.advantages__list
-	margin: 0 auto
-	margin-top: 82px
-	display: grid
-	width: 1300px
-	grid-column-gap: 74px
-	grid-row-gap: 46px
-	grid-template-columns: repeat(auto-fill, minmax(520px, 1fr))
+.advantages__list 
+	margin-top: 83px
+	max-width: 1500px
+	width: 100%
+	display: flex
+	flex-wrap: wrap 
+	justify-content: center
+
 
 .advantages__list_item
 	display: flex
@@ -241,9 +255,12 @@
 	-webkit-border-radius: 35px
 	-moz-border-radius: 35px
 	-ms-border-radius: 35px
-	-o-border-radius: 35px
-	margin: 0 auto
-	padding: 0 25px
+	-o-border-radius: 35px 
+	margin-bottom: 25px 
+	padding: 0 25px  
+	&:nth-child(2n)
+		margin-left: 74px
+
 
 .advantages__list-logo
 	max-width: 80px
@@ -273,32 +290,41 @@
 /* SEARCH
 
 .search
-	padding-top: 120px
-	padding-bottom: 69px
+	padding-top: 252px
+	padding-bottom: 70px
+	padding-right: 57px
 	position: relative
-
 	&::before
 		content: "estate"
-		z-index: -1
+		display: block  
+		height: 100% 
+		
+		margin-top: 77px 
 		position: absolute
+		z-index: -1
+		top: 52%
+		left: 52%
+		transform: translate(-50%, -50%)
+		-webkit-transform: translate(-50%, -50%)
+		-moz-transform: translate(-50%, -50%)
+		-ms-transform: translate(-50%, -50%)
+		-o-transform: translate(-50%, -50%)		
 		text-transform: uppercase
 		font-weight: bold
 		font-size: 194px
 		color: #315c60
 		opacity: 0.05
 		text-align: center
-		width: 100%
 		letter-spacing: 135.8px
-
-.search__inner
-	padding: 70px 56px
 
 .search__criteria
 	display: flex
 	justify-content: space-between
-	align-items: center
-	margin-top: 100px
-	margin-bottom: 78px
+	align-items: flex-end 
+	margin: 0 auto
+	margin-bottom: 72px
+	max-width: 1330px
+	width: 100%
 
 .search__title
 	margin-left: 115px
@@ -354,23 +380,30 @@
 	&:hover
 		cursor: pointer
 
-.search__cards
-	display: flex
-	justify-content: center
-	align-items: center
-	flex-wrap: wrap
-	max-width: 1342px
+
+.search__cards 
 	width: 100%
+	display: flex
+	flex-wrap: wrap 
+	justify-content: center
+	align-items: center 
 	margin: 0 auto
 
-.search__cards_item
-	margin: 3px
-	border-radius: 6px
+.search__cards_item   
+	position: relative  
+	border-radius: 6px    
+	max-width: 661px
+	width: 100%
+	max-height: 368px
+	height: 100%
+	margin-bottom: 5px
 	-webkit-border-radius: 6px
 	-moz-border-radius: 6px
 	-ms-border-radius: 6px
 	-o-border-radius: 6px
-	position: relative
+	&:nth-child(2n)
+		margin-left: 5px
+		
 
 .search__cards_text
 	position: absolute
@@ -445,11 +478,11 @@
 
 .footer__nav
 	display: flex
+	justify-content: center
 	width: 50%
 
 .footer__nav-item
-	width: 100%
-	margin-right: 158px
+	width: 100% 
 
 	&:last-child
 		margin-right: 0
@@ -524,29 +557,29 @@
 /*
 /* ADAPTIVE
 /* HEADER
-@media screen and (min-width: 1550px)
-	.header__right-side
-		flex-grow: 0.1
+// @media screen and (min-width: 1550px)
+// 	.header__right-side
+// 		flex-grow: 0.1
 
-@media screen and (max-width: 1510px)
-	.about__list
-		margin: 0 auto
-		margin-top: 120px
-		flex-wrap: wrap
-		max-width: 750px
-		width: 100%
+// @media screen and (max-width: 1510px)
+// 	.about__list
+// 		margin: 0 auto
+// 		margin-top: 120px
+// 		flex-wrap: wrap
+// 		max-width: 750px
+// 		width: 100%
 
-	.about__list_item
-		margin: 0 auto
-		margin-top: 25px
+// 	.about__list_item
+// 		margin: 0 auto
+// 		margin-top: 25px
 
-@media screen and (max-width: 1170px)
-	.about__list
-		flex-wrap: wrap
-		margin-top: 120px
+// @media screen and (max-width: 1170px)
+// 	.about__list
+// 		flex-wrap: wrap
+// 		margin-top: 120px
 
-	.about__list_item
-		margin: 0 auto
+// 	.about__list_item
+// 		margin: 0 auto
 
 
 //ALWAYS END
