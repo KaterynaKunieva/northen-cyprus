@@ -165,6 +165,9 @@
               <form action="#">
                 <select name="type" class="select_type">
                   <option value="default">Тип недвижимости</option>
+                  <option value="default">Квартири</option>
+                  <option value="default">Віла</option>
+                  <option value="default">Апартаменти</option>
                 </select>
                 <input type="button" value="Подобрать" class="select_btn" />
               </form>
