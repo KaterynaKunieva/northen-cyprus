@@ -44,7 +44,6 @@
 @import "bourbon"
 @import 'reset.sass'
 
-
 .main_head
 	background-image: url("../img/main_bg.png"), radial-gradient(circle at 1% 24%, #c9ebfb -17%, #73acc7 62%)
 
@@ -78,7 +77,7 @@
 		font-size: 211px
 		line-height: 232px
 		color: #315c60
-		opacity: 0.05
+		opacity: 0.05 
 		letter-spacing: 147.7px
 
 .about__title
@@ -94,8 +93,7 @@
 		color: #1e6465
 		white-space: nowrap
 
-.about__list
-	max-width: 1500px
+.about__list 
 	width: 100%
 	margin: 109px auto 170px 
 	display: flex
@@ -237,14 +235,14 @@
 		display: block
 
 .advantages__list 
+	margin: 0 auto
 	margin-top: 83px
 	max-width: 1500px
 	width: 100%
 	display: flex
 	flex-wrap: wrap 
 	justify-content: center
-
-
+	
 .advantages__list_item
 	display: flex
 	align-items: center
@@ -291,8 +289,7 @@
 
 .search
 	padding-top: 252px
-	padding-bottom: 70px
-	padding-right: 57px
+	padding-bottom: 70px 
 	position: relative
 	&::before
 		content: "estate"
@@ -401,6 +398,20 @@
 	-o-border-radius: 6px
 	&:nth-child(2n)
 		margin-left: 5px
+	img
+		transition: 0.2s
+		-webkit-transition: 0.2s
+		-moz-transition: 0.2s
+		-ms-transition: 0.2s
+		-o-transition: 0.2s
+
+	&:hover
+		img
+			filter: brightness(50%)
+			-webkit-filter: brightness(50%)
+
+		> .search__cards_text
+			z-index: 2
 		
 
 .search__cards_text
@@ -421,22 +432,6 @@
 	-moz-transition: 0.2s
 	-ms-transition: 0.2s
 	-o-transition: 0.2s
-
-.search__cards_item
-	img
-		transition: 0.2s
-		-webkit-transition: 0.2s
-		-moz-transition: 0.2s
-		-ms-transition: 0.2s
-		-o-transition: 0.2s
-
-	&:hover
-		img
-			filter: brightness(50%)
-			-webkit-filter: brightness(50%)
-
-		> .search__cards_text
-			z-index: 2
 
 .more__btn
 	display: block
@@ -551,34 +546,6 @@
 	line-height: 35px
 	letter-spacing: 0.72px
 
-/*
-/*
-/* ADAPTIVE
-/* HEADER
-// @media screen and (min-width: 1550px)
-// 	.header__right-side
-// 		flex-grow: 0.1
-
-// @media screen and (max-width: 1510px)
-// 	.about__list
-// 		margin: 0 auto
-// 		margin-top: 120px
-// 		flex-wrap: wrap
-// 		max-width: 750px
-// 		width: 100%
-
-// 	.about__list_item
-// 		margin: 0 auto
-// 		margin-top: 25px
-
-// @media screen and (max-width: 1170px)
-// 	.about__list
-// 		flex-wrap: wrap
-// 		margin-top: 120px
-
-// 	.about__list_item
-// 		margin: 0 auto
-
 
 //ALWAYS END
-@import "_media"
+@import "media"
