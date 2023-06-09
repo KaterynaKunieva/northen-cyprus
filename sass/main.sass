@@ -227,14 +227,13 @@
 		color: #a1827c
 		display: block
 
-.advantages__list 
-	margin: 0 auto
-	margin-top: 83px
-	max-width: 1500px
+.advantages__list  
+	margin: 83px auto 0px 
+	max-width: 1100px
 	width: 100%
 	display: flex
 	flex-wrap: wrap 
-	justify-content: center
+	justify-content: center  
 	
 .advantages__list_item
 	display: flex
@@ -247,11 +246,14 @@
 	-moz-border-radius: 35px
 	-ms-border-radius: 35px
 	-o-border-radius: 35px 
-	margin-bottom: 25px 
 	padding: 0 25px	
+	margin: 22px 0
 	&:nth-child(2n)
-		margin-left: 74px
-
+		margin-right: 0 
+		margin-left: auto
+	&:nth-child(2n+1)
+		margin-left: 0 
+		margin-right: auto
 
 .advantages__list-logo
 	max-width: 80px
@@ -408,19 +410,23 @@
 
 .search__cards_item	 
 	position: relative	
-	border-radius: 6px		
-	max-width: 661px
-	width: 100%
+	max-width: 50% 
 	max-height: 368px
 	height: 100%
 	margin-bottom: 5px
+	border-radius: 6px	
 	-webkit-border-radius: 6px
 	-moz-border-radius: 6px
 	-ms-border-radius: 6px
 	-o-border-radius: 6px
+	margin: 3px
 	&:nth-child(2n)
-		margin-left: 5px
+		margin-right: 0
+	&:nth-child(2n+1)
+		margin-left: 0  
 	img
+		max-width: 100%
+		max-height: 100%
 		transition: 0.2s
 		-webkit-transition: 0.2s
 		-moz-transition: 0.2s

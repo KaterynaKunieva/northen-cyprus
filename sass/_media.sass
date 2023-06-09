@@ -1,22 +1,43 @@
-@media only screen and (max-width: 750px)
+@media only screen and (max-width: 730px)
 	// ABOUT  
 	.about__title
 		margin-left: 25px !important
+	.about__list_item
+		max-width: 100% !important
+		width: 100% 
 	
 	// ADVANTAGES 
-	.advantages__list_item  
-		width: 518px  !important 
+	.advantages__list_item   
+		max-width: 100% !important
 		height: 93px  !important 
-		margin-bottom: 25px  !important 
-		&:nth-child(2n)
-			margin-left: 0px !important
-	
+		margin: 0 0 25px 0 !important  
 	.advantages__list-logo
 		max-width: 80px !important
 		width: 100% !important
 		height: 60px !important
 	.advantages__list-text
 		width: 370px  !important
+	
+	// FOOTER
+	.footer__nav
+		flex-wrap: wrap !important 
+	.footer__nav-item 
+		margin-left: 0 !important 
+		width: 80% !important
+		margin-bottom: 37px  !important
+	.footer__contacts
+		flex-wrap: wrap
+		justify-content: center  
+		margin-top: 0 !important
+	.footer__contacts-list 
+		margin: 0 auto !important
+		margin-bottom: 37px !important
+		width: 80% !important
+
+	.footer__btn-phone
+		width: 80% !important
+		margin: 0 auto !important
+
 
 
 @media only screen and (max-width: 890px)
@@ -35,8 +56,7 @@
 		border: none  
 	
 	// MAIN 
-	.main_head
-		max-height: 1360px !important
+	.main_head 
 		height: 100% !important
 		background-image: url(../img/mob_bg.png),radial-gradient(circle at 80% 4%,#c9ebfb 17%,#73acc7 66%)
 	.main__content
@@ -172,12 +192,16 @@
 		max-width: 705px  
 		margin-top: 68px 
 	.advantages__list_item
-		width: 340px 
+		max-width: 48% 
+		margin: 1% auto
 		height: 137px 
-		margin-bottom: 38px 
-		padding-left: 0
+		padding-left: 0 
 		&:nth-child(2n)
-			margin-left: 21px
+			margin-right: 0 
+			margin-left: auto
+		&:nth-child(2n+1)
+			margin-left: 0 
+			margin-right: auto
 	.advantages__list-logo
 		max-width: 98px 
 		width: 100%	 
@@ -187,6 +211,9 @@
 	// SEARCH
 	.search 
 		padding: 130px 0 43px !important 
+	.search__cards_item	 
+		max-width: 100%
+		margin: 3px 0 
 	.more__btn 
 		margin-top: 20px !important
 	.text__bg 
