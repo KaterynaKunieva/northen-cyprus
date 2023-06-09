@@ -159,17 +159,18 @@
             <div class="search__title">
               ВЫБЕРИТЕ <span>ПАРАМЕТРЫ ПОИСКА</span>
             </div>
-            <div class="search__form">
-              <form action="#">
+            <form action="#" class="search__form">
+              <div class="select">
                 <select name="type" class="select_type">
                   <option value="default">Тип недвижимости</option>
                   <option value="default">Квартиры</option>
-                  <option value="default">Вилы</option>
+                  <option value="default">Виллы</option>
                   <option value="default">Аппартаменты</option>
                 </select>
-                <input type="button" value="Подобрать" class="select_btn" />
-              </form>
-            </div>
+                <i class="icon"></i>
+              </div>
+              <input type="button" value="Подобрать" class="select_btn" />
+            </form>
           </div>
 
           <div class="search__cards">

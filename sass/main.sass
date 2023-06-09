@@ -314,6 +314,11 @@
 		text-align: center
 		letter-spacing: 135.8px
 
+.search__form
+	display: flex 
+	align-items: center
+	flex-wrap: wrap
+
 .search__criteria
 	display: flex
 	justify-content: space-between
@@ -333,9 +338,50 @@
 	> span
 		color: #1e6465
 
+	
+
+.select
+	width: 195px  
+	height:  47px
+	margin-right: 41px
+	position: relative
+	display: inline-block 
+	.icon  
+		position: absolute
+		z-index: -1
+		top: 50%
+		margin-top: -5px 
+		right: 16px
+		width: 11px
+		height: 9px 
+		&::after
+			content: ""
+			position: absolute
+			z-index: -1
+			top: 4px 
+			left: 0px
+			display: block 
+			height: 1px 
+			width: 8px
+			transform: rotate(55deg) 
+			background-color: #1e6465  
+		&::before
+			content: ""
+			position: absolute
+			z-index: -1
+			top: 4px 
+			left: 4px
+			display: block
+			height: 1px 
+			width: 8px
+			transform: rotate(-55deg) 
+			background-color: #1e6465  
+			
+
 .select_type 
-	width: 197px
-	height: 45px
+	width: 100% 
+	min-height: 47px 
+	height: 100%
 	border: 2px solid #1e6465
 	border-radius: 22.5px
 	-webkit-border-radius: 22.5px
@@ -343,25 +389,20 @@
 	-ms-border-radius: 22.5px
 	-o-border-radius: 22.5px
 	padding-left: 13px
-	margin-right: 41px
+	font-family: "Circe"
 	font-size: 17px
 	line-height: 100%
 	color: #1e6465 
-	appearance: none 
-
+	appearance: none  
+	background-color: transparent
+	position: relative
+	z-index: 1
 	&:focus 
 		outline: none
-	
 	&:hover
 		cursor: pointer
-
-.select_type
-	&::after
-		content: ""
-		width: 0.8em
-		height: 0.5em
-		background-color: #1e6465
-		clip-path: polygon(100% 0%, 0 0%, 50% 100%)
+	option
+		width: 100%
 
 
 .select_btn
@@ -539,7 +580,7 @@
 		height: 100%
 
 .footer__btn-phone
-	width: 185px
+	width: 100%
 	height: 36px
 	text-align: center
 	background-color: #a1827c
