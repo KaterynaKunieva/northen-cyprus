@@ -47,6 +47,25 @@
 .main_head
 	background-image: url("../img/main_bg.png"), radial-gradient(circle at 1% 24%, #c9ebfb -17%, #73acc7 62%)
 
+.text__bg 
+	display: block 
+	width: 100vw  
+	position: absolute
+	top: 5%
+	z-index: -1 	
+	text-align: center
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 10vw
+	line-height: 232px
+	color: #315c60
+	opacity: 0.05 
+	letter-spacing: 12vw
+.text__bg-about
+	letter-spacing: 14vw
+.text__bg-search
+	top: 6%
+
 /* ABOUT
 
 .about
@@ -55,31 +74,6 @@
 	padding-bottom: 93px 
 	width: 100%
 	height: 100%
-
-	&::before
-		content: "about"
-		display: block
-		max-width: 1330px
-		width: 100%
-		height: 100%
-		margin-top: 77px 
-		position: absolute
-		z-index: -1
-		top: 48%
-		left: 50%
-		transform: translate(-50%, -50%)
-		-webkit-transform: translate(-50%, -50%)
-		-moz-transform: translate(-50%, -50%)
-		-ms-transform: translate(-50%, -50%)
-		-o-transform: translate(-50%, -50%)		
-		text-align: center
-		text-transform: uppercase
-		font-weight: bold
-		font-size: 211px
-		line-height: 232px
-		color: #315c60
-		opacity: 0.05 
-		letter-spacing: 147.7px
 
 .about__title
 	width: 215px
@@ -105,10 +99,9 @@
 .about__list_item
 	display: flex
 	flex-direction: column
-	align-items: center 
-	max-width: 310px
-	width: 100%
-	height: 250px
+	align-items: center  
+	width: 50%
+	margin-bottom: 30px
 	text-align: center
 
 .about__list-logo
@@ -290,29 +283,7 @@
 .search
 	padding-top: 252px
 	padding-bottom: 70px 
-	position: relative
-	&::before
-		content: "estate"
-		display: block	
-		height: 100% 
-		
-		margin-top: 77px 
-		position: absolute
-		z-index: -1
-		top: 52%
-		left: 52%
-		transform: translate(-50%, -50%)
-		-webkit-transform: translate(-50%, -50%)
-		-moz-transform: translate(-50%, -50%)
-		-ms-transform: translate(-50%, -50%)
-		-o-transform: translate(-50%, -50%)		
-		text-transform: uppercase
-		font-weight: bold
-		font-size: 194px
-		color: #315c60
-		opacity: 0.05
-		text-align: center
-		letter-spacing: 135.8px
+	position: relative 
 
 .search__form
 	display: flex 

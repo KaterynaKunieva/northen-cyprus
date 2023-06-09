@@ -13,6 +13,9 @@
 
       <div class="about">
         <div class="container"> 
+          <div class="text__bg text__bg-about">
+            about
+          </div>
             <h2 class="about__title">
               Почему 
               <span>THE Family Estate</span>?
@@ -155,6 +158,9 @@
 
       <div class="search">
         <div class="container">
+          <div class="text__bg text__bg-search">
+            Estate
+          </div>
           <div class="search__criteria">
             <div class="search__title">
               ВЫБЕРИТЕ <span>ПАРАМЕТРЫ ПОИСКА</span>
