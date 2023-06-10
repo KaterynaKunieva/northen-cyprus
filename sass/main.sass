@@ -591,8 +591,13 @@
 	top: 130px !important 
 	left: 15px !important 
 	letter-spacing: 12.5vw !important
+	max-width: 99vw !important
 .about__company 
 	padding: 300px 185px 64px 62px
+	background-image: url('../img/waves_bg_about.png')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
 .about__company_p_title
 	font-size: 42px
 	line-height: 21px
@@ -638,7 +643,7 @@
 .founders 
 	padding: 115px 56px 84px 53px 
 	position: relative
-	background-image: url('../img/waves_bg.png')
+	background-image: url('../img/waves_bg_founders.png')
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
@@ -702,10 +707,8 @@
 	max-height: 370px 
 	max-width: 390px 
 	text-align: center
-	background-color: #1e6465
-	border-radius: 60px 
-	margin-right: 42px
-	
+	// background-color: #1e6465
+	border-radius: 60px  
 	img
 		max-height: 370px 
 		min-width: 390px 
@@ -713,7 +716,8 @@
 		width: 100%
 		border-radius: 60px 
 		object-fit: cover
-		object-position: center 21%
+		object-position: center 21% 
+
 .family__companies_title
 	font-size: 21px 
 	line-height: 25px 
@@ -724,19 +728,27 @@
 	font-size: 17px 
 	line-height: 25px 
 	color: #1e6465 
-
+.family__companies_text
+	margin-left: 42px	
 .family__companies-row
 	margin-top: 90px
 	display: flex
 	width: 100%  
 .family__companies-col
-	max-width: 50%
+	max-width: 49% 
 	margin: 0 auto !important  
 	.family__companies_text
-		margin-right: 17px
-.family__companies_img
-	&:nth-child(2)
-		object-position: center 11% !important
-		
+		margin-right: 17px 
+		margin-left: 0px
+	.family__companies_img
+		max-height: 368px 
+		max-width: 333px
+		height: 100% 
+		width: 100%
+		img
+			min-height: 368px !important 
+			min-width: 333px !important 
+			height: 100% 
+			width: 100%
 //ALWAYS END
 @import "media"

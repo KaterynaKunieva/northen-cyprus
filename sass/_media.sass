@@ -42,7 +42,8 @@
 @media only screen and (max-width: 890px)
 	// HEADER 
 	header
-		padding: 15px 56px 0px 48px !important  
+		&:not(.header__about)
+			padding: 15px 56px 0px 48px !important  
 	.head__menu 
 		display: none !important
 	.toggle__menu
@@ -222,3 +223,6 @@
 		top: 3%  
 	.text__bg-search 
 		letter-spacing: 8vw
+	.text__bg-about-page
+		
+		letter-spacing: 8vw !important

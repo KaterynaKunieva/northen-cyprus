@@ -1,8 +1,16 @@
 <?php include_once('header.php') ?>
 <script>
 // Додати клас для іншого хедера
-var element = document.getElementsByTagName("header")[0];
-element.classList.add("transparent");
+var header = document.getElementsByTagName("header")[0];
+header.classList.add("header__about");
+var menu_link = header.querySelectorAll('a')
+for (let i = 0; i < menu_link.length; i++) {
+  if (i['href'] == 'about.php') {
+    i.classList.add('selectedMenu')
+    console.log(menu_link)
+    console.log('There')
+  }
+}
 </script>
 
 <main>
@@ -103,7 +111,7 @@ element.classList.add("transparent");
     <div class="family__companies">
       <div class="family__companies_founder">
         <div class="family__companies_img">
-          <img src="img/founders/2_1.png" alt="Емец Василий Павлович">
+          <img src="img/founders/2_2.png" alt="Емец Василий Павлович">
         </div>
         <div class="family__companies_text">
           <div class="family__companies-first_line">Група компаній нашої сім’ї зародилась ще в далекому минулому, коли
@@ -138,9 +146,8 @@ element.classList.add("transparent");
               </div>
             </div>
             <div class="family__companies_img">
-              <img src="/img/founders/4_2.png" alt="Андрушко Олег Леонидович">
+              <img src="/img/founders/3_2.png" alt="Шинкевич Виктор Геннадиевич">
             </div>
-
           </div>
         </div>
         <div class="family__companies-col">
@@ -161,7 +168,7 @@ element.classList.add("transparent");
               </div>
             </div>
             <div class="family__companies_img">
-              <img src="/img/founders/3_2.png" alt="Шинкевич Виктор Геннадиевич">
+              <img src="/img/founders/4_2.png" alt="Андрушко Олег Леонидович">
             </div>
           </div>
         </div>
