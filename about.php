@@ -151,7 +151,7 @@ for (let i = 0; i < menu_link.length; i++) {
           </div>
         </div>
         <div class="family__companies-col">
-          <div class="family__companies_founder">
+          <div class="family__companies_founder reverse">
             <div class="family__companies_text">
               <div class="family__companies_title">Шинкевич Виктор Геннадиевич</div>
               <div class="family__companies_p">

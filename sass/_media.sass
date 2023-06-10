@@ -43,7 +43,9 @@
 	// HEADER 
 	header
 		&:not(.header__about)
-			padding: 15px 56px 0px 48px !important  
+			padding: 16px 56px 0px 47px !important  
+	.header__about
+		padding: 16px 56px 90px 47px !important  
 	.head__menu 
 		display: none !important
 	.toggle__menu
@@ -83,6 +85,29 @@
 		padding-left: 26px !important
 		padding-right: 23px !important
 
+	// ABOUT PAGE 
+	.about__company
+		padding: 247px 41px 28px 46px !important
+	.about__company_p_title
+		font-size: 38px
+		margin-bottom: 40px !important
+	.about__company_p_text
+		max-width: 100%
+	.founders__about_img
+		img 
+			max-width: 100%
+			width: 100% !important
+			height: 713px !important
+	.founders__about_cards
+		max-width: 49%
+	.family__companies-first_line
+		font-size: 19px
+@media only screen and (max-width: 1100px)
+	// ABOUT PAGE
+	.about__company_card_text
+		width: 100% !important
+		p 
+			display: inline 
 
 @media only screen and (max-width: 1350px)
 	// ABOUT 
@@ -97,7 +122,7 @@
 		flex-wrap: wrap !important
 		justify-content: center !important 
 	.about__list_item
-		max-width: 50%
+		max-width: 53%
 	.about__list-title
 		min-width: 280px
 		font-size: 27px !important
@@ -117,7 +142,6 @@
 		&:last-child
 			margin-bottom: 0 !important
 
-	
 	// SEARCH
 	.search__criteria 
 		flex-direction: column
@@ -182,6 +206,48 @@
 		font-size: 31px 
 		line-height: 61px
 
+	// ABOUT PAGE 
+	.founders 
+		padding: 225px 12px 8px 13px
+	.founders__title
+		top: 79px 
+		left: 31px 
+	.founders__about
+		justify-content: space-between
+	.founders__about_cards
+		margin: 0 
+		margin-left: 8px
+	.founders__about_title
+		font-size: 20px
+		line-height: 23px
+		margin-bottom: 14px
+	.founders__about_card
+		margin-bottom: 6%
+		max-width: 98%
+		&:last-child
+			margin-bottom: 0px
+	.founders__about_img 
+		max-height: 772px
+		max-width: 50%
+		width: 100% 
+	.family__companies 
+		position: relative
+		margin-top: 80px
+		padding-left: 13px
+		padding-bottom: 0px
+	.family__companies-first_line
+		position: absolute
+		width: 100%
+		top: 0 
+		left: 13px 
+	.family__companies_founder
+		display: block
+	.family__companies_text
+		margin: 0
+	.family__companies_img
+		img
+			float: left
+			margin: 0 16px 16px 0
 
 @media only screen and (max-width: 1438px)
 	// ADVANTAGES
@@ -223,6 +289,38 @@
 		top: 3%  
 	.text__bg-search 
 		letter-spacing: 8vw
+
+	// ABOUT PAGE
 	.text__bg-about-page
-		
-		letter-spacing: 8vw !important
+		letter-spacing: 8vw !important 
+		top: 100px !important
+	.about__company_card 
+		flex-wrap: wrap
+		padding: 35px 40px 25px 45px
+	.about__company_card_img
+		width: 100%
+
+
+@media only screen and (max-width: 1510px)
+	// ABOUT PAGE
+	.about__company_card  
+		p
+			margin-bottom: 0px 
+		img
+			margin-bottom: 23px  
+	.about__company_card_text
+		width: 70% 
+	.family__companies-row
+		flex-direction: column
+		margin-top: 40px !important
+		align-items: center
+	.family__companies-col 
+		max-width: 100% 
+		width: 100%   
+		.family__companies_founder
+			display: flex
+			margin-bottom: 32px !important
+	.reverse	
+		flex-direction: row-reverse
+		.family__companies_img
+			margin-right: 26px
