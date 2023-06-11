@@ -85,7 +85,27 @@
           ?>
         </div>
       </div>
-      <div class="estate__recomendations"></div>
+      <div class="estate__recomendations">
+        <div class="recomendations__header">
+          <div class="recomendations__title">Рекомендуем к просмотру</div>
+          <div class="recomendations__line"></div>
+        </div>
+
+        <div class="recomendation__items">
+          <div class="recomendation__img">
+            <img src="img/recomendations/1.png">
+          </div>
+          <div class="recomendation__img">
+            <img src="img/recomendations/2.png">
+          </div>
+          <div class="recomendation__img">
+            <img src="img/recomendations/3.png">
+          </div>
+          <div class="recomendation__img">
+            <img src="img/recomendations/4.png">
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -96,8 +116,8 @@
 <?php include_once('footer.php') ?>
 
 <script>
-// var footer = document.getElementsByTagName("footer")[0];
-// footer.classList.add("footer__contacts_page");
+var footer = document.getElementsByTagName("footer")[0];
+footer.classList.add("footer__light");
 var header = document.getElementsByTagName("header")[0];
 header.classList.add("header__estate");
 </script>

@@ -58,7 +58,7 @@
 
 <script>
 var footer = document.getElementsByTagName("footer")[0];
-footer.classList.add("footer__contacts_page");
+footer.classList.add("footer__light");
 var header = document.getElementsByTagName("header")[0];
 header.classList.add("header__contacts");
 </script>
