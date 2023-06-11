@@ -26,15 +26,18 @@
         <div class="contact_type">присоединяйтесь в соцсетях</div>
         <div class="socials__items">
           <div class="social__item">
-            <img src="#" alt="instagram">
+            <!-- <img src="#" alt="instagram"> -->
+            <a href=""><i class="fab fa-instagram rounded_icon"></i></a>
             <div class="contact_value">@thefamily.estate</div>
           </div>
           <div class="social__item">
-            <img src="#" alt="facebook">
+            <!-- <img src="#" alt="facebook"> -->
+            <i class="fab fa-facebook-f rounded_icon"></i>
             <div class="contact_value">@The Family Estate</div>
           </div>
           <div class="social__item">
-            <img src="#" alt="youtube">
+            <!-- <img src="#" alt="youtube"> -->
+            <i class="fab fa-youtube"></i>
             <div class="contact_value">The Family Estate</div>
           </div>
         </div>

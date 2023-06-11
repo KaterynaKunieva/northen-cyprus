@@ -29,11 +29,11 @@
       <ul>
         <li>
           <!-- <a href="#"><img src="img/social/1.png" alt="instagram" /></a> -->
-          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-instagram rounded_icon"></i></a>
         </li>
         <li>
           <!-- <a href="#"><img src="img/social/2.png" alt="facebook" /></a> -->
-          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-facebook-f rounded_icon"></i>
         </li>
         <li>
           <!-- <a href="#"><img src="img/social/3.png" alt="youtube" /></a> -->
