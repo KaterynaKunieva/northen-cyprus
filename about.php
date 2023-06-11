@@ -1,6 +1,5 @@
 <?php include_once('header.php') ?>
 <script>
-// Додати клас для іншого хедера
 var header = document.getElementsByTagName("header")[0];
 header.classList.add("header__about");
 var menu_link = header.querySelectorAll('a')

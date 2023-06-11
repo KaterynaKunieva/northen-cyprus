@@ -28,19 +28,24 @@
     <div class="footer__contacts-list">
       <ul>
         <li>
-          <a href="#"><img src="img/social/1.png" alt="instagram" /></a>
+          <!-- <a href="#"><img src="img/social/1.png" alt="instagram" /></a> -->
+          <a href=""><i class="fab fa-instagram"></i></a>
         </li>
         <li>
-          <a href="#"><img src="img/social/2.png" alt="facebook" /></a>
+          <!-- <a href="#"><img src="img/social/2.png" alt="facebook" /></a> -->
+          <i class="fab fa-facebook-f"></i>
         </li>
         <li>
-          <a href="#"><img src="img/social/3.png" alt="youtube" /></a>
+          <!-- <a href="#"><img src="img/social/3.png" alt="youtube" /></a> -->
+          <i class="fab fa-youtube"></i>
         </li>
         <li>
-          <a href="#"><img src="img/social/4.png" alt="telegram" /></a>
+          <!-- <a href="#"><img src="img/social/4.png" alt="telegram" /></a> -->
+          <i class="fa-brands fa-telegram"></i>
         </li>
       </ul>
     </div>
+    <div class="footer__phone">+357-24-020177 </div>
     <input class="footer__btn-phone" type="button" value="Позвоните мне" />
   </div>
 </footer>
