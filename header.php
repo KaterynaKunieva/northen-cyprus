@@ -34,7 +34,7 @@
     <div class="header__logo"><img src="img/logo.png" alt="logo" /></div>
     <nav class="menu head__menu">
       <ul>
-        <li><a href="#">недвижимость</a></li>
+        <li><a href="estate.php">недвижимость</a></li>
         <li><a href="index.php">Про остров</a></li>
         <li><a href="about.php">О компании</a></li>
         <li><a href="contacts.php">контакты</a></li>
