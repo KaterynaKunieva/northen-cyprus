@@ -1,6 +1,6 @@
 var gallery_thubn = $(".gallery_thubn");
 gallery_thubn.slick({
-  slidesToShow: 6, // більше
+  slidesToShow: 11, 
   slidesToScroll: 1,
   fade: false,
   adaptiveHeight: false,
