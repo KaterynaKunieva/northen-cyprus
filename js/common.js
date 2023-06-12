@@ -1,3 +1,55 @@
+var gallery_thubn = $(".gallery_thubn");
+gallery_thubn.slick({
+  slidesToShow: 6, // більше
+  slidesToScroll: 1,
+  fade: false,
+  adaptiveHeight: false,
+  infinite: true,
+  pauseOnFocus: true,
+  draggable: true,
+  centerMode: false, // true
+  variableWidth: false,
+  autoplay: false,
+  autoplaySpeed: 5000,
+  focusOnSelect: true,
+  arrows: false,
+  dots: false,
+  asNavFor: ".gallery_items",
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 5,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4,
+      },
+    },
+  ],
+});
+
+var gallery_items = $(".gallery_items");
+gallery_items.slick({
+  slide: ".item",
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: true,
+  adaptiveHeight: true,
+  infinite: true,
+  pauseOnFocus: true,
+  draggable: true,
+  centerMode: false,
+  variableWidth: false,
+  autoplay: false,
+  autoplaySpeed: 5000,
+  arrows: true,
+  dots: false,
+  asNavFor: ".gallery_thubn",
+});
+
 // !(function (a) {
 //   a.fn.animated = function (n) {
 //     a(this).each(function () {
@@ -106,9 +158,3 @@
 //       $(".animation_7").animated("flash"),
 //       $(".animation_8").animated("zoomInDown");
 //   });
-
-$(".toggle__menu").click(function () {
-  $(".sandwich__menu").toggleClass("active"); // сендвіч навхрест
-  // $(".mobile_menu").toggleClass("active"); // відкриття меню
-  // $("header").toggleClass("active"); // закриття хедеру
-});

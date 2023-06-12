@@ -90,7 +90,6 @@
           <div class="recomendations__title">Рекомендуем к просмотру</div>
           <div class="recomendations__line"></div>
         </div>
-
         <div class="recomendation__items">
           <div class="recomendation__img">
             <img src="img/recomendations/1.png">

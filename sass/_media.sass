@@ -63,9 +63,8 @@
 	// SEARCH
 	.search 
 		padding: 130px 0 43px !important 
-	.search__cards_item	 
-		max-width: 100%
-		margin: 3px 0 
+	.search__cards_item	  
+		margin: 3px auto !important
 	.more__btn 
 		margin-top: 20px !important
 
@@ -79,6 +78,54 @@
 	.about__company_card_img
 		width: 100%
 
+	// ESTATE
+	.estate__form
+		max-width: 736px
+		width: 100%
+	.estate__filter
+		padding: 192px 0px 55px 0
+	.estate__cards
+		.search__cards
+			max-width: 750px
+		.search__cards_item	 
+			height: 364px 
+			width: 367px
+			border-radius: 35px
+			.search__cards_img 
+				width: 100%
+				height: 100%
+			img 
+				object-fit: cover
+				border-radius: 35px
+		.search__cards_title
+			font-size: 30px
+		.search__cards_price
+			font-size: 24px
+		.search__cards_text
+			top: 0
+			flex-direction: column
+			height: 100%
+			align-items: center
+			padding: 169px 0 22px 0
+		.search__cards_price
+			align-self: flex-end
+			margin-right: 18px
+	.estate__pagination
+		margin-top: 49px
+	.pagination__item a
+		font-size: 17px 
+	.estate__header
+		height: 172px
+		background-color: #1e6465
+		background-image: none
+		z-index: -1
+		position: relative
+	
+	.estate__title
+		position: absolute
+		top: 1px
+		z-index: 11
+		color: #1e6465
 @media only screen and (max-width: 1350px)
 	// ABOUT 
 	.about  

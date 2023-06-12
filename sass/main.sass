@@ -331,8 +331,6 @@
 	> span
 		color: #1e6465
 
-	
-
 .select
 	width: 195px  
 	height:  47px
@@ -370,7 +368,6 @@
 			transform: rotate(-55deg) 
 			background-color: #1e6465  
 			
-
 .select_type 
 	width: 100% 
 	min-height: 47px 
@@ -397,7 +394,6 @@
 	option
 		width: 100%
 
-
 .select_btn
 	width: 197px
 	height: 47px
@@ -419,8 +415,8 @@
 	&:hover
 		cursor: pointer
 
-
-.search__cards 
+.search__cards
+	max-width: 1307px 
 	width: 100%
 	display: flex
 	flex-wrap: wrap 
@@ -429,30 +425,24 @@
 	margin: 0 auto
 
 .search__cards_item	 
-	position: relative	
-	max-width: 50% 
-	max-height: 368px
-	height: 100%
-	margin-bottom: 5px
-	border-radius: 6px	
-	-webkit-border-radius: 6px
-	-moz-border-radius: 6px
-	-ms-border-radius: 6px
-	-o-border-radius: 6px
+	position: relative
+	max-height: 360px
+	height: 100% 
+	max-width: 650px
+	width: 100% 
 	margin: 3px
+	border-radius: 6px	 
+	img
+		max-height: 360px
+		height: 100% 
+		max-width: 650px
+		width: 100% 
+		transition: 0.2s 
+	
 	&:nth-child(2n)
 		margin-right: 0
 	&:nth-child(2n+1)
 		margin-left: 0  
-	img
-		max-width: 100%
-		max-height: 100%
-		transition: 0.2s
-		-webkit-transition: 0.2s
-		-moz-transition: 0.2s
-		-ms-transition: 0.2s
-		-o-transition: 0.2s
-
 	&:hover
 		img
 			filter: brightness(50%)
@@ -899,8 +889,7 @@
 .estate__title
 	max-width: 50%
 	max-height: 440px 
-	height: 100%
-	// width: 100%
+	height: 100% 
 	width: 40%
 	padding: 199px 67px 104px 62px 
 	font-size: 42px
@@ -923,6 +912,7 @@
 	background-color: lightgrey
 .estate__cards
 	margin-top: 113px
+
 .estate__pagination
 	margin: 0 auto
 	display: flex
@@ -937,13 +927,17 @@
 		line-height: 36px 
 		font-weight: bold
 		color: #1e6465
+
 .estate__recomendations
 	padding: 63px 59px 50px 68px
 	background-color: #1e6465
 	border-radius: 30px
 .recomendations__header
+	max-width: 100%
+	width: 1300px
 	display: flex 
 	align-items: baseline
+	margin: 0 auto
 .recomendations__title
 	margin-bottom: 44px  
 	max-width: 30%
