@@ -56,9 +56,9 @@
 	background-image: url("../img/main_bg.png"), radial-gradient(circle at 1% 24%, #c9ebfb -17%, #73acc7 62%)
 
 .text__bg 
-	display: block 
-	width: 100vw  
-	position: absolute
+	display: block  
+	position: absolute  
+	max-width: 100%
 	top: 5%
 	z-index: -1 	
 	text-align: center
@@ -75,6 +75,7 @@
 	top: 6%
 .text__bg_contacts 
 	top: 100px
+	left: 25px
 	letter-spacing: 7vw
 	font-size: 8vw
 	color: #a1827c
@@ -515,20 +516,11 @@
 	background-size: cover
 	display: flex
 	justify-content: space-between
-.footer__dark 
-	background-color: #1e6465
-.footer__light
-	background-color: #f5f5f5 
-	padding: 63px 60px 68px 57px
-	.footer__nav-item, .footer__contacts, .footer__nav-item ul a, .footer__contacts-list i
-		color: #1e6465
-	.fa-facebook-f, .fa-instagram
-		background-color: #1e6465 !important
-		&::before
-			color: #fff !important
-	.footer__phone
-		display: block
 
+.footer__nav-title, .footer__contacts-title
+	text-transform: uppercase
+	letter-spacing: 1.6px
+	
 .footer__nav
 	display: flex
 	justify-content: center
@@ -543,15 +535,33 @@
 	&:last-child
 		margin-right: 0
 
+.footer__dark 
+	background-color: #1e6465
+
+.rounded_icon
+	background-color: #fff
+	border-radius: 50%
+	padding: 8px
+	&::before
+		color: #1e6465
+
 .footer__contacts, .footer__nav-item ul a
 	color: #ffffff
 	font-weight: bold
 	font-size: 18px
 	line-height: 31px
 
-.footer__nav-title, .footer__contacts-title
-	text-transform: uppercase
-	letter-spacing: 1.6px
+.footer__light
+	background-color: #f5f5f5 
+	padding: 63px 60px 68px 57px
+	.footer__nav-item, .footer__contacts, .footer__nav-item ul a, .footer__contacts-list i
+		color: #1e6465
+	.fa-facebook-f, .fa-instagram
+		background-color: #1e6465 !important 
+		&::before
+			color: #fff !important
+	.footer__phone
+		display: block
 
 .footer__contacts
 	display: flex
@@ -572,44 +582,43 @@
 		li 
 			margin: 0 6px
 			text-align: center
+			max-width: 37px 
+			max-height: 37px 
+			width: 100%
+			height: 100%
 			&:last-child
 				margin-right: 0
-	a
+	a 
 		max-width: 40px
-		max-height: 40px
-		width: 100%
-		height: 100% 
+		max-height: 40px 
 	i 
 		color: #fff 
 		width: 37px
 		height: 37px
 		text-align: center 
 		&::before
-			display: block
-			max-width: 37px 
+			display: block 
 			width: 100%
+			font-size: 37px
 	img
 		width: 100%
 		height: 100%
-.rounded_icon
-	background-color: #fff
-	border-radius: 50%
-	padding: 8px
-	&::before
-		color: #1e6465
+	.fa-facebook-f, .fa-instagram
+		&::before
+			font-size: 20px 
+	.fa-youtube
+		&::before
+			font-size: 32px 
 .footer__phone
 	display: none
+
 .footer__btn-phone
 	width: 100%
 	height: 36px
 	text-align: center
 	background-color: #a1827c
 	border: none
-	border-radius: 18px
-	-webkit-border-radius: 18px
-	-moz-border-radius: 18px
-	-ms-border-radius: 18px
-	-o-border-radius: 18px
+	border-radius: 18px 
 	color: #fff
 	font-family: "Circe"
 	font-weight: bold
@@ -619,7 +628,6 @@
 	margin-top: 22px
 	&:hover
 		cursor: pointer
-
 
 // ABOUT PAGE 
 .text__bg-about-page
@@ -792,7 +800,7 @@
 			height: 100% 
 			width: 100%
 
-// CONTACTS PAGE
+// CONTACTS PAGE 
 .contacts
 	margin-top: 102px 
 	border-radius: 60px
@@ -837,18 +845,30 @@
 	margin-bottom: 33px
 .social__item
 	display: flex
+	margin-bottom: 15px
+	a 
+		max-width: 50px
+		max-height: 50px
+		width: 100% 
+		height: 100%
+		text-align: center
 	i 
 		max-width: 50px
 		width: 100%
 		max-height: 50px
-		height: 100%
-		&::before
-			width: 100%
-			width: 50px
+		height: 100% 
+		&::before 
 			color: #1e6465
-			font-size: 40px
+			font-size: 50px 
+	.fa-facebook-f, .fa-instagram
+		&::before 
+			font-size: 29px
+	.fa-youtube
+		&::before 
+			font-size: 45px
 	.rounded_icon 
 		background-color: #1e6465
+		padding: 10px
 		&::before
 			color: #fff
 	img
@@ -861,6 +881,7 @@
 	img
 		border-radius: 60px
 		max-width: 100%
+
 
 
 // ESTATE PAGE

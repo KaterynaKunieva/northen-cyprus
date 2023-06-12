@@ -32,12 +32,12 @@
           </div>
           <div class="social__item">
             <!-- <img src="#" alt="facebook"> -->
-            <i class="fab fa-facebook-f rounded_icon"></i>
+            <a href=""><i class="fab fa-facebook-f rounded_icon"></i></a>
             <div class="contact_value">@The Family Estate</div>
           </div>
           <div class="social__item">
             <!-- <img src="#" alt="youtube"> -->
-            <i class="fab fa-youtube"></i>
+            <a href=""><i class="fab fa-youtube"></i></a>
             <div class="contact_value">The Family Estate</div>
           </div>
         </div>

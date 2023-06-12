@@ -33,15 +33,15 @@
         </li>
         <li>
           <!-- <a href="#"><img src="img/social/2.png" alt="facebook" /></a> -->
-          <i class="fab fa-facebook-f rounded_icon"></i>
+          <a href=""><i class="fab fa-facebook-f rounded_icon"></i></a>
         </li>
         <li>
           <!-- <a href="#"><img src="img/social/3.png" alt="youtube" /></a> -->
-          <i class="fab fa-youtube"></i>
+          <a href=""><i class="fab fa-youtube"></i></a>
         </li>
         <li>
           <!-- <a href="#"><img src="img/social/4.png" alt="telegram" /></a> -->
-          <i class="fa-brands fa-telegram"></i>
+          <a href=""><i class="fa-brands fa-telegram"></i></a>
         </li>
       </ul>
     </div>
