@@ -2,11 +2,11 @@
 
 <main>
   <div class="estate">
-    <div class="estate__header">
-      <div class="estate__header_color"></div>
-      <div class="title estate__title">апартаменты Северного Кипра </div>
+    <div class="estate__header"> 
+      
     </div>
     <div class="estate__main">
+      <div class="title estate__title">апартаменты Северного Кипра </div>
       <div class="text__bg text__bg_estate">estate</div>
       <div class="estate__filter">
         <div class="estate__form">
@@ -85,38 +85,44 @@
           ?>
         </div>
       </div>
-      <div class="estate__recomendations">
-        <div class="recomendations__header">
-          <div class="recomendations__title">Рекомендуем к просмотру</div>
-          <div class="recomendations__line"></div>
-        </div>
-        <div class="recomendation__items">
-          <div class="recomendation__img">
-            <img src="img/recomendations/1.png">
-          </div>
-          <div class="recomendation__img">
-            <img src="img/recomendations/2.png">
-          </div>
-          <div class="recomendation__img">
-            <img src="img/recomendations/3.png">
-          </div>
-          <div class="recomendation__img">
-            <img src="img/recomendations/4.png">
-          </div>
-        </div>
+    </div>
+  </div>
+  <div class="estate__recomendations">
+    <div class="recomendations__header">
+      <div class="recomendations__title">Рекомендуем к просмотру</div>
+      <div class="recomendations__line"></div>
+    </div>
+    <div class="recomendation__items owl-carousel owl-theme">
+      <div class="recomendation__img">
+        <img src="img/recomendations/1.png">
+      </div>
+      <div class="recomendation__img">
+        <img src="img/recomendations/2.png">
+      </div>
+      <div class="recomendation__img">
+        <img src="img/recomendations/3.png">
+      </div>
+      <div class="recomendation__img">
+        <img src="img/recomendations/4.png">
       </div>
     </div>
-
   </div>
 
 </main>
 
 
 <?php include_once('footer.php') ?>
-
+<script src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script> 
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="js/common.min.js"></script> 
 <script>
-var footer = document.getElementsByTagName("footer")[0];
-footer.classList.add("footer__light");
-var header = document.getElementsByTagName("header")[0];
-header.classList.add("header__estate");
+  var footer = document.getElementsByTagName("footer")[0];
+  footer.classList.add("footer__light"); 
+  footer.classList.remove("footer__dark");
+  var header = document.getElementsByTagName("header")[0];
+  header.classList.add("header__estate");
 </script>

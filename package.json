@@ -22,5 +22,8 @@
     "gulp-uglify": "^3.0.2",
     "node-bourbon": "^4.2.8",
     "sass": "^1.60.0"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
   }
 }

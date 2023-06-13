@@ -7,26 +7,51 @@
 		<div class="object__code">Код обьекта: <span>764785434667</span></div>
 		<div class="slider">
 			<div class="gallery_thubn">
-				<img src="img/slider/main.png" alt="">
+				<div class="item">
+					<img src="img/slider/main.png" alt="1">
+				</div>
+			</div>
 			</div>
 			<div class="gallery_items">
-				<a href="#"><img src="img/slider/main.png" alt="2"></a>
-				<a href="#"><img src="img/slider/main.png" alt="1"></a>
-				<a href="#"><img src="img/slider/main.png" alt="3"></a>
-				<a href="#"><img src="img/slider/main.png" alt="4"></a>
-				<a href="#"><img src="img/slider/main.png" alt="5"></a>
-				<a href="#"><img src="img/slider/main.png" alt="6"></a>
-				<a href="#"><img src="img/slider/main.png" alt="7"></a>
-				<a href="#"><img src="img/slider/main.png" alt="8"></a>
-				<a href="#"><img src="img/slider/main.png" alt="9"></a>
-				<a href="#"><img src="img/slider/main.png" alt="10"></a>
-				<a href="#"><img src="img/slider/main.png" alt="11"></a>
+				<div class="item">
+					<img src="img/slider/main.png" alt="1">
+				</div>
+				<div class="item">
+					<img src="img/slider/main.png" alt="3">
+				</div>
+				<div class="item">
+					<img src="img/slider/main.png" alt="4">
+				</div>
+				<div class="item">
+					<img src="img/slider/main.png" alt="5">
+				</div>
+				<div class="item">
+					<img src="img/slider/main.png" alt="2">
+				</div>
+				<div class="item">
+					<img src="img/slider/main.png" alt="6">
+				</div>
+				<div class="item">
+					<img src="img/slider/main.png" alt="7">
+				</div>
+				<div class="item">
+					<img src="img/slider/main.png" alt="8">
+				</div>
+				<div class="item">
+					<img src="img/slider/main.png" alt="9">
+				</div>
+				<div class="item">
+					<img src="img/slider/main.png" alt="10">
+				</div>
+				<div class="item">
+					<img src="img/slider/main.png" alt="11">
+				</div>
 			</div>
 		</div>
 		<div class="object__info">
 			<div class="object__price">Цена стартует от: <span>240 000USD</span></div>
 			<div class="btn object__btn">
-				<input type="submit" value="Узнать про обьект ">
+				<input class="btn" type="submit" value="Узнать про обьект ">
 			</div>
 			<div class="object__characteristics">
 				<div class="characteristic__item">

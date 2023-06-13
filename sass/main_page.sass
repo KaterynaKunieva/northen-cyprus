@@ -2,9 +2,6 @@
 	background-image: url("../img/main_bg.png"), radial-gradient(circle at 1% 24%, #c9ebfb -17%, #73acc7 62%)
 
 /* ABOUT
-.text__bg-about
-	letter-spacing: 14vw
-
 .about
 	position: relative
 	padding-top: 152px
@@ -87,30 +84,29 @@
 	height: 100%
 	margin: 0 auto 
 
-	&::after
-		position: absolute
-		z-index: -1
-		color: $mediumtaupe
-		opacity: 0.08
-		font-weight: 800
-		text-align: center
-		top: 5px
-		width: 210%
+.about__stat-bg
+	position: absolute
+	z-index: -1
+	color: $mediumtaupe
+	opacity: 0.08
+	font-weight: 800
+	text-align: center
+	top: 5px
+	width: 210%
 
-	&:nth-child(1)::after
-		content: "10" 
+.about__stat-bg
+	&:nth-child(1)
 		font-size: 185px
 		line-height: 116px
-
-	&:nth-child(2)::after
-		content: "2000" 
+.about__stat-bg
+	&:nth-child(2) 
 		font-size: 175px
 		line-height: 109px
-
-	&:nth-child(3)::after
-		content: "224 000" 
+.about__stat-bg
+	&:nth-child(3) 
 		font-size: 139px
 		line-height: 87px
+.about__stat-bg
 	&:last-child
 		.about__stat-text
 			max-width: 370px 

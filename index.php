@@ -64,16 +64,19 @@
       </div>
       <div class="about__stat">
         <div class="about__stat_item">
+          <div class="about__stat-bg">10</div>
           <div class="about__stat-number">10</div>
           <div class="about__stat-text">
             Лет опыта на рынке недвижимости
           </div>
         </div>
         <div class="about__stat_item">
+          <div class="about__stat-bg">2000</div>
           <div class="about__stat-number">2000</div>
           <div class="about__stat-text">Успешно оформленных сделок</div>
         </div>
         <div class="about__stat_item">
+          <div class="about__stat-bg">224 000</div>
           <div class="about__stat-number">224 000</div>
           <div class="about__stat-text">
             Построенных квадратных метров

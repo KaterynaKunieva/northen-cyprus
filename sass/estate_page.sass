@@ -1,18 +1,29 @@
 // ESTATE PAGE 
+.estate
+	margin-top: 359px 
+	background-color: $white
+	border-radius: 35px
+
 .estate__header
 	width: 100%
-	height: 100%
+	height: 440px
 	background-image:	url('../img/header__bg_estate.png')
 	@include positioning-bg-top-center 
 	background-color: rgba(60, 93, 97, 0.68)
 	background-blend-mode: exclusion 
+	position: absolute
+	top: 1px 
+	z-index: -1
 .estate__title
 	max-width: 50%
 	max-height: 440px
 	height: 100%
 	width: 40%
-	padding: 199px 67px 104px 62px
+	padding: 200px 67px 170px 
 	color: $white
+	position: absolute
+	z-index: 1
+	top: 0px
 .estate__main
 	background-image: url('../img/waves_bg_estate.png')
 	@include positioning-bg-top-center  
@@ -43,9 +54,13 @@
 		color: $teal2
 
 .estate__recomendations
-	padding: 63px 59px 50px 68px
+	padding: 90px 59px 50px 68px
 	background-color: $teal2
-	border-radius: 30px
+	border-radius: 0px 0px 30px 30px 
+	margin-top: -35px
+	// position: relative
+	min-width: 0
+	z-index: -1
 .recomendations__header
 	max-width: 100%
 	width: 1300px
@@ -72,10 +87,11 @@
 	max-width: 100%
 	width: 1300px
 	display: flex 
+	min-width: 0
 	justify-content: space-between
 	align-items: center
 	margin: 0 auto
-.recomendation__img
+.recomendation__img 
 	width: 320px 
 	height: 320px
 	max-width: 100%
@@ -85,4 +101,6 @@
 		width: 100%
 		height: 100%
 		object-fit: cover
-		border-radius: 15px
+		border-radius: 15px 
+
+

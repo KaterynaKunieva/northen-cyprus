@@ -15,7 +15,7 @@
 		max-width: 100% 
 		width: 100%	 
 		.family__companies_founder
-			display: flex
+			display: flex 
 			margin-bottom: 32px !important
 	.reverse	
 		flex-direction: row-reverse
@@ -25,16 +25,15 @@
 @media only screen and (max-width: 1438px)
 	// TEXT BG
 	.text__bg 
-		&:not(.text__bg_contacts), &:not(.text__bg_estate)
-			font-size: 15vw !important
-			letter-spacing: 10vw
-			top: 0
+		font-size: 15vw !important
+		letter-spacing: 10vw
+		top: 0
 	.text__bg-about
 		top: 3%	
 	.text__bg-search 
 		letter-spacing: 8vw
 	.text__bg_estate
-		top: 47% !important
+		top: 15% !important
 		letter-spacing: 9vw !important
 
 	// ADVANTAGES
@@ -79,12 +78,16 @@
 		width: 100%
 
 	// ESTATE
+	.estate
+		margin-top: 140px
+		border-radius: 35px 
 	.estate__form
 		max-width: 736px
 		width: 100%
 	.estate__filter
 		padding: 192px 0px 55px 0
 	.estate__cards
+		margin-top: 62px
 		.search__cards
 			max-width: 750px
 		.search__cards_item	 
@@ -112,20 +115,30 @@
 			margin-right: 18px
 	.estate__pagination
 		margin-top: 49px
+		max-width: 281px
 	.pagination__item a
 		font-size: 17px 
 	.estate__header
-		height: 172px
+		height: 178px
 		background-color: #1e6465
 		background-image: none
-		z-index: -1
-		position: relative
-	
+		z-index: -1 
 	.estate__title
 		position: absolute
 		top: 1px
 		z-index: 11
 		color: #1e6465
+		font-size: 36px 
+		max-width: 510px
+		width: 100%
+	// .recomendation__items, .recomendations__header
+	// 	max-width: 750px 
+	// .recomendation__img
+	// 	margin: 0 3px
+	// .recomendation__img, .recomendation__img img
+	// 	width: 240px
+	// 	height: 240px
+
 @media only screen and (max-width: 1350px)
 	// ABOUT 
 	.about	
@@ -196,6 +209,8 @@
 		margin-top: 146px
 	.footer__contacts-title
 		display: none
+	.rounded_icon
+		padding: 13px
 	.footer__contacts-list 
 		width: 50%
 		margin-right: 37px
@@ -203,6 +218,7 @@
 		justify-content: center !important	
 		ul
 			margin-bottom: 0px
+			justify-content: space-around
 			li
 				margin-right: 0px
 				max-width: 66px 
@@ -210,11 +226,22 @@
 				width: 100% 
 				height: 100%	
 				a 
-					width: 100%
-					height: 100%
+					max-width: 40px
+					max-height: 40px 
 					img
 						height: 100%
 						vertical-align: middle
+				i 
+					width: 66px
+					height: 66px 
+					&::before
+						font-size: 66px
+				.fa-facebook-f, .fa-instagram
+					&::before
+						font-size: 38px 
+				.fa-youtube
+					&::before
+						font-size: 59px 
 	.footer__btn-phone 
 		height: 65px 
 		width: 50% 
@@ -277,8 +304,16 @@
 	.footer__phone
 		display: none !important
 	.footer__btn-phone
-		margin-top: 0
+		margin-top: 0 
 
+	// ESTATE
+	.recomendations__line 
+		max-width: 50%
+		width: 50%
+	.recomendations__title
+		max-width: 50%
+		width: 50%
+	
 @media only screen and (max-width: 1100px)
 	// ABOUT PAGE
 	.about__company_card_text
@@ -298,26 +333,35 @@
 		width: 100% !important
 	.text__bg_contacts
 		left: 20px !important
-	.footer__light
-		background-color: #1e6465 
-	.footer__nav-item, .footer__nav-title, .footer__contacts, .footer__nav-list ul a, .footer__contacts-list i
-		color: #ffffff !important 
-	.footer__contacts-list 
-		.rounded_icon
-			background-color: #fff
-			color: #1e6465
-			border-radius: 50%
-			padding: 8px
-			background-color: #fff !important
-			color: #1e6465 !important
-		.contacts__title
-			margin-bottom: 75px
 
-@media only screen and (max-width: 890px)
+	.footer__dark
+		.footer__nav-item, .footer__nav-title, .footer__contacts, .footer__nav-list ul a, .footer__contacts-list i
+			color: #ffffff !important 
+		.footer__contacts-list 
+			.rounded_icon
+				background-color: #fff
+				color: #1e6465
+				border-radius: 50%
+				padding: 8px
+				background-color: #fff !important
+				color: #1e6465 !important
+			.contacts__title
+				margin-bottom: 75px
+		
+	.footer__light
+		background-color: $white
+		background-image: url('../img/waves_bg_footer-green.png')
+
+
+
+@media only screen and (max-width: 930px)
 	// HEADER 
 	header
 		&:not(.header__about)
 			padding: 16px 56px 0px 47px !important	
+		
+@media only screen and (max-width: 890px)
+	// HEADER  
 	.header__about
 		padding: 16px 56px 90px 47px !important	
 	.head__menu 
@@ -389,6 +433,14 @@
 			height: 573px !important
 			width: 655px !important
 			object-fit: cover
+	
+	// ESTATE
+	.recomendations__line 
+		display: none
+	.recomendations__title
+		max-width: 100%
+		width: 100%
+		text-align: center
 
 @media only screen and (max-width: 730px)
 	// ABOUT	

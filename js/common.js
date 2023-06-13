@@ -1,54 +1,69 @@
-var gallery_thubn = $(".gallery_thubn");
-gallery_thubn.slick({
-  slidesToShow: 11, 
-  slidesToScroll: 1,
-  fade: false,
-  adaptiveHeight: false,
-  infinite: true,
-  pauseOnFocus: true,
-  draggable: true,
-  centerMode: false, // true
-  variableWidth: false,
-  autoplay: false,
-  autoplaySpeed: 5000,
-  focusOnSelect: true,
-  arrows: false,
-  dots: false,
-  asNavFor: ".gallery_items",
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 5,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 4,
-      },
-    },
-  ],
+// Slider
+// $(document).ready(function () {
+//   console.log($(".recomendation__items"));
+//   $(".recomendation__items").slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 3,
+//   });
+//   $(".slick-slide").removeAttr("style");
+// });
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
 });
 
-var gallery_items = $(".gallery_items");
-gallery_items.slick({
-  slide: ".item",
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: true,
-  adaptiveHeight: true,
-  infinite: true,
-  pauseOnFocus: true,
-  draggable: true,
-  centerMode: false,
-  variableWidth: false,
-  autoplay: false,
-  autoplaySpeed: 5000,
-  arrows: true,
-  dots: false,
-  asNavFor: ".gallery_thubn",
-});
+// var gallery_thubn = $(".gallery_thubn");
+// gallery_thubn.slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 11,
+//   fade: false,
+//   adaptiveHeight: false,
+//   infinite: true,
+//   pauseOnFocus: true,
+//   draggable: true,
+//   centerMode: true,
+//   variableWidth: false,
+//   autoplay: false,
+//   autoplaySpeed: 5000,
+//   focusOnSelect: true,
+//   arrows: false,
+//   dots: false,
+//   asNavFor: ".gallery_items",
+//   responsive: [
+//     {
+//       breakpoint: 992,
+//       settings: {
+//         slidesToShow: 5,
+//       },
+//     },
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         slidesToShow: 4,
+//       },
+//     },
+//   ],
+// });
+
+// var gallery_items = $(".gallery_items");
+// gallery_items.slick({
+//   slide: ".item",
+//   slidesToShow: 11,
+//   slidesToScroll: 11,
+//   fade: true,
+//   adaptiveHeight: true,
+//   infinite: true,
+//   pauseOnFocus: true,
+//   draggable: true,
+//   centerMode: false,
+//   variableWidth: false,
+//   autoplay: false,
+//   autoplaySpeed: 5000,
+//   arrows: true,
+//   dots: false,
+//   asNavFor: ".gallery_thubn",
+// });
 
 // !(function (a) {
 //   a.fn.animated = function (n) {
