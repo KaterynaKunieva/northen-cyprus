@@ -21,7 +21,7 @@ for (let i = 0; i < menu_link.length; i++) {
       family
     </div>
     <div class="about__company_p">
-      <div class="about__company_p_title">О компании</div>
+      <div class="title about__company_p_title">О компании</div>
       <div class="about__company_p_text">
         <p>
           The Family Estate – международное семейное агентство недвижимости. Мы ценим ваше время и помогаем сделать
@@ -65,7 +65,7 @@ for (let i = 0; i < menu_link.length; i++) {
   </div>
 
   <div class="founders">
-    <div class="founders__title">
+    <div class="title founders__title">
       Основатели
       <span>The Family Estate</span>
     </div>

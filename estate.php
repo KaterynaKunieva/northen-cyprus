@@ -4,7 +4,7 @@
   <div class="estate">
     <div class="estate__header">
       <div class="estate__header_color"></div>
-      <div class="estate__title">апартаменты Северного Кипра </div>
+      <div class="title estate__title">апартаменты Северного Кипра </div>
     </div>
     <div class="estate__main">
       <div class="text__bg text__bg_estate">estate</div>

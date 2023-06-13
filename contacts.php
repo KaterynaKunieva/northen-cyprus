@@ -3,7 +3,7 @@
 <main>
   <div class="contacts">
     <div class="text__bg text__bg_contacts">contacts</div>
-    <div class="contacts__title">КОНТАКТЫ</div>
+    <div class="title contacts__title">КОНТАКТЫ</div>
     <div class="contacts__content">
       <div class="contacts__coordinates">
         <div class="contacts_item">

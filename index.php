@@ -16,7 +16,7 @@
       <div class="text__bg text__bg-about">
         about
       </div>
-      <h2 class="about__title">
+      <h2 class="title about__title">
         Почему
         <span>THE Family Estate</span>?
       </h2>
@@ -162,7 +162,7 @@
         Estate
       </div>
       <div class="search__criteria">
-        <div class="search__title">
+        <div class="title search__title">
           ВЫБЕРИТЕ <span>ПАРАМЕТРЫ ПОИСКА</span>
         </div>
         <form action="#" class="search__form">
