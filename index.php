@@ -3,10 +3,10 @@
   <div class="main_head">
     <div class="container">
       <div class="main__content">
-        <h2 class="main__title">
+        <h2 class="title main__title">
           Открой для себя рай жизни на острове Кипр
         </h2>
-        <button class="main__btn">Подобрать недвижимость</button>
+        <button class="btn main__btn">Подобрать недвижимость</button>
       </div>
     </div>
   </div>
@@ -176,7 +176,7 @@
             </select>
             <i class="icon"></i>
           </div>
-          <input type="button" value="Подобрать" class="select_btn" />
+          <input type="button" value="Подобрать" class="btn select_btn" />
         </form>
       </div>
 
@@ -236,7 +236,7 @@
           </div>
         </div>
       </div>
-      <input type="button" class="more__btn" value="смотреть больше " />
+      <input type="button" class="btn more__btn" value="смотреть больше " />
     </div>
   </div>
 </main>

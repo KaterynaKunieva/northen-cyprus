@@ -46,7 +46,7 @@
       </ul>
     </div>
     <div class="footer__phone">+357-24-020177 </div>
-    <input class="footer__btn-phone" type="button" value="Позвоните мне" />
+    <input class="btn footer__btn-phone" type="button" value="Позвоните мне" />
   </div>
 </footer>
 <script src="js/jquery-1.11.2.min.js"></script>

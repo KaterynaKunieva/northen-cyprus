@@ -7,8 +7,8 @@ a
 		color: #000
 
 .text__bg 
-	display: block  
-	position: absolute  
+	display: block	
+	position: absolute	
 	max-width: 100%
 	top: 5%
 	z-index: -1 	
@@ -36,7 +36,7 @@ a
 	margin: 0 auto
 	color: $mediumtaupe
 .text__bg-about-page
-	color: 	$mediumtaupe  
+	color: 	$mediumtaupe	
 	top: 130px !important 
 	left: 15px !important 
 	letter-spacing: 12.5vw !important
@@ -52,3 +52,25 @@ a
 	letter-spacing: 0.04em
 	text-transform: uppercase
 	color: $teal2
+
+.btn 
+	border: none
+	font-size: 18px
+	font-weight: bold
+	font-family: "Circe"
+	text-align: center
+	&:hover
+		cursor: pointer
+	
+@mixin positioning-bg
+	background-repeat: no-repeat
+	background-size: cover
+
+@mixin positioning-bg-center 
+	@include positioning-bg
+	background-position: center
+
+@mixin positioning-bg-top-center 
+	@include positioning-bg
+	background-position: top center
+

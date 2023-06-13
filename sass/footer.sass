@@ -5,15 +5,13 @@
 	height: 350px
 	padding: 123px 60px 71px 56px
 	background: url("../img/waves_bg_founders.png")
-	background-repeat: no-repeat
-	background-position: center
-	background-size: cover
+	@include positioning-bg-center  
 	display: flex
 	justify-content: space-between
 
 .footer__nav-title, .footer__contacts-title
 	text-transform: uppercase
-	letter-spacing: 1.6px
+	letter-spacing: 0.08em
 	
 .footer__nav
 	display: flex
@@ -109,17 +107,10 @@
 .footer__btn-phone
 	width: 100%
 	height: 36px
-	text-align: center
 	background-color: $mediumtaupe
-	border: none
-	border-radius: 18px 
-	color: $white
-	font-family: "Circe"
-	font-weight: bold
-	font-size: 18px
+	border-radius: 18px
+	color: $white 
 	line-height: 35px
-	letter-spacing: 0.72px
+	letter-spacing: 0.04em
 	margin-top: 22px
-	&:hover
-		cursor: pointer
 
