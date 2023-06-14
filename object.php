@@ -5,47 +5,74 @@
 		<div class="text__bg text__bg_object"> estate </div>
 		<div class="object__name">Palm Homes Specifications</div>
 		<div class="object__code">Код обьекта: <span>764785434667</span></div>
-		<div class="slider">
-			<div class="gallery_thubn">
-				<div class="item">
-					<img src="img/slider/main.png" alt="1">
-				</div>
+		<div class="gallery_thubn">
+			<div class="item">
+				<img src="img/slider/1.png" alt="1">
 			</div>
+			<div class="item">
+				<img src="img/slider/2.png" alt="3">
 			</div>
-			<div class="gallery_items">
-				<div class="item">
-					<img src="img/slider/main.png" alt="1">
-				</div>
-				<div class="item">
-					<img src="img/slider/main.png" alt="3">
-				</div>
-				<div class="item">
-					<img src="img/slider/main.png" alt="4">
-				</div>
-				<div class="item">
-					<img src="img/slider/main.png" alt="5">
-				</div>
-				<div class="item">
-					<img src="img/slider/main.png" alt="2">
-				</div>
-				<div class="item">
-					<img src="img/slider/main.png" alt="6">
-				</div>
-				<div class="item">
-					<img src="img/slider/main.png" alt="7">
-				</div>
-				<div class="item">
-					<img src="img/slider/main.png" alt="8">
-				</div>
-				<div class="item">
-					<img src="img/slider/main.png" alt="9">
-				</div>
-				<div class="item">
-					<img src="img/slider/main.png" alt="10">
-				</div>
-				<div class="item">
-					<img src="img/slider/main.png" alt="11">
-				</div>
+			<div class="item">
+				<img src="img/slider/3.png" alt="4">
+			</div>
+			<div class="item">
+				<img src="img/slider/4.png" alt="5">
+			</div>
+			<div class="item">
+				<img src="img/slider/5.png" alt="2">
+			</div>
+			<div class="item">
+				<img src="img/slider/6.png" alt="6">
+			</div>
+			<div class="item">
+				<img src="img/slider/7.png" alt="7">
+			</div>
+			<div class="item">
+				<img src="img/slider/8.png" alt="8">
+			</div>
+			<div class="item">
+				<img src="img/slider/9.png" alt="9">
+			</div>
+			<div class="item">
+				<img src="img/slider/10.png" alt="10">
+			</div>
+			<div class="item">
+				<img src="img/slider/11.png" alt="11">
+			</div>
+		</div>
+		<div class="gallery_items">
+			<div class="item">
+				<img src="img/slider/1.png" alt="1">
+			</div>
+			<div class="item">
+				<img src="img/slider/2.png" alt="3">
+			</div>
+			<div class="item">
+				<img src="img/slider/3.png" alt="4">
+			</div>
+			<div class="item">
+				<img src="img/slider/4.png" alt="5">
+			</div>
+			<div class="item">
+				<img src="img/slider/5.png" alt="2">
+			</div>
+			<div class="item">
+				<img src="img/slider/6.png" alt="6">
+			</div>
+			<div class="item">
+				<img src="img/slider/7.png" alt="7">
+			</div>
+			<div class="item">
+				<img src="img/slider/8.png" alt="8">
+			</div>
+			<div class="item">
+				<img src="img/slider/9.png" alt="9">
+			</div>
+			<div class="item">
+				<img src="img/slider/10.png" alt="10">
+			</div>
+			<div class="item">
+				<img src="img/slider/11.png" alt="11">
 			</div>
 		</div>
 		<div class="object__info">
@@ -90,3 +117,53 @@
 	</div>
 </main>
 <?php include_once('footer.php') ?>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>	 
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script> 
+	$(document).ready(function () {
+		$(".recomendation__items").slick();
+
+		var gallery_thubn = $(".gallery_thubn");
+		var gallery_items = $(".gallery_items");
+		gallery_thubn.slick({
+			slidesToShow: 1, 
+			slidesToScroll: 1,
+			
+			infinite: true,
+			slide: ".item",
+			fade: true,
+			adaptiveHeight: true,
+			pauseOnFocus: true,
+			
+			centerMode: false,
+			variableWidth: false,
+			autoplay: false,
+			autoplaySpeed: 5000,
+			draggable: true,
+			arrows: false,
+			dots: false,
+			asNavFor: ".gallery_items",
+		});
+
+		gallery_items.slick({
+			slidesToShow: 11,
+			slidesToScroll: 1,
+			fade: false,
+			adaptiveHeight: false,
+			infinite: true,
+			pauseOnFocus: true,
+			draggable: true,
+			centerMode: false,
+			variableWidth: false,
+			autoplay: false,
+			autoplaySpeed: 5000,
+			focusOnSelect: true,
+			arrows: false,
+			dots: false,
+			
+			asNavFor: ".gallery_thubn",
+		});
+	});
+</script>

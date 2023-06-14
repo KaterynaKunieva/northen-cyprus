@@ -25,7 +25,7 @@
 @media only screen and (max-width: 1438px)
 	// TEXT BG
 	.text__bg 
-		font-size: 15vw !important
+		font-size: 15vw 
 		letter-spacing: 10vw
 		top: 0
 	.text__bg-about
@@ -35,6 +35,11 @@
 	.text__bg_estate
 		top: 15% !important
 		letter-spacing: 9vw !important
+	.text__bg_contacts
+		top: 6%
+		left: 5%
+		letter-spacing: 5vw
+		font-size: 10vw
 
 	// ADVANTAGES
 	.advantages
@@ -293,11 +298,7 @@
 			float: left
 			margin: 0 16px 16px 0
 	
-	// CONTACTS PAGE
-	.text__bg_contacts 
-		letter-spacing: 5vw
-		font-size: 10vw
-		left: 0
+	// CONTACTS PAGE 
 	.contacts__map
 		img
 			margin-top: 40px !important
@@ -330,17 +331,13 @@
 		justify-content: space-between
 	.contacts__social
 		margin: 0
-		width: 100% !important
-	.text__bg_contacts
-		left: 20px !important
+		width: 100% !important 
 
 	.footer__dark
 		.footer__nav-item, .footer__nav-title, .footer__contacts, .footer__nav-list ul a, .footer__contacts-list i
 			color: #ffffff !important 
 		.footer__contacts-list 
-			.rounded_icon
-				background-color: #fff
-				color: #1e6465
+			.rounded_icon 
 				border-radius: 50%
 				padding: 8px
 				background-color: #fff !important
@@ -351,6 +348,10 @@
 	.footer__light
 		background-color: $white
 		background-image: url('../img/waves_bg_footer-green.png')
+	
+	.text__bg_contacts
+		font-size: 13vw
+		letter-spacing: 3vw
 
 
 
@@ -441,6 +442,12 @@
 		max-width: 100%
 		width: 100%
 		text-align: center
+	
+	.text__bg_contacts  
+		top: 8%
+		letter-spacing: 2vw
+		font-size: 15vw
+
 
 @media only screen and (max-width: 730px)
 	// ABOUT	
@@ -479,9 +486,4 @@
 		width: 80% !important
 	.footer__btn-phone
 		width: 80% !important
-		margin: 0 auto !important
-	.text__bg_contacts 
-		letter-spacing: 4vw !important
-		font-size: 12vw !important
-
-
+		margin: 0 auto !important 

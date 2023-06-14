@@ -105,6 +105,30 @@
       <div class="recomendation__img">
         <img src="img/recomendations/4.png">
       </div>
+      <div class="recomendation__img">
+        <img src="img/recomendations/1.png">
+      </div>
+      <div class="recomendation__img">
+        <img src="img/recomendations/2.png">
+      </div>
+      <div class="recomendation__img">
+        <img src="img/recomendations/3.png">
+      </div>
+      <div class="recomendation__img">
+        <img src="img/recomendations/4.png">
+      </div>
+      <div class="recomendation__img">
+        <img src="img/recomendations/1.png">
+      </div>
+      <div class="recomendation__img">
+        <img src="img/recomendations/2.png">
+      </div>
+      <div class="recomendation__img">
+        <img src="img/recomendations/3.png">
+      </div>
+      <div class="recomendation__img">
+        <img src="img/recomendations/4.png">
+      </div>
     </div>
   </div>
 
@@ -125,4 +149,22 @@
   footer.classList.remove("footer__dark");
   var header = document.getElementsByTagName("header")[0];
   header.classList.add("header__estate");
+</script>
+<script>
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+    });
+    $(".owl-item").removeAttr("style");
+    if ($(window).width() < 1438) {
+      $(".owl-item").width("241px");
+      $(".owl-item").height("241px");
+      $(".owl-item").css("margin", "0 2px");
+      $(".owl-stage-outer").width("750px");
+      $(".owl-stage-outer").height("250px");
+    } else {
+      $(".owl-item").width("331px");
+      $(".owl-stage-outer").width("1325px");
+    }
+  });
 </script>
