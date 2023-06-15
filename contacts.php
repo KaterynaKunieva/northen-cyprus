@@ -1,6 +1,9 @@
 <?php include_once('header.php') ?>
 
 <main>
+  <div class="contacts__banner">
+
+  </div>
   <div class="contacts">
     <div class="text__bg text__bg_contacts">contacts</div>
     <div class="title contacts__title">КОНТАКТЫ</div>
@@ -27,17 +30,20 @@
         <div class="socials__items">
           <div class="social__item">
             <!-- <img src="#" alt="instagram"> -->
-            <a href=""><i class="fab fa-instagram rounded_icon"></i></a>
+            <!-- <a href=""><i class="fab fa-instagram rounded_icon"></i></a> -->
+            <a href=""><img src="img/social/1.png" alt=""></a>
             <div class="contact_value">@thefamily.estate</div>
           </div>
           <div class="social__item">
             <!-- <img src="#" alt="facebook"> -->
-            <a href=""><i class="fab fa-facebook-f rounded_icon"></i></a>
+            <!-- <a href=""><i class="fab fa-facebook-f rounded_icon"></i></a> -->
+            <a href=""><img src="img/social/2.png" alt=""></a>
             <div class="contact_value">@The Family Estate</div>
           </div>
           <div class="social__item">
             <!-- <img src="#" alt="youtube"> -->
-            <a href=""><i class="fab fa-youtube"></i></a>
+            <!-- <a href=""><i class="fab fa-youtube"></i></a> -->
+            <a href=""><img src="img/social/3.png" alt=""></a>
             <div class="contact_value">The Family Estate</div>
           </div>
         </div>

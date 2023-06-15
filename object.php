@@ -183,5 +183,7 @@ header.classList.add("header__object");
 var footer = document.getElementsByTagName("footer")[0];
 footer.classList.add("inside");
 footer.classList.add("footer__dark");
-footer.classList.add("footer__bigger");
+if ($(window).width() < 1350) {
+  footer.classList.add("footer__bigger");
+}
 </script>

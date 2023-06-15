@@ -57,6 +57,16 @@ $(document).ready(function () {
     change_menu_class();
   });
 
+  if ($(window).width() < 1438) {
+    $(document).ready(function () {
+      $(".search__cards_item").each(function (index) {
+        if (index > 3 && !$(this).closest(".estate").length) {
+          $(this).css("display", "none");
+        }
+      });
+    });
+  }
+
   function change_menu_class() {
     if ($(window).width() < 891) {
       $(".menu").removeClass("head__menu");
@@ -96,7 +106,7 @@ $(document).ready(function () {
     adaptiveHeight: false,
     infinite: true,
     pauseOnFocus: true,
-    draggable: false,
+    draggable: true,
     centerMode: false,
     variableWidth: false,
     autoplay: false,

@@ -146,7 +146,4 @@ footer.classList.add("inside");
 footer.classList.remove("footer__dark");
 var header = document.getElementsByTagName("header")[0];
 header.classList.add("header__estate");
-$(document).ready(function() {
-  $(".recomendation__items").slick()
-});
 </script>
