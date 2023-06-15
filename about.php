@@ -45,7 +45,7 @@ for (let i = 0; i < menu_link.length; i++) {
   </div>
   <div class="about__company_card">
     <div class="about__company_card_img">
-      <img src="img/family_photo.png" alt="family photo">
+      <img src="img/family_photo.jpg" alt="family photo">
     </div>
     <div class="about__company_card_text">
       <p>Все члены нашей семьи активные и целеустремленные. Мы много путешествуем по миру, учимся и развиваемся,

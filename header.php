@@ -38,7 +38,7 @@
         <span class="sw-footer"></span>
       </span>
     </button>
-    <div class="header__logo"><img src="img/logo.png" alt="logo" /></div>
+    <a class="header__logo" href="index.php"><img src="img/logo.png" alt="logo" /></a>
     <nav class="menu head__menu">
       <ul>
         <li><a href="estate.php">недвижимость</a></li>
