@@ -70,12 +70,12 @@
             Лет опыта на рынке недвижимости
           </div>
         </div>
-        <div class="about__stat_item">
+        <div class="about__stat_item medium">
           <div class="about__stat-bg">2000</div>
           <div class="about__stat-number">2000</div>
           <div class="about__stat-text">Успешно оформленных сделок</div>
         </div>
-        <div class="about__stat_item">
+        <div class="about__stat_item small">
           <div class="about__stat-bg">224 000</div>
           <div class="about__stat-number">224 000</div>
           <div class="about__stat-text">
@@ -184,60 +184,60 @@
       </div>
 
       <div class="search__cards">
-        <div class="search__cards_item">
+        <a class="search__cards_item" href="object.php">
           <div class="search__cards_img">
-            <a href=""><img src="img/list_cards/1.png" alt="" /></a>
+            <img src="img/list_cards/1.png" alt="" />
           </div>
           <div class="search__cards_text">
             <div class="search__cards_title">Palm Homes</div>
             <div class="search__cards_price">от 240 000$</div>
           </div>
-        </div>
-        <div class="search__cards_item">
+        </a>
+        <a class="search__cards_item" href="object.php">
           <div class="search__cards_img">
-            <a href=""><img src="img/list_cards/2.png" alt="" /></a>
+            <img src="img/list_cards/2.png" alt="" />
           </div>
           <div class="search__cards_text">
             <div class="search__cards_title">Palm Homes</div>
             <div class="search__cards_price">от 240 000$</div>
           </div>
-        </div>
-        <div class="search__cards_item">
+        </a>
+        <a class="search__cards_item" href="object.php">
           <div class="search__cards_img">
-            <a href=""><img src="img/list_cards/3.png" alt="" /></a>
+            <img src="img/list_cards/3.png" alt="" />
           </div>
           <div class="search__cards_text">
             <div class="search__cards_title">Palm Homes</div>
             <div class="search__cards_price">от 240 000$</div>
           </div>
-        </div>
-        <div class="search__cards_item">
+        </a>
+        <a class="search__cards_item" href="object.php">
           <div class="search__cards_img">
-            <a href=""><img src="img/list_cards/4.png" alt="" /></a>
+            <img src="img/list_cards/4.png" alt="" />
           </div>
           <div class="search__cards_text">
             <div class="search__cards_title">Palm Homes</div>
             <div class="search__cards_price">от 240 000$</div>
           </div>
-        </div>
-        <div class="search__cards_item">
+        </a>
+        <a class="search__cards_item" href="object.php">
           <div class="search__cards_img">
-            <a href=""><img src="img/list_cards/5.png" alt="" /></a>
+            <img src="img/list_cards/5.png" alt="" />
           </div>
           <div class="search__cards_text">
             <div class="search__cards_title">Palm Homes</div>
             <div class="search__cards_price">от 240 000$</div>
           </div>
-        </div>
-        <div class="search__cards_item">
+        </a>
+        <a class="search__cards_item" href="object.php">
           <div class="search__cards_img">
-            <a href=""><img src="img/list_cards/6.png" alt="" /></a>
+            <img src="img/list_cards/6.png" alt="" />
           </div>
           <div class="search__cards_text">
             <div class="search__cards_title">Palm Homes</div>
             <div class="search__cards_price">от 240 000$</div>
           </div>
-        </div>
+        </a>
       </div>
       <input type="button" class="btn more__btn" value="смотреть больше " />
     </div>
@@ -245,3 +245,7 @@
 </main>
 
 <?php include_once('footer.php') ?>
+<script>
+var footer = document.getElementsByTagName("footer")[0];
+footer.classList.remove("inside")
+</script>

@@ -28,20 +28,20 @@
     <div class="footer__contacts-list">
       <ul>
         <li>
-          <!-- <a href="#"><img src="img/social/1.png" alt="instagram" /></a> -->
-          <a href=""><i class="fab fa-instagram rounded_icon"></i></a>
+          <a href="#"><img src="img/social/1.png" alt="instagram" /></a>
+          <!-- <a href=""><i class="fab fa-instagram rounded_icon"></i></a> -->
         </li>
         <li>
-          <!-- <a href="#"><img src="img/social/2.png" alt="facebook" /></a> -->
-          <a href=""><i class="fab fa-facebook-f rounded_icon"></i></a>
+          <a href="#"><img src="img/social/2.png" alt="facebook" /></a>
+          <!-- <a href=""><i class="fab fa-facebook-f rounded_icon"></i></a> -->
         </li>
         <li>
-          <!-- <a href="#"><img src="img/social/3.png" alt="youtube" /></a> -->
-          <a href=""><i class="fab fa-youtube"></i></a>
+          <a href="#"><img src="img/social/3.png" alt="youtube" /></a>
+          <!-- <a href=""><i class="fab fa-youtube"></i></a> -->
         </li>
         <li>
-          <!-- <a href="#"><img src="img/social/4.png" alt="telegram" /></a> -->
-          <a href=""><i class="fa-brands fa-telegram"></i></a>
+          <a href="#"><img src="img/social/4.png" alt="telegram" /></a>
+          <!-- <a href=""><i class="fa-brands fa-telegram"></i></a> -->
         </li>
       </ul>
     </div>
@@ -50,5 +50,10 @@
   </div>
 </footer>
 
+<script src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/common.js"></script>
+
 </body>
+
 </html>

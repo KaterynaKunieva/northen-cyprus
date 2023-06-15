@@ -110,7 +110,7 @@ for (let i = 0; i < menu_link.length; i++) {
     <div class="family__companies">
       <div class="family__companies_founder">
         <div class="family__companies_img">
-          <img src="img/founders/2_2.png" alt="Емец Василий Павлович">
+          <img src="img/founders/2_1.png" alt="Емец Василий Павлович">
         </div>
         <div class="family__companies_text">
           <div class="family__companies-first_line">Група компаній нашої сім’ї зародилась ще в далекому минулому, коли
@@ -145,7 +145,11 @@ for (let i = 0; i < menu_link.length; i++) {
               </div>
             </div>
             <div class="family__companies_img">
-              <img src="/img/founders/3_2.png" alt="Шинкевич Виктор Геннадиевич">
+              <picture>
+                <source srcset="img/founders/3_2.png" media="(max-width: 1438px)">
+                <source srcset="img/founders/3_1.png">
+                <img src="img/founders/3_1.png" alt="Андрушко Олег Леонидович">
+              </picture>
             </div>
           </div>
         </div>
@@ -167,7 +171,11 @@ for (let i = 0; i < menu_link.length; i++) {
               </div>
             </div>
             <div class="family__companies_img">
-              <img src="/img/founders/4_2.png" alt="Андрушко Олег Леонидович">
+              <picture>
+                <source srcset="img/founders/4_2.png" media="(max-width: 1438px)">
+                <source srcset="img/founders/4_1.png">
+                <img src="img/founders/4_1.png" alt="Шинкевич Виктор Геннадиевич">
+              </picture>
             </div>
           </div>
         </div>

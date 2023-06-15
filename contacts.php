@@ -58,8 +58,14 @@
 
 <script>
 var footer = document.getElementsByTagName("footer")[0];
-footer.classList.remove("footer__dark"); 
-footer.classList.add("footer__light"); 
+footer.classList.remove("footer__dark");
+footer.classList.add("footer__light");
+footer.classList.add("inside");
+if ($(window).width() < 1350) {
+  footer.classList.remove("footer__light");
+  footer.classList.add("footer__contacts");
+  footer.classList.add("footer__dark");
+}
 var header = document.getElementsByTagName("header")[0];
 header.classList.add("header__contacts");
 </script>

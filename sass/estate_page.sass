@@ -3,17 +3,16 @@
 	margin-top: 359px 
 	background-color: $white
 	border-radius: 35px
+	position: relative
+	z-index: 2 
+	margin-top: -50px
 
-.estate__header
+.banner
 	width: 100%
-	height: 440px
-	background-image:	url('../img/header__bg_estate.png')
+	height: 440px 
 	@include positioning-bg-top-center 
 	background-color: rgba(60, 93, 97, 0.68)
-	background-blend-mode: exclusion 
-	position: absolute
-	top: 1px 
-	z-index: -1
+	background-blend-mode: exclusion
 .estate__title
 	max-width: 50%
 	max-height: 440px
@@ -58,18 +57,18 @@
 	background-color: $teal2
 	border-radius: 0px 0px 30px 30px 
 	margin-top: -35px
-	// position: relative
+	position: relative
 	min-width: 0
-	z-index: -1
+	z-index: 1
 .recomendations__header
 	max-width: 100%
-	width: 1300px
+	width: 1307px
 	display: flex 
 	align-items: baseline
 	margin: 0 auto
 .recomendations__title
 	margin-bottom: 44px	
-	max-width: 30%
+	max-width: 40%
 	font-size: 28px
 	line-height: 36px
 	font-weight: bold
@@ -78,8 +77,8 @@
 	display: inline-block 
 	margin-left: auto
 	margin-right: 0
-	max-width: 65% 
-	width: 65%
+	max-width: 60% 
+	width: 60%
 	height: 7px
 	background-color: rgba(255, 255, 255, 0.59)
 	border-radius:5px
@@ -103,7 +102,16 @@
 		object-fit: cover
 		border-radius: 15px 
 
+// Slider styles
+.slick-list
+	max-width: 1307px
+	margin: 0 auto !important
+.slick-slide
+	width: 325px 
+.recomendation__img img
+	width: 320px 
+	height: 320px  
 
-.owl-stage-outer
-	width: 1325px
-	margin: 0 auto 
+// .owl-stage-outer
+// 	width: 1325px
+// 	margin: 0 auto 

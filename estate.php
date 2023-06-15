@@ -1,12 +1,13 @@
 <?php include_once('header.php') ?>
 
 <main>
-  <div class="estate">
-    <div class="estate__header"> 
-      
+  <div class="banner" style="background-image: url('img/header__bg_estate.png');">
+    <div class="title estate__title">
+      <h1>апартаменты Северного Кипра</h1>
     </div>
+  </div>
+  <div class="estate">
     <div class="estate__main">
-      <div class="title estate__title">апартаменты Северного Кипра </div>
       <div class="text__bg text__bg_estate">estate</div>
       <div class="estate__filter">
         <div class="estate__form">
@@ -15,60 +16,60 @@
         </div>
         <div class="estate__cards">
           <div class="search__cards">
-            <div class="search__cards_item">
+            <a class="search__cards_item" href="object.php">
               <div class="search__cards_img">
-                <a href=""><img src="img/list_cards/1.png" alt="" /></a>
+                <img src="img/list_cards/1.png" alt="" />
               </div>
               <div class="search__cards_text">
                 <div class="search__cards_title">Palm Homes</div>
                 <div class="search__cards_price">от 240 000$</div>
               </div>
-            </div>
-            <div class="search__cards_item">
+            </a>
+            <a class="search__cards_item" href="object.php">
               <div class="search__cards_img">
-                <a href=""><img src="img/list_cards/2.png" alt="" /></a>
+                <img src="img/list_cards/2.png" alt="" />
               </div>
               <div class="search__cards_text">
                 <div class="search__cards_title">Palm Homes</div>
                 <div class="search__cards_price">от 240 000$</div>
               </div>
-            </div>
-            <div class="search__cards_item">
+            </a>
+            <a class="search__cards_item" href="object.php">
               <div class="search__cards_img">
-                <a href=""><img src="img/list_cards/3.png" alt="" /></a>
+                <img src="img/list_cards/3.png" alt="" />
               </div>
               <div class="search__cards_text">
                 <div class="search__cards_title">Palm Homes</div>
                 <div class="search__cards_price">от 240 000$</div>
               </div>
-            </div>
-            <div class="search__cards_item">
+            </a>
+            <a class="search__cards_item" href="object.php">
               <div class="search__cards_img">
-                <a href=""><img src="img/list_cards/4.png" alt="" /></a>
+                <img src="img/list_cards/4.png" alt="" />
               </div>
               <div class="search__cards_text">
                 <div class="search__cards_title">Palm Homes</div>
                 <div class="search__cards_price">от 240 000$</div>
               </div>
-            </div>
-            <div class="search__cards_item">
+            </a>
+            <a class="search__cards_item" href="object.php">
               <div class="search__cards_img">
-                <a href=""><img src="img/list_cards/5.png" alt="" /></a>
+                <img src="img/list_cards/5.png" alt="" />
               </div>
               <div class="search__cards_text">
                 <div class="search__cards_title">Palm Homes</div>
                 <div class="search__cards_price">от 240 000$</div>
               </div>
-            </div>
-            <div class="search__cards_item">
+            </a>
+            <a class="search__cards_item" href="object.php">
               <div class="search__cards_img">
-                <a href=""><img src="img/list_cards/6.png" alt="" /></a>
+                <img src="img/list_cards/6.png" alt="" />
               </div>
               <div class="search__cards_text">
                 <div class="search__cards_title">Palm Homes</div>
                 <div class="search__cards_price">от 240 000$</div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="estate__pagination">
@@ -92,7 +93,8 @@
       <div class="recomendations__title">Рекомендуем к просмотру</div>
       <div class="recomendations__line"></div>
     </div>
-    <div class="recomendation__items owl-carousel owl-theme">
+    <!-- owl-carousel owl-theme -->
+    <div class="recomendation__items">
       <div class="recomendation__img">
         <img src="img/recomendations/1.png">
       </div>
@@ -136,35 +138,15 @@
 
 
 <?php include_once('footer.php') ?>
-<script src="js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script> 
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-<script src="/node_modules/jquery/dist/jquery.js"></script>
-<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-<script src="js/common.min.js"></script> 
+
 <script>
-  var footer = document.getElementsByTagName("footer")[0];
-  footer.classList.add("footer__light"); 
-  footer.classList.remove("footer__dark");
-  var header = document.getElementsByTagName("header")[0];
-  header.classList.add("header__estate");
-</script>
-<script>
-  $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-    });
-    $(".owl-item").removeAttr("style");
-    if ($(window).width() < 1438) {
-      $(".owl-item").width("241px");
-      $(".owl-item").height("241px");
-      $(".owl-item").css("margin", "0 2px");
-      $(".owl-stage-outer").width("750px");
-      $(".owl-stage-outer").height("250px");
-    } else {
-      $(".owl-item").width("331px");
-      $(".owl-stage-outer").width("1325px");
-    }
-  });
+var footer = document.getElementsByTagName("footer")[0];
+footer.classList.add("footer__light");
+footer.classList.add("inside");
+footer.classList.remove("footer__dark");
+var header = document.getElementsByTagName("header")[0];
+header.classList.add("header__estate");
+$(document).ready(function() {
+  $(".recomendation__items").slick()
+});
 </script>

@@ -8,16 +8,17 @@
 	margin-top: 118px
 	padding: 128px 21px 42px 18px
 	position: relative
+	z-index: 1
 	background-color: $white
 	border-radius: 60px
 	background-image: url('../img/waves_bg_object.png')
 	@include positioning-bg-top-center  
-.object__header
+.object__banner
 	background-color: $teal2
 	position: absolute
 	height: 168px
 	width: 100%
-	top: -118px
+	top: 0px
 	left: 0px
 	z-index: -1
 .object__name, .object__code
@@ -36,7 +37,7 @@
 	z-index: 1
 .slider
 	margin: 13px auto 38px
-.gallery_thubn
+.gallery_items
 	margin: 0 auto
 	max-width: 1403px
 	max-height: 677px
@@ -47,7 +48,7 @@
 		height: 677px
 		border-radius: 60px
 		object-fit: cover
-.gallery_items
+.gallery_thubn
 	margin: 0 auto
 	display: flex
 	max-width: 1081px

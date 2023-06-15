@@ -3,6 +3,9 @@
 	margin-top: 102px 
 	border-radius: 60px
 	padding: 136px 60px 94px 66px
+	position: relative
+	z-index: 1
+	background-color: #fff
 .contacts__title 
 	margin-left: 121px
 	margin-bottom: 108px
@@ -16,6 +19,7 @@
 	max-width: 50% 
 	width: 100%
 	flex-wrap: wrap 
+	justify-content: space-between
 	&:last-child
 		width: 100%
 .contacts__social
@@ -33,7 +37,11 @@
 	font-size: 25px 
 	line-height: 49px
 	letter-spacing: 0.04em
-	margin-left: 20px
+	span
+		display: block
+.contacts__social
+	.contact_value	
+		margin-left: 20px
 .contacts_item
 	margin-bottom: 33px
 .social__item

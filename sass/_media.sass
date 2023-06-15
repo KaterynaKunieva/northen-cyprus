@@ -1,28 +1,24 @@
-@media only screen and (max-width: 1510px)
+@media only screen and (max-width: 1690px)
 	// ABOUT PAGE
-	.about__company_card	
-		p
-			margin-bottom: 0px 
-		img
-			margin-bottom: 23px	
-	.about__company_card_text
-		width: 70% 
-	.family__companies-row
-		flex-direction: column
-		margin-top: 40px !important
-		align-items: center
-	.family__companies-col 
-		max-width: 100% 
-		width: 100%	 
-		.family__companies_founder
-			display: flex 
-			margin-bottom: 32px !important
-	.reverse	
-		flex-direction: row-reverse
-		.family__companies_img
-			margin-right: 26px
+	.family__companies-col
+		.family__companies_p
+			line-height: 1.3em
+		.family__companies_text
+			font-size: 17px
+	.family__companies-col
+		&:first-child
+			max-width: 45%
+		&:last-child
+			max-width: 52%
 
+@media only screen and (max-width: 1525px)
+	// ABOUT PAGE
+	.family__companies-col
+		.family__companies_p
+			line-height: 1.1em !important
+	
 @media only screen and (max-width: 1438px)
+
 	// TEXT BG
 	.text__bg 
 		font-size: 15vw 
@@ -33,10 +29,10 @@
 	.text__bg-search 
 		letter-spacing: 8vw
 	.text__bg_estate
-		top: 15% !important
+		top: 0 !important
 		letter-spacing: 9vw !important
 	.text__bg_contacts
-		top: 6%
+		top: 0%
 		left: 5%
 		letter-spacing: 5vw
 		font-size: 10vw
@@ -64,6 +60,7 @@
 		height: 117px
 	.advantages__list-text
 		width: 206px 
+	
 	// SEARCH
 	.search 
 		padding: 130px 0 43px !important 
@@ -80,11 +77,58 @@
 		flex-wrap: wrap
 		padding: 35px 40px 25px 45px
 	.about__company_card_img
+		margin-bottom: 20px
 		width: 100%
+	.about__company_card	
+		p
+			margin-bottom: 0px  
+	.about__company_card_text
+		width: 70% 
+	.family__companies_p
+		line-height: 25px
+	.family__companies-col 
+		.family__companies_p 
+			line-height: 23px !important
+	.family__companies_img
+		max-height: 345px 
+		max-width: 300px  
+		border-radius: 35px	
+		img, picture
+			max-height: 345px
+			min-width: 300px
+			height: 100% 
+			width: 100%
+			border-radius: 35px  
+			object-fit: cover
+			object-position: center 21% 
+	
+	.family__companies-col
+		&:first-child 
+			.family__companies_img
+				max-height: 335px  !important
+				max-width: 360px  !important
+				border-radius: 35px	
+				img, picture
+					min-height: 334px !important
+					min-width: 360px  !important
+					border-radius: 35px  
+			margin-bottom: 35px !important
+		&:last-child 
+			.family__companies_img
+				max-height: 381px  !important
+				max-width: 302px  !important
+				border-radius: 35px	 
+				img, picture
+					min-height: 381px !important
+					min-width: 302px  !important
+					border-radius: 35px  
+					margin-right: 0px
+			.family__companies_text
+				margin-right: 0
+				margin-left: 27px
 
 	// ESTATE
-	.estate
-		margin-top: 140px
+	.estate 
 		border-radius: 35px 
 	.estate__form
 		max-width: 736px
@@ -123,15 +167,15 @@
 		max-width: 281px
 	.pagination__item a
 		font-size: 17px 
-	.estate__header
+	.banner
 		height: 178px
 		background-color: #1e6465
-		background-image: none
+		background-image: initial !important
 		z-index: -1 
 	.estate__title
 		position: absolute
 		top: 1px
-		z-index: 11
+		z-index: 3
 		color: #1e6465
 		font-size: 36px 
 		max-width: 510px
@@ -144,6 +188,20 @@
 	// 	width: 240px
 	// 	height: 240px
 
+	// ABOUT PAGE
+	.family__companies-row
+		flex-direction: column
+		margin-top: 40px !important
+		align-items: center
+	.family__companies-col 
+		max-width: 100% !important
+		width: 100%	
+		.family__companies_founder
+			display: flex 
+			margin-bottom: 32px !important
+	.reverse	
+		flex-direction: row-reverse 
+	
 @media only screen and (max-width: 1350px)
 	// ABOUT 
 	.about	
@@ -167,15 +225,6 @@
 		width: 100%
 	.about__list-logo
 		max-height: 73px
-	.about__stat 
-		flex-wrap: wrap !important
-	.about__stat_item
-		width: 100% !important
-		margin-bottom: 70px !important
-		&:nth-child(2n)
-			margin-left: 0 !important
-		&:last-child
-			margin-bottom: 0 !important
 
 	// SEARCH
 	.search__criteria 
@@ -201,17 +250,19 @@
 		width: 100% 
 	.footer__nav-item
 		width: 50%
-		margin-left: 35px
-		font-size: 22px 
-		line-height: 39px
-	.footer__nav-item
+		margin-left: 35px 
 		&:last-child
 			margin-left: 140px
+	.footer__nav-title
+		font-size: 25px
+	.footer__nav-list ul li a
+		font-size: 22px 
+		line-height: 39px
 	.footer__contacts 
 		width: 100%
 		flex-direction: row
 		align-items: center 
-		margin-top: 146px
+		margin-top: 85px
 	.footer__contacts-title
 		display: none
 	.rounded_icon
@@ -231,10 +282,11 @@
 				width: 100% 
 				height: 100%	
 				a 
-					max-width: 40px
-					max-height: 40px 
+					max-width: 66px
+					max-height: 66px 
 					img
-						height: 100%
+						position: static
+						transform: initial
 						vertical-align: middle
 				i 
 					width: 66px
@@ -254,6 +306,8 @@
 		margin-left: auto
 		font-size: 31px 
 		line-height: 61px
+	.inside
+		margin-top: -30px
 
 	// ABOUT PAGE 
 	.founders 
@@ -276,8 +330,7 @@
 		&:last-child
 			margin-bottom: 0px
 	.founders__about_img 
-		max-height: 772px
-		max-width: 50%
+		max-height: 760px 
 		width: 100% 
 	.family__companies 
 		position: relative
@@ -293,8 +346,13 @@
 		display: block
 	.family__companies_text
 		margin: 0
-	.family__companies_img
-		img
+	.family__companies_img 
+		img, picture
+			height: 345px
+			width: 300px
+			border-radius: 35px  
+			object-fit: cover
+			object-position: center 21% 
 			float: left
 			margin: 0 16px 16px 0
 	
@@ -302,6 +360,11 @@
 	.contacts__map
 		img
 			margin-top: 40px !important
+	.contacts
+		border-radius: 70px
+	.footer__contacts
+		margin-top: -70px !important
+		padding-top: 132px !important
 	.footer__phone
 		display: none !important
 	.footer__btn-phone
@@ -315,6 +378,16 @@
 		max-width: 50%
 		width: 50%
 	
+	.about__stat 
+		flex-wrap: wrap !important
+	.about__stat_item
+		width: 100% !important
+		margin-bottom: 70px !important
+		&:nth-child(2n)
+			margin-left: 0 !important
+		&:last-child
+			margin-bottom: 0 !important
+
 @media only screen and (max-width: 1100px)
 	// ABOUT PAGE
 	.about__company_card_text
@@ -329,6 +402,10 @@
 		max-width: 100% 
 		margin: 0 auto
 		justify-content: space-between
+		.contacts_item 
+			&:last-child
+				width: 100%
+
 	.contacts__social
 		margin: 0
 		width: 100% !important 
@@ -353,6 +430,20 @@
 		font-size: 13vw
 		letter-spacing: 3vw
 
+	.estate__recomendations
+		padding: 90px 12px 40px 
+
+	// Slider styles
+	.recomendations__header
+		width: 750px
+	.slick-list
+		width: 750px 
+		margin: 0 auto !important
+	.slick-slide
+		width: 250px 
+	.recomendation__img img
+		width: 240px 
+		height: 240px  
 
 
 @media only screen and (max-width: 930px)
@@ -367,11 +458,11 @@
 		padding: 16px 56px 90px 47px !important	
 	.head__menu 
 		display: none !important
-	.toggle__menu
+	.toggle__mnu
 		display: block !important
 	.header__phone 
 		margin: 0 !important
-	.toggle__menu 
+	.toggle__mnu 
 		background-color: transparent
 		border: none	
 	
@@ -416,12 +507,14 @@
 		img 
 			max-width: 100%
 			width: 100% !important
-			height: 713px !important
+			height: 760px !important
 	.founders__about_cards
-		max-width: 49%
+		max-width: 40%
 	.family__companies-first_line
 		font-size: 19px
-
+	.founders__about_p 
+		line-height: 1.1em
+	
 	// CONTACTS PAGE
 	.contacts__map 
 		max-height: 573px
@@ -436,18 +529,41 @@
 			object-fit: cover
 	
 	// ESTATE
-	.recomendations__line 
-		display: none
+	.recomendations__line  
+		width: 50%
 	.recomendations__title
-		max-width: 100%
-		width: 100%
+		max-width: 50%
+		width: 50%
 		text-align: center
 	
 	.text__bg_contacts  
-		top: 8%
+		top: 0%
 		letter-spacing: 2vw
 		font-size: 15vw
 
+
+	// Slider styles
+	.recomendations__header
+		width: 730px
+	.slick-list
+		width: 730px 
+		margin: 0 auto !important
+	.slick-slide
+		width: 250px 
+	.recomendation__img img
+		width: 240px 
+		height: 240px  
+
+	.footer__nav-item 
+		margin-left: 35px 
+		&:last-child
+			margin-left: 75px
+
+@media only screen and (max-width: 770px)
+	.footer__nav-item 
+		margin-left: 30px 
+		&:last-child
+			margin-left: 50px
 
 @media only screen and (max-width: 730px)
 	// ABOUT	
