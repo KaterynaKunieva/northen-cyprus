@@ -45,14 +45,14 @@
         </li>
       </ul>
     </div>
-    <div class="footer__phone">+357-24-020177 </div>
+    <a class="footer__phone" href="tel:+35724020177">+357-24-020177 </a>
     <input class="btn footer__btn-phone" type="button" value="Позвоните мне" />
   </div>
 </footer>
 
 <script src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
-<script src="js/common.js"></script>
+<script src="js/common.js?2"></script>
 
 </body>
 

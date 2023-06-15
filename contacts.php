@@ -11,7 +11,7 @@
       <div class="contacts__coordinates">
         <div class="contacts_item">
           <div class="contact_type">телефон</div>
-          <div class="contact_value">+357-24-020177</div>
+          <a href="tel:+35724020177" class="contact_value">+357-24-020177</a>
         </div>
         <div class="contacts_item">
           <div class="contact_type">ОФИС КОМПАНИИ</div>
@@ -21,7 +21,7 @@
         </div>
         <div class="contacts_item">
           <div class="contact_type">почта</div>
-          <div class="contact_value">Thefamilyestateagency@gmail.com</div>
+          <a href="mailto:Thefamilyestateagency@gmail.com" class="contact_value">Thefamilyestateagency@gmail.com</a>
         </div>
       </div>
 
