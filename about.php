@@ -13,9 +13,6 @@ for (let i = 0; i < menu_link.length; i++) {
 </script>
 
 <main>
-  <!-- ДОДАТИ соц мережі в хедер -->
-  <!-- ЗМІНИТИ градієнт хедеру для цієї сторінки -->
-
   <div class="about__company">
     <div class="text__bg text__bg-about-page">
       family
