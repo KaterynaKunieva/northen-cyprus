@@ -177,3 +177,11 @@
   </div>
 </main>
 <?php include_once('footer.php') ?>
+<script>
+var header = document.getElementsByTagName("header")[0];
+header.classList.add("header__object");
+var footer = document.getElementsByTagName("footer")[0];
+footer.classList.add("inside");
+footer.classList.add("footer__dark");
+footer.classList.add("footer__bigger");
+</script>

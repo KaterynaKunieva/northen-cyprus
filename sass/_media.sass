@@ -258,16 +258,16 @@
 	.footer__nav-list ul li a
 		font-size: 22px 
 		line-height: 39px
-	.footer__contacts 
+	.footer__bigger 
 		width: 100%
 		flex-direction: row
 		align-items: center 
 		margin-top: 85px
-	.footer__contacts-title
+	.footer__bigger-title
 		display: none
 	.rounded_icon
 		padding: 13px
-	.footer__contacts-list 
+	.footer__bigger-list 
 		width: 50%
 		margin-right: 37px
 		align-self: center
@@ -362,7 +362,7 @@
 			margin-top: 40px !important
 	.contacts
 		border-radius: 70px
-	.footer__contacts
+	.footer__bigger
 		margin-top: -70px !important
 		padding-top: 132px !important
 	.footer__phone
@@ -411,9 +411,9 @@
 		width: 100% !important 
 
 	.footer__dark
-		.footer__nav-item, .footer__nav-title, .footer__contacts, .footer__nav-list ul a, .footer__contacts-list i
+		.footer__nav-item, .footer__nav-title, .footer__bigger, .footer__nav-list ul a, .footer__bigger-list i
 			color: #ffffff !important 
-		.footer__contacts-list 
+		.footer__bigger-list 
 			.rounded_icon 
 				border-radius: 50%
 				padding: 8px
@@ -433,24 +433,81 @@
 	.estate__recomendations
 		padding: 90px 12px 40px 
 
-	// Slider styles
-	.recomendations__header
-		width: 750px
-	.slick-list
-		width: 750px 
-		margin: 0 auto !important
-	.slick-slide
-		width: 250px 
-	.recomendation__img img
-		width: 240px 
-		height: 240px  
+	.slider
+		margin-top: 30px
+	.object
+		.gallery_thubn
+			.slick-track
+				height: 95px
+			.slick-slide, img
+				height: 95px
+				width: 95px
+				margin: 0
+			.slick-slide
+				margin: 15px 7px
+			.slick-list
+				margin: 0 auto 
+				max-width: 100% !important
+				img
+					width: 100%
+	.object__name, .object__code
+		margin-left: 66px
+		width: 100%
+	.object__name
+		font-size: 50px
+		margin-bottom: 10px
+		letter-spacing: 0.02em
+	.object__code
+		font-size: 19px 
+		font-weight: 400
+	.object__price
+		margin-bottom: 35px
+	.object__info
+		display: block
+		background-color: $white
+		margin: 147px 30px 40px 26px
+		padding: 50px 7px 21px 
+		border-radius: 70px
+	.object__price, .object__characteristics, .object__desc
+		background-color: transparent 
+		padding: 0
+		margin: 0
+		text-align: left 
+	.object__btn
+		position: absolute
+		bottom: 41% 
+		left: 50%
+		transform: translateX(-50%)
+		margin: 0 auto
+	.object__btn input
+		width: 697px 
+		height: 111px
+		border-radius: 42px
+		padding: 36px 197px 46px 197px
+		text-align: center
+		margin: 0
+	.object__desc
+		max-width: 100%
+		background-color: $gainsboro
+		padding: 28px 33px 30px 40px
+		margin: 0 auto  
+	.object__price, .object__characteristics
+		margin-left: 57px
+	.desc__title
+		margin: 0
+		font-size: 36px
 
+	.desc__text
+		font-size: 26px
+		letter-spacing: 0
 
 @media only screen and (max-width: 930px)
 	// HEADER 
 	header
 		&:not(.header__about)
 			padding: 16px 56px 0px 47px !important	
+	.object__btn
+		bottom: 42% 
 		
 @media only screen and (max-width: 890px)
 	// HEADER  
@@ -545,11 +602,12 @@
 	// Slider styles
 	.recomendations__header
 		width: 730px
-	.slick-list
-		width: 730px 
-		margin: 0 auto !important
-	.slick-slide
-		width: 250px 
+	.estate
+		.slick-list
+			width: 730px 
+			margin: 0 auto !important
+		.slick-slide
+			width: 250px 
 	.recomendation__img img
 		width: 240px 
 		height: 240px  
@@ -564,6 +622,8 @@
 		margin-left: 30px 
 		&:last-child
 			margin-left: 50px
+	.object__btn
+		bottom: 43% 
 
 @media only screen and (max-width: 730px)
 	// ABOUT	
@@ -592,14 +652,17 @@
 		margin-left: 0 !important 
 		width: 80% !important
 		margin-bottom: 37px	!important
-	.footer__contacts
+	.footer__bigger
 		flex-wrap: wrap
 		justify-content: center	
 		margin-top: 0 !important
-	.footer__contacts-list 
+	.footer__bigger-list 
 		margin: 0 auto !important
 		margin-bottom: 37px !important
 		width: 80% !important
 	.footer__btn-phone
 		width: 80% !important
 		margin: 0 auto !important 
+
+	.object__btn
+		bottom: 44% 

@@ -23,9 +23,9 @@
     </div>
   </div>
 
-  <div class="footer__contacts">
-    <div class="footer__contacts-title">Всегда на связи</div>
-    <div class="footer__contacts-list">
+  <div class="footer__bigger">
+    <div class="footer__bigger-title">Всегда на связи</div>
+    <div class="footer__bigger-list">
       <ul>
         <li>
           <a href="#"><img src="img/social/1.png" alt="instagram" /></a>

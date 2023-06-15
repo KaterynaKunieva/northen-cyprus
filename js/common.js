@@ -85,10 +85,12 @@ $(document).ready(function () {
     // autoplaySpeed: 2000,
   });
 
+  slides = $(window).width() < 1100 ? 7 : 11;
+
   var gallery_thubn = $(".gallery_thubn");
   var gallery_items = $(".gallery_items");
   gallery_thubn.slick({
-    slidesToShow: 11,
+    slidesToShow: slides,
     slidesToScroll: 1,
     fade: false,
     adaptiveHeight: false,

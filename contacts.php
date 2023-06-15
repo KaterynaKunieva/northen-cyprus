@@ -63,7 +63,7 @@ footer.classList.add("footer__light");
 footer.classList.add("inside");
 if ($(window).width() < 1350) {
   footer.classList.remove("footer__light");
-  footer.classList.add("footer__contacts");
+  footer.classList.add("footer__bigger");
   footer.classList.add("footer__dark");
 }
 var header = document.getElementsByTagName("header")[0];
