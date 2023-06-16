@@ -28,6 +28,53 @@ $(document).ready(function () {
 
   $(".main_head").addClass("start_animation");
 
+  var statNumbers = document.querySelectorAll(".about__stat-number");
+
+  function isElementInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function countTo(element) {
+    var targetCount = parseInt(element.getAttribute("data-count"));
+    var currentCount = 0;
+    var increment = Math.ceil(targetCount / 100); // Adjust the increment value as needed
+
+    var interval = setInterval(function () {
+      if (currentCount >= targetCount) {
+        clearInterval(interval);
+      } else {
+        currentCount += increment;
+        element.textContent = currentCount;
+      }
+    }, 10); // Adjust the interval duration as needed
+  }
+
+  function handleScroll() {
+    statNumbers.forEach(function (numberElement) {
+      if (
+        isElementInViewport(numberElement) &&
+        !numberElement.classList.contains("animated")
+      ) {
+        countTo(numberElement);
+        numberElement.classList.add("animated");
+      } else if (
+        !isElementInViewport(numberElement) &&
+        numberElement.classList.contains("animated")
+      ) {
+        numberElement.classList.remove("animated");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
   // LL = new LazyLoad({
   //   elements_selector: ".lazy_bg",
   // });
