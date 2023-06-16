@@ -107,7 +107,7 @@ for (let i = 0; i < menu_link.length; i++) {
     <div class="family__companies">
       <div class="family__companies_founder">
         <div class="family__companies_img">
-          <img src="img/founders/2_1.png" alt="Емец Василий Павлович">
+          <img src="img/founders/2_1.jpg" alt="Емец Василий Павлович">
         </div>
         <div class="family__companies_text">
           <div class="family__companies-first_line">Група компаній нашої сім’ї зародилась ще в далекому минулому, коли

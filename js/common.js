@@ -36,6 +36,49 @@ $(document).ready(function () {
   var win_width = $(window).width();
   var offset_top = $(window).height();
   var scrollTop = $(window).scrollTop();
+  var header = document.querySelector("header");
+  var headerClasses = Array.from(header.classList);
+  var a = document.querySelectorAll("header ul li a");
+
+  fixingMenu = function () {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > 100) {
+      header.removeAttribute("class");
+      header.setAttribute(
+        "style",
+        "background-color: #1e6465; background-image: initial; position: fixed; border-radius: 35px 35px 35px 35px; padding-bottom: 15px !important; max-height: 120px"
+      );
+      a.forEach(function (link) {
+        link.addEventListener("mouseenter", mouseEnterHandler);
+        link.addEventListener("mouseleave", mouseLeaveHandler);
+      });
+    } else {
+      header.removeAttribute("style");
+      if (headerClasses && headerClasses.length > 0) {
+        headerClasses.forEach(function (className) {
+          header.classList.add(className);
+        });
+      }
+      a.forEach(function (link) {
+        link.removeEventListener("mouseenter", mouseEnterHandler);
+        link.removeEventListener("mouseleave", mouseLeaveHandler);
+      });
+    }
+  };
+
+  window.addEventListener("scroll", () => {
+    $(".mobile_menu").removeClass("active");
+    $(".sandwich").removeClass("active");
+  });
+  window.addEventListener("scroll", fixingMenu);
+
+  function mouseEnterHandler() {
+    this.style.color = "#a1827c";
+  }
+
+  function mouseLeaveHandler() {
+    this.style.color = "";
+  }
 
   $("body").toggleClass("down", win_width > 768 && scrollTop > offset_top);
 
@@ -68,7 +111,7 @@ $(document).ready(function () {
   }
 
   function change_menu_class() {
-    if ($(window).width() < 891) {
+    if ($(window).width() < 928) {
       $(".menu").removeClass("head__menu");
       $(".menu").addClass("mobile_menu");
     } else {
@@ -81,6 +124,11 @@ $(document).ready(function () {
     $(".sandwich").toggleClass("active");
     $("header").toggleClass("menu_active");
     $(".mobile_menu").toggleClass("active");
+    if ($(".mobile_menu").hasClass("active")) {
+      $("header").css("border-radius", "0px");
+    } else {
+      $("header").css("border-radius", "35px");
+    }
   });
 
   $(".recomendation__items").slick({
