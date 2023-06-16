@@ -18,7 +18,7 @@
           <div class="search__cards">
             <a class="search__cards_item" href="object.php">
               <div class="search__cards_img">
-                <img src="img/list_cards/1.png" alt="" />
+                <img src="img/list_cards/1.jpg" alt="" />
               </div>
               <div class="search__cards_text">
                 <div class="search__cards_title">Palm Homes</div>
@@ -27,7 +27,7 @@
             </a>
             <a class="search__cards_item" href="object.php">
               <div class="search__cards_img">
-                <img src="img/list_cards/2.png" alt="" />
+                <img src="img/list_cards/2.jpg" alt="" />
               </div>
               <div class="search__cards_text">
                 <div class="search__cards_title">Palm Homes</div>
@@ -36,7 +36,7 @@
             </a>
             <a class="search__cards_item" href="object.php">
               <div class="search__cards_img">
-                <img src="img/list_cards/3.png" alt="" />
+                <img src="img/list_cards/3.jpg" alt="" />
               </div>
               <div class="search__cards_text">
                 <div class="search__cards_title">Palm Homes</div>
@@ -45,7 +45,7 @@
             </a>
             <a class="search__cards_item" href="object.php">
               <div class="search__cards_img">
-                <img src="img/list_cards/4.png" alt="" />
+                <img src="img/list_cards/4.jpg" alt="" />
               </div>
               <div class="search__cards_text">
                 <div class="search__cards_title">Palm Homes</div>
@@ -54,7 +54,7 @@
             </a>
             <a class="search__cards_item" href="object.php">
               <div class="search__cards_img">
-                <img src="img/list_cards/5.png" alt="" />
+                <img src="img/list_cards/5.jpg" alt="" />
               </div>
               <div class="search__cards_text">
                 <div class="search__cards_title">Palm Homes</div>
@@ -63,7 +63,43 @@
             </a>
             <a class="search__cards_item" href="object.php">
               <div class="search__cards_img">
-                <img src="img/list_cards/6.png" alt="" />
+                <img src="img/list_cards/6.jpg" alt="" />
+              </div>
+              <div class="search__cards_text">
+                <div class="search__cards_title">Palm Homes</div>
+                <div class="search__cards_price">от 240 000$</div>
+              </div>
+            </a>
+            <a class="search__cards_item" href="object.php">
+              <div class="search__cards_img">
+                <img src="img/list_cards/7.jpg" alt="" />
+              </div>
+              <div class="search__cards_text">
+                <div class="search__cards_title">Palm Homes</div>
+                <div class="search__cards_price">от 240 000$</div>
+              </div>
+            </a>
+            <a class="search__cards_item" href="object.php">
+              <div class="search__cards_img">
+                <img src="img/list_cards/8.jpg" alt="" />
+              </div>
+              <div class="search__cards_text">
+                <div class="search__cards_title">Palm Homes</div>
+                <div class="search__cards_price">от 240 000$</div>
+              </div>
+            </a>
+            <a class="search__cards_item" href="object.php">
+              <div class="search__cards_img">
+                <img src="img/list_cards/9.jpg" alt="" />
+              </div>
+              <div class="search__cards_text">
+                <div class="search__cards_title">Palm Homes</div>
+                <div class="search__cards_price">от 240 000$</div>
+              </div>
+            </a>
+            <a class="search__cards_item" href="object.php">
+              <div class="search__cards_img">
+                <img src="img/list_cards/10.jpg" alt="" />
               </div>
               <div class="search__cards_text">
                 <div class="search__cards_title">Palm Homes</div>
@@ -96,40 +132,40 @@
     <!-- owl-carousel owl-theme -->
     <div class="recomendation__items">
       <div class="recomendation__img">
-        <img src="img/recomendations/1.png">
+        <img src="img/recomendations/1.jpg">
       </div>
       <div class="recomendation__img">
-        <img src="img/recomendations/2.png">
+        <img src="img/recomendations/2.jpg">
       </div>
       <div class="recomendation__img">
-        <img src="img/recomendations/3.png">
+        <img src="img/recomendations/3.jpg">
       </div>
       <div class="recomendation__img">
-        <img src="img/recomendations/4.png">
+        <img src="img/recomendations/4.jpg">
       </div>
       <div class="recomendation__img">
-        <img src="img/recomendations/1.png">
+        <img src="img/recomendations/1.jpg">
       </div>
       <div class="recomendation__img">
-        <img src="img/recomendations/2.png">
+        <img src="img/recomendations/2.jpg">
       </div>
       <div class="recomendation__img">
-        <img src="img/recomendations/3.png">
+        <img src="img/recomendations/3.jpg">
       </div>
       <div class="recomendation__img">
-        <img src="img/recomendations/4.png">
+        <img src="img/recomendations/4.jpg">
       </div>
       <div class="recomendation__img">
-        <img src="img/recomendations/1.png">
+        <img src="img/recomendations/1.jpg">
       </div>
       <div class="recomendation__img">
-        <img src="img/recomendations/2.png">
+        <img src="img/recomendations/2.jpg">
       </div>
       <div class="recomendation__img">
-        <img src="img/recomendations/3.png">
+        <img src="img/recomendations/3.jpg">
       </div>
       <div class="recomendation__img">
-        <img src="img/recomendations/4.png">
+        <img src="img/recomendations/4.jpg">
       </div>
     </div>
   </div>

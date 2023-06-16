@@ -148,12 +148,13 @@ $(document).ready(function () {
   });
 
   if ($(window).width() < 1438) {
-    $(document).ready(function () {
-      $(".search__cards_item").each(function (index) {
-        if (index > 3 && !$(this).closest(".estate").length) {
-          $(this).css("display", "none");
-        }
-      });
+    $(".search__cards_item").each(function (index) {
+      if (
+        (index > 3 && !$(this).closest(".estate").length) ||
+        (index > 7 && $(this).closest(".estate__cards").length)
+      ) {
+        $(this).css("display", "none");
+      }
     });
   }
 

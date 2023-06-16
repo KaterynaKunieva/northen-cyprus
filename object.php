@@ -8,126 +8,126 @@
     <div class="slider">
       <div class="gallery_items">
         <div class="item">
-          <img src="img/slider/1.png" alt="1">
+          <img src="img/slider/1.jpg" alt="1">
         </div>
         <div class="item">
-          <img src="img/slider/2.png" alt="3">
+          <img src="img/slider/2.jpg" alt="3">
         </div>
         <div class="item">
-          <img src="img/slider/3.png" alt="4">
+          <img src="img/slider/3.jpg" alt="4">
         </div>
         <div class="item">
-          <img src="img/slider/4.png" alt="5">
+          <img src="img/slider/4.jpg" alt="5">
         </div>
         <div class="item">
-          <img src="img/slider/5.png" alt="2">
+          <img src="img/slider/5.jpg" alt="2">
         </div>
         <div class="item">
-          <img src="img/slider/6.png" alt="6">
+          <img src="img/slider/6.jpg" alt="6">
         </div>
         <div class="item">
-          <img src="img/slider/7.png" alt="7">
+          <img src="img/slider/7.jpg" alt="7">
         </div>
         <div class="item">
-          <img src="img/slider/8.png" alt="8">
+          <img src="img/slider/8.jpg" alt="8">
         </div>
         <div class="item">
-          <img src="img/slider/9.png" alt="9">
+          <img src="img/slider/9.jpg" alt="9">
         </div>
         <div class="item">
-          <img src="img/slider/10.png" alt="10">
+          <img src="img/slider/10.jpg" alt="10">
         </div>
         <div class="item">
-          <img src="img/slider/11.png" alt="11">
+          <img src="img/slider/11.jpg" alt="11">
         </div>
         <div class="item">
-          <img src="img/slider/12.png" alt="12">
+          <img src="img/slider/12.jpg" alt="12">
         </div>
         <div class="item">
-          <img src="img/slider/13.png" alt="13">
+          <img src="img/slider/13.jpg" alt="13">
         </div>
         <div class="item">
-          <img src="img/slider/14.png" alt="14">
+          <img src="img/slider/14.jpg" alt="14">
         </div>
         <div class="item">
-          <img src="img/slider/15.png" alt="15">
+          <img src="img/slider/15.jpg" alt="15">
         </div>
         <div class="item">
-          <img src="img/slider/16.png" alt="16">
+          <img src="img/slider/16.jpg" alt="16">
         </div>
         <div class="item">
-          <img src="img/slider/17.png" alt="17">
+          <img src="img/slider/17.jpg" alt="17">
         </div>
         <div class="item">
-          <img src="img/slider/18.png" alt="18">
+          <img src="img/slider/18.jpg" alt="18">
         </div>
         <div class="item">
-          <img src="img/slider/19.png" alt="19">
+          <img src="img/slider/19.jpg" alt="19">
         </div>
         <div class="item">
-          <img src="img/slider/20.png" alt="20">
+          <img src="img/slider/20.jpg" alt="20">
         </div>
       </div>
       <div class="gallery_thubn">
         <div class="item">
-          <img src="img/slider/1.png" alt="1">
+          <img src="img/slider/1.jpg" alt="1">
         </div>
         <div class="item">
-          <img src="img/slider/2.png" alt="3">
+          <img src="img/slider/2.jpg" alt="3">
         </div>
         <div class="item">
-          <img src="img/slider/3.png" alt="4">
+          <img src="img/slider/3.jpg" alt="4">
         </div>
         <div class="item">
-          <img src="img/slider/4.png" alt="5">
+          <img src="img/slider/4.jpg" alt="5">
         </div>
         <div class="item">
-          <img src="img/slider/5.png" alt="2">
+          <img src="img/slider/5.jpg" alt="2">
         </div>
         <div class="item">
-          <img src="img/slider/6.png" alt="6">
+          <img src="img/slider/6.jpg" alt="6">
         </div>
         <div class="item">
-          <img src="img/slider/7.png" alt="7">
+          <img src="img/slider/7.jpg" alt="7">
         </div>
         <div class="item">
-          <img src="img/slider/8.png" alt="8">
+          <img src="img/slider/8.jpg" alt="8">
         </div>
         <div class="item">
-          <img src="img/slider/9.png" alt="9">
+          <img src="img/slider/9.jpg" alt="9">
         </div>
         <div class="item">
-          <img src="img/slider/10.png" alt="10">
+          <img src="img/slider/10.jpg" alt="10">
         </div>
         <div class="item">
-          <img src="img/slider/11.png" alt="11">
+          <img src="img/slider/11.jpg" alt="11">
         </div>
         <div class="item">
-          <img src="img/slider/12.png" alt="12">
+          <img src="img/slider/12.jpg" alt="12">
         </div>
         <div class="item">
-          <img src="img/slider/13.png" alt="13">
+          <img src="img/slider/13.jpg" alt="13">
         </div>
         <div class="item">
-          <img src="img/slider/14.png" alt="14">
+          <img src="img/slider/14.jpg" alt="14">
         </div>
         <div class="item">
-          <img src="img/slider/15.png" alt="15">
+          <img src="img/slider/15.jpg" alt="15">
         </div>
         <div class="item">
-          <img src="img/slider/16.png" alt="16">
+          <img src="img/slider/16.jpg" alt="16">
         </div>
         <div class="item">
-          <img src="img/slider/17.png" alt="17">
+          <img src="img/slider/17.jpg" alt="17">
         </div>
         <div class="item">
-          <img src="img/slider/18.png" alt="18">
+          <img src="img/slider/18.jpg" alt="18">
         </div>
         <div class="item">
-          <img src="img/slider/19.png" alt="19">
+          <img src="img/slider/19.jpg" alt="19">
         </div>
         <div class="item">
-          <img src="img/slider/20.png" alt="20">
+          <img src="img/slider/20.jpg" alt="20">
         </div>
       </div>
     </div>

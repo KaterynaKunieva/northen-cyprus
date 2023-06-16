@@ -52,7 +52,7 @@
 
 <script src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
-<script src="js/common.js?6"></script>
+<script src="js/common.js?7"></script>
 
 </body>
 
