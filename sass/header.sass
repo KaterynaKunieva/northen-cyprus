@@ -42,12 +42,15 @@ header
 			&::before
 				color: #1e6465
 
-.header__estate, .header__contacts, .header__object
+.head__menu ul li a 
+	&.current-menu-item 
+		color: #1e6465 !important
+.header__estate, .header__contacts, .header__object 
 	.head__menu ul li a 
-		&:active
-			color: #a1827c
-		&:hover
-			color: #a1827c
+		&:hover,
+		&.current-menu-item 
+			color: #a1827c !important
+
 
 .header__logo
 	max-width: 140px
@@ -103,9 +106,9 @@ header
 		>li 
 			display: block 
 			position: relative
-			width: 100%  
+			width: 100%	
 			background-color: #1e6465 
-			a  
+			a	
 				width: 90%
 				display: inline-block
 				font-size: 22px 
@@ -277,10 +280,10 @@ header
 	.sw-footer
 		position: absolute
 		top: 5px
-		left: 0   
+		left: 0	 
 		transform: rotate(45deg)
 		clip-path: polygon(100% 0%,0% 0%,0% 100%,100% 100%)
 	.sw-bottom
-		opacity: 0  
+		opacity: 0	
 		transform: rotate(180deg)
 		clip-path: polygon(100% 0%,0% 0%,0% 100%,100% 100%)
