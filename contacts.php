@@ -1,7 +1,7 @@
 <?php include_once('header.php') ?>
 
 <main>
-  <div class="banner contacts__banner">
+  <div class="contacts__banner">
 
   </div>
   <div class="contacts">
