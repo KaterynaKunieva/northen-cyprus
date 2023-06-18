@@ -1,7 +1,7 @@
 <?php include_once('header.php') ?>
 
 <main>
-  <div class="contacts__banner">
+  <div class="banner contacts__banner">
 
   </div>
   <div class="contacts">
@@ -53,10 +53,7 @@
         <img src="img/contacts_map.png" alt="map">
       </div>
     </div>
-    <div class="contacts__map"></div>
-
   </div>
-
 </main>
 
 
@@ -69,8 +66,8 @@ footer.classList.add("footer__light");
 footer.classList.add("inside");
 if ($(window).width() < 1350) {
   footer.classList.remove("footer__light");
-  footer.classList.add("footer__bigger");
   footer.classList.add("footer__dark");
+  footer.setAttribute("style", "margin-top: -60px");
 }
 var header = document.getElementsByTagName("header")[0];
 header.classList.add("header__contacts");

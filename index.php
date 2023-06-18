@@ -89,7 +89,7 @@
   <div class="advantages">
     <div class="container">
       <div class="advantages__title">
-        приемущества <span>Северного Кипра</span>
+        преимущества <span>Северного Кипра</span>
       </div>
 
       <div class="advantages__list">

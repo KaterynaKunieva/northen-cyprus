@@ -1,6 +1,3 @@
-//Animate CSS + WayPoints javaScript Plugin
-//Example: $(".element").animated("zoomInUp");
-//Author URL: http://webdesign-master.ru
 (function ($) {
   $.fn.animated = function (inEffect) {
     $(this).each(function () {
@@ -44,8 +41,7 @@ $(document).ready(function () {
   function countTo(element) {
     var targetCount = parseInt(element.getAttribute("data-count"));
     var currentCount = 0;
-    var increment = Math.ceil(targetCount / 100); // Adjust the increment value as needed
-
+    var increment = Math.ceil(targetCount / 100);
     var interval = setInterval(function () {
       if (currentCount >= targetCount) {
         clearInterval(interval);
@@ -53,16 +49,18 @@ $(document).ready(function () {
         currentCount += increment;
         element.textContent = currentCount;
       }
-    }, 10); // Adjust the interval duration as needed
+    }, 10);
   }
 
   function handleScroll() {
+    var animatedNumbers = [];
+
     statNumbers.forEach(function (numberElement) {
       if (
         isElementInViewport(numberElement) &&
         !numberElement.classList.contains("animated")
       ) {
-        countTo(numberElement);
+        animatedNumbers.push(numberElement);
         numberElement.classList.add("animated");
       } else if (
         !isElementInViewport(numberElement) &&
@@ -71,6 +69,12 @@ $(document).ready(function () {
         numberElement.classList.remove("animated");
       }
     });
+
+    if (animatedNumbers.length > 0) {
+      animatedNumbers.forEach(function (numberElement) {
+        countTo(numberElement);
+      });
+    }
   }
 
   window.addEventListener("scroll", handleScroll);

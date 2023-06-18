@@ -1,6 +1,6 @@
 <?php include_once('header.php') ?>
 <main>
-  <div class="object__banner"></div>
+  <div class="banner object__banner"></div>
   <div class="object">
     <div class="text__bg text__bg_object"> estate </div>
     <div class="object__name">Palm Homes Specifications</div>
@@ -184,6 +184,6 @@ var footer = document.getElementsByTagName("footer")[0];
 footer.classList.add("inside");
 footer.classList.add("footer__dark");
 if ($(window).width() < 1350) {
-  footer.classList.add("footer__bigger");
+  footer.setAttribute("style", "margin-top: -60px")
 }
 </script>
