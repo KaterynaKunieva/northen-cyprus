@@ -6,7 +6,7 @@
   </div>
   <div class="contacts">
     <div class="text__bg text__bg_contacts">contacts</div>
-    <div class="title contacts__title">КОНТАКТЫ</div>
+    <h1 class="title contacts__title" style="opacity: 0;">КОНТАКТЫ</h1>
     <div class="contacts__content">
       <div class="contacts__coordinates">
         <div class="contacts_item">

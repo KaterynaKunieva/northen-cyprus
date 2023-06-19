@@ -2,7 +2,7 @@
 
 <main>
   <div class="banner" style="background-image: url('img/header__bg_estate.png');">
-    <div class="title estate__title">
+    <div class="title estate__title" style="opacity: 0;">
       <h1>апартаменты Северного Кипра</h1>
     </div>
   </div>
@@ -16,7 +16,7 @@
         </div>
         <div class="estate__cards">
           <div class="search__cards">
-            <a class="search__cards_item" href="object.php">
+            <a class="search__cards_item animation_5" href="object.php">
               <div class="search__cards_img">
                 <img src="img/list_cards/1.jpg" alt="" />
               </div>
@@ -25,7 +25,7 @@
                 <div class="search__cards_price">от 240 000$</div>
               </div>
             </a>
-            <a class="search__cards_item" href="object.php">
+            <a class="search__cards_item animation_5" href="object.php">
               <div class="search__cards_img">
                 <img src="img/list_cards/2.jpg" alt="" />
               </div>
@@ -34,7 +34,7 @@
                 <div class="search__cards_price">от 240 000$</div>
               </div>
             </a>
-            <a class="search__cards_item" href="object.php">
+            <a class="search__cards_item animation_5" href="object.php">
               <div class="search__cards_img">
                 <img src="img/list_cards/3.jpg" alt="" />
               </div>
@@ -43,7 +43,7 @@
                 <div class="search__cards_price">от 240 000$</div>
               </div>
             </a>
-            <a class="search__cards_item" href="object.php">
+            <a class="search__cards_item animation_5" href="object.php">
               <div class="search__cards_img">
                 <img src="img/list_cards/4.jpg" alt="" />
               </div>
@@ -52,7 +52,7 @@
                 <div class="search__cards_price">от 240 000$</div>
               </div>
             </a>
-            <a class="search__cards_item" href="object.php">
+            <a class="search__cards_item animation_5" href="object.php">
               <div class="search__cards_img">
                 <img src="img/list_cards/5.jpg" alt="" />
               </div>
@@ -61,7 +61,7 @@
                 <div class="search__cards_price">от 240 000$</div>
               </div>
             </a>
-            <a class="search__cards_item" href="object.php">
+            <a class="search__cards_item animation_5" href="object.php">
               <div class="search__cards_img">
                 <img src="img/list_cards/6.jpg" alt="" />
               </div>
@@ -70,7 +70,7 @@
                 <div class="search__cards_price">от 240 000$</div>
               </div>
             </a>
-            <a class="search__cards_item" href="object.php">
+            <a class="search__cards_item animation_5" href="object.php">
               <div class="search__cards_img">
                 <img src="img/list_cards/7.jpg" alt="" />
               </div>
@@ -79,7 +79,7 @@
                 <div class="search__cards_price">от 240 000$</div>
               </div>
             </a>
-            <a class="search__cards_item" href="object.php">
+            <a class="search__cards_item animation_5" href="object.php">
               <div class="search__cards_img">
                 <img src="img/list_cards/8.jpg" alt="" />
               </div>
@@ -88,7 +88,7 @@
                 <div class="search__cards_price">от 240 000$</div>
               </div>
             </a>
-            <a class="search__cards_item" href="object.php">
+            <a class="search__cards_item animation_5" href="object.php">
               <div class="search__cards_img">
                 <img src="img/list_cards/9.jpg" alt="" />
               </div>
@@ -97,7 +97,7 @@
                 <div class="search__cards_price">от 240 000$</div>
               </div>
             </a>
-            <a class="search__cards_item" href="object.php">
+            <a class="search__cards_item animation_5" href="object.php">
               <div class="search__cards_img">
                 <img src="img/list_cards/10.jpg" alt="" />
               </div>

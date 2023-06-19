@@ -18,8 +18,8 @@ for (let i = 0; i < menu_link.length; i++) {
       family
     </div>
     <div class="about__company_p">
-      <div class="title about__company_p_title">О компании</div>
-      <div class="about__company_p_text">
+      <h1 class="title about__company_p_title" style="opacity: 0;">О компании</h1>
+      <div class="about__company_p_text" style="opacity: 0;">
         <p>
           The Family Estate – международное семейное агентство недвижимости. Мы ценим ваше время и помогаем сделать
           лучший выбор для инвестирования, жизни и отдыха за границей.
@@ -41,10 +41,10 @@ for (let i = 0; i < menu_link.length; i++) {
     </div>
   </div>
   <div class="about__company_card">
-    <div class="about__company_card_img">
+    <div class="about__company_card_img animation_2">
       <img src="img/family_photo.jpg" alt="family photo">
     </div>
-    <div class="about__company_card_text">
+    <div class="about__company_card_text animation_3">
       <p>Все члены нашей семьи активные и целеустремленные. Мы много путешествуем по миру, учимся и развиваемся,
         обмениваемся опытом с иностранными партнерами. Это дает нам возможность предлагать вам только лучшие решения
         по приобретению недвижимости с целью инвестирования, жизни и отдыха. Синергия идей и совместных усилий членов
@@ -62,7 +62,7 @@ for (let i = 0; i < menu_link.length; i++) {
   </div>
 
   <div class="founders">
-    <div class="title founders__title">
+    <div class="title founders__title animation_5">
       Основатели
       <span>The Family Estate</span>
     </div>

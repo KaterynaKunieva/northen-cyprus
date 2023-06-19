@@ -25,6 +25,13 @@ $(document).ready(function () {
 
   $(".main_head").addClass("start_animation");
 
+  $(".main__title").addClass("animation_5");
+  $(".main__btn").addClass("animation_5");
+  $(".estate__title").addClass("animation_5");
+  $(".about__company_p_title").addClass("animation_5");
+  $(".about__company_p_text").addClass("animation_5");
+  $(".contacts__title").addClass("animation_5");
+
   var statNumbers = document.querySelectorAll(".about__stat-number");
 
   function isElementInViewport(element) {
@@ -95,10 +102,18 @@ $(document).ready(function () {
     var scrollTop = $(window).scrollTop();
     if (scrollTop > 100) {
       header.removeAttribute("class");
-      header.setAttribute(
-        "style",
-        "background-color: #1e6465; background-image: initial; position: fixed; border-radius: 35px 35px 35px 35px; padding-bottom: 15px !important; max-height: 120px"
-      );
+      if ($(window).width() < 480) {
+        header.setAttribute(
+          "style",
+          "background-color: #1e6465; background-image: initial; position: fixed; border-radius: 20px 20px 20px 20px; padding-bottom: 15px !important; max-height: 120px"
+        );
+      } else {
+        header.setAttribute(
+          "style",
+          "background-color: #1e6465; background-image: initial; position: fixed; border-radius: 35px 35px 35px 35px; padding-bottom: 15px !important; max-height: 120px"
+        );
+      }
+
       a.forEach(function (link) {
         link.addEventListener("mouseenter", mouseEnterHandler);
         link.addEventListener("mouseleave", mouseLeaveHandler);
@@ -176,10 +191,21 @@ $(document).ready(function () {
     $(".sandwich").toggleClass("active");
     $("header").toggleClass("menu_active");
     $(".mobile_menu").toggleClass("active");
+    style = $("header").attr("style");
     if ($(".mobile_menu").hasClass("active")) {
-      $("header").css("border-radius", "0px");
+      $("header").attr("style", style + "; " + "border-radius: 0px !important");
     } else {
-      $("header").css("border-radius", "35px");
+      if ($(window).width() < 480) {
+        $("header").attr(
+          "style",
+          style + "; " + "border-radius: 20px !important"
+        );
+      } else if ($(window).width() < 930) {
+        $("header").attr(
+          "style",
+          style + "; " + "border-radius: 35px !important"
+        );
+      }
     }
   });
 
@@ -234,6 +260,35 @@ $(document).ready(function () {
     dots: false,
     asNavFor: ".gallery_thubn",
   });
+
+  $(function () {
+    var code = "+380"; // Assigning value from model.
+    //$('#phone').val(code);
+    $("#phone").intlTelInput({
+      formatOnDisplay: true,
+      dropdownContainer: "",
+      allowDropdown: true,
+      hiddenInput: "full_number",
+      initialCountry: "ua",
+      nationalMode: true,
+      placeholderNumberType: "MOBILE",
+      preferredCountries: ["US", "UA"],
+    });
+    $("#btnSubmit").on("click", function () {
+      var code = $("#phone").intlTelInput("getSelectedCountryData").dialCode;
+      var phoneNumber = $("#phone").val();
+      var name = $("#phone").intlTelInput("getSelectedCountryData").name;
+      alert(
+        "Country Code : " +
+          code +
+          "\nPhone Number : " +
+          phoneNumber +
+          "\nCountry Name : " +
+          name
+      );
+    });
+  });
+
   $(".animation_1").animated("fadeIn");
   $(".animation_2").animated("fadeInLeft");
   $(".animation_3").animated("fadeInRight");

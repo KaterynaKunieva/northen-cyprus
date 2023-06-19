@@ -399,6 +399,10 @@
 		margin-top: -64px
 
 @media only screen and (max-width: 1100px)
+	.visible-lg
+		display: block!important
+	.hidden-lg
+		display: none!important
 	// ABOUT PAGE
 	.about__company_card_text
 		width: 100% !important
@@ -475,7 +479,7 @@
 	.object__info
 		display: block
 		background-color: $white
-		margin: 147px 30px 40px 26px
+		margin: 47px 30px 40px 26px
 		padding: 50px 7px 21px 
 		border-radius: 70px
 		box-shadow: 0px 15px 60px 18px rgba(0,0,0,.21)
@@ -485,12 +489,12 @@
 		padding: 0
 		margin: 0
 		text-align: left 
-	.object__btn
-		position: absolute
-		bottom: 41% 
-		left: 50%
-		transform: translateX(-50%)
-		margin: 0 auto
+	// .object__btn
+	// 	position: absolute
+	// 	bottom: 41% 
+	// 	left: 50%
+	// 	transform: translateX(-50%)
+	// 	margin: 0 auto
 	.object__btn input
 		width: 697px 
 		height: 111px
@@ -519,7 +523,7 @@
 		&:not(.header__about)
 			padding: 16px 56px 0px 47px 
 	.object__btn
-		bottom: 42% 
+		//bottom: 42% 
 	// .header__socials
 	// 	&:active
 	// 		.header__social
@@ -647,7 +651,7 @@
 		&:last-child
 			margin-left: 50px
 	.object__btn
-		bottom: 44% 
+		//bottom: 44% 
 	.estate 
 		.search__cards_item, .search__cards_img
 			max-height: 350px !important
@@ -672,7 +676,7 @@
 
 	// MAIN 
 	.main__content
-		padding: 590px 5px 69px 10px !important 
+		padding: 60vh 7px 88px 17px !important 
 		margin: 0 !important
 	.main__title
 		font-size: 39px !important
@@ -818,7 +822,7 @@
 	.object__name, .object__code
 		margin-left: 13px
 	.object__btn
-		bottom: 50%
+		//bottom: 50%
 
 @media only screen and (max-width: 680px)
 	.about__list_item
@@ -1073,11 +1077,14 @@
 		font-size: 20px 
 
 	.object__btn input
-		width: 500px 
+		width: 100% 
 		padding: 23px 127px 26px 
 		font-size: 27px
 
-@media only screen and (max-width: 480px)
+
+
+		// @media only screen and (max-width: 480px)
+
 	.header__logo 
 		img
 			max-width: 90px !important
@@ -1133,7 +1140,7 @@
 		margin-top: 50px !important 
 
 	.object__btn
-		bottom: 44% 
+		//bottom: 44% 
 
 	// ESTATE 
 	.banner
@@ -1320,16 +1327,17 @@
 		top: -60px
 		font-size: 15.5vw
 	.object__btn
-		bottom: 47%
+		//bottom: 47%
+		padding: 0 15px
 		input
-			width: 445px
+			width: 100%
 			height: 70px
 			padding: 23px 127px 26px 
 			font-size: 24px
 	.object__info
-		margin: 115px 18px 0px 
+		margin: 35px 18px 0px 
 		padding: 32px 12px 10px 
-		max-width: 450px
+		max-width: 100%
 	.object__characteristics
 		width: initial
 	.object__price, .characteristic__item
@@ -1362,7 +1370,7 @@
 			.slick-slide
 				margin: 7px 4px 
 		.gallery_items 
-			max-width: 471px
+			max-width: 100%
 			max-height: 464px 
 			img
 				width: 100%
@@ -1373,3 +1381,160 @@
 		top: -17px
 	.mobile_menu 
 		top: 96px !important
+
+
+
+@media only screen and (max-width: 480px)
+	header
+		padding: 10px 15px!important 
+	.main__content 
+		padding-left: 0!important
+		padding-right: 0!important 
+		
+	.main__title
+		width: 100%!important
+		margin-bottom: 40px!important
+		font-size: 28px!important
+		line-height: 32px!important
+	.about__list_item
+		width: 100%
+		max-width: 100%!important
+	.advantages
+		border-radius: 20px
+	.advantages__list
+		margin: 30px 0px 0!important
+		.advantages__list_item
+			margin: 0 0px 12px!important
+			min-width: initial
+			min-width: initial
+			width: 100% !important
+			max-width: initial
+	.search__cards_item
+		img
+			border-radius: 20px!important
+	.search__title
+		width: 100%
+	.object__code, .object__name
+		margin-left: 0
+		padding: 0 15px
+	.object .gallery_items img
+		border-radius: 20px
+	.object__btn
+		//bottom: 47%
+		padding: 0 15px
+		input
+			width: 100%
+			height: auto
+			padding: 15px 20px
+			font-size: 20px
+	.object__info
+		margin: 30px 15px 0
+		padding: 30px 15px
+		border-radius: 20px
+	.object__characteristics
+		margin: 0 0 25px
+		border-radius: 0px
+	.characteristic__item, .object__price
+		font-size: 18px
+		line-height: 32px
+	.object
+		border-radius: 20px
+		padding: 40px 0 20px
+	.object__desc
+		padding: 0
+		background-color: transparent
+		.desc__title
+			margin-bottom: 10px
+	.footer__nav
+		margin: 0!important
+	.footer
+		padding: 60px 15px 30px!important
+	.footer__nav
+		display: block
+	.footer__nav-item
+		width: 100%!important
+		margin-bottom: 20px!important
+	.footer__bigger
+		margin-top: 20px!important
+		display: block
+	.footer__bigger-list
+		width: 100%
+		margin-bottom: 30px
+	.footer__btn-phone
+		width: 100%
+	.about__company
+		padding: 150px 15px 20px!important
+	.about__company_card
+		padding: 20px 15px
+		border-radius: 20px
+	.about__company_card_img img
+		border-radius: 20px
+	.founders
+		padding: 120px 15px 30px
+	.founders__about
+		display: block
+		.founders__about_cards
+			max-width: 100%
+			margin: 0 0 30px
+	.founders__about_img
+		img
+			border-radius: 20px
+	.family__companies_img
+		max-width: 100%
+		border-radius: 20px
+		img
+			max-width: 100%
+			margin: 0 0 20px
+			width: 100%
+			min-width: 100%
+			border-radius: 20px
+	.family__companies-col:first-child .family__companies_img img, .family__companies-col:first-child .family__companies_img picture
+		border-radius: 20px
+	.family__companies-row .family__companies-col:last-child .family__companies_text
+		margin-left: 0
+	.family__companies-col:last-child .family__companies_img
+		max-width: 100%!important
+		border-radius: 20px
+	.family__companies-col:last-child .family__companies_img img, .family__companies-col:last-child .family__companies_img picture
+		border-radius: 20px
+	.family__companies-row .family__companies_text
+		margin-right: 0
+		margin-bottom: 20px
+	.family__companies-col:first-child .family__companies_img
+		max-width: 100%!important
+		border-radius: 20px
+	.family__companies-col .family__companies_founder
+		display: block
+	.estate
+		border-radius: 20px
+	.estate .search__cards_img, .estate .search__cards_item
+		width: 100%!important
+		max-width: 100%!important
+	.estate__recomendations
+		border-radius: 0 0 20px 20px
+	.contacts
+		border-radius: 20px
+		padding: 60px 15px 20px!important
+	.contacts__map img
+		border-radius: 20px
+	body .remodal-wrapper .remodal .modal_content
+		padding: 20px 15px
+	body .remodal-wrapper .remodal .modal_content .modal_logo img
+		margin-bottom: 15px
+	body .remodal-wrapper .remodal .modal_content form input, body .remodal-wrapper .remodal .modal_content form textarea
+		font-size: 18px
+		line-height: 20px
+	body .remodal-wrapper .remodal .modal_content form .wpcf7-form-control-wrap
+		margin-bottom: 15px
+	body .remodal-wrapper .remodal .modal_content .center_wrap .form_title
+		font-size: 20px
+		line-height: 24px
+		margin-bottom: 15px
+	body .remodal-wrapper .remodal .modal_content form .btn_style_wrap .btn_style
+		font-size: 18px
+		line-height: 20px
+	.mobile_menu
+		top: 85px!important
+	.main_head
+		min-height: 480px !important
+

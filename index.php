@@ -3,10 +3,10 @@
   <div class="main_head">
     <div class="container">
       <div class="main__content">
-        <h2 class="title main__title">
+        <h1 class="title main__title" style="opacity: 0;">
           Открой для себя рай жизни на острове Кипр
-        </h2>
-        <button class="btn main__btn">Подобрать недвижимость</button>
+        </h1>
+        <button class="btn main__btn" style="opacity: 0;" data-remodal-target="modal">Подобрать недвижимость</button>
       </div>
     </div>
   </div>
@@ -16,12 +16,12 @@
       <div class="text__bg text__bg-about">
         about
       </div>
-      <h2 class="title about__title">
+      <h2 class="title about__title animation_5">
         Почему
         <span>THE Family Estate</span>?
       </h2>
       <div class="about__list">
-        <div class="about__list_item">
+        <div class="about__list_item animation_5">
           <div class="about__list-logo">
             <img src="img/about/1.png" alt="Надёжность" />
           </div>
@@ -31,7 +31,7 @@
             и их проектами
           </div>
         </div>
-        <div class="about__list_item">
+        <div class="about__list_item animation_5">
           <div class="about__list-logo">
             <img src="img/about/2.png" alt="сервис" />
           </div>
@@ -41,7 +41,7 @@
             клиентам, как к членам семьи
           </div>
         </div>
-        <div class="about__list_item">
+        <div class="about__list_item animation_5">
           <div class="about__list-logo">
             <img src="img/about/3.png" alt="Профессионализм" />
           </div>
@@ -51,7 +51,7 @@
             строительства
           </div>
         </div>
-        <div class="about__list_item">
+        <div class="about__list_item animation_5">
           <div class="about__list-logo">
             <img src="img/about/4.png" alt="забота" />
           </div>
@@ -63,19 +63,19 @@
         </div>
       </div>
       <div class="about__stat">
-        <div class="about__stat_item">
+        <div class="about__stat_item animation_5">
           <div class="about__stat-bg">10</div>
           <div class="about__stat-number" data-count="10">10</div>
           <div class="about__stat-text">
             Лет опыта на рынке недвижимости
           </div>
         </div>
-        <div class="about__stat_item medium">
+        <div class="about__stat_item medium animation_5">
           <div class="about__stat-bg">2000</div>
           <div class="about__stat-number" data-count="2000">2000</div>
           <div class="about__stat-text">Успешно оформленных сделок</div>
         </div>
-        <div class="about__stat_item small">
+        <div class="about__stat_item small animation_5">
           <div class="about__stat-bg">224 000</div>
           <div class="about__stat-number" data-count="224000">224 000</div>
           <div class="about__stat-text">
@@ -88,12 +88,12 @@
 
   <div class="advantages">
     <div class="container">
-      <div class="advantages__title">
+      <div class="advantages__title animation_5">
         преимущества <span>Северного Кипра</span>
       </div>
 
       <div class="advantages__list">
-        <div class="advantages__list_item">
+        <div class="advantages__list_item animation_5">
           <div class="advantages__list-logo">
             <img src="img/advantages/1.png" alt="" />
           </div>
@@ -101,7 +101,7 @@
             Более 300 солнечных дней в году
           </div>
         </div>
-        <div class="advantages__list_item">
+        <div class="advantages__list_item animation_5">
           <div class="advantages__list-logo">
             <img src="img/advantages/2.png" alt="" />
           </div>
@@ -109,7 +109,7 @@
             Мягкий морской климат и чистый воздух
           </div>
         </div>
-        <div class="advantages__list_item">
+        <div class="advantages__list_item animation_5">
           <div class="advantages__list-logo">
             <img src="img/advantages/3.png" alt="" />
           </div>
@@ -117,7 +117,7 @@
             Международная система образования
           </div>
         </div>
-        <div class="advantages__list_item">
+        <div class="advantages__list_item animation_5">
           <div class="advantages__list-logo">
             <img src="img/advantages/4.png" alt="" />
           </div>
@@ -125,7 +125,7 @@
             Органические продукты с местных плантаций
           </div>
         </div>
-        <div class="advantages__list_item">
+        <div class="advantages__list_item animation_5">
           <div class="advantages__list-logo">
             <img src="img/advantages/5.png" alt="" />
           </div>
@@ -133,7 +133,7 @@
             Отсутствие запроса на происхождение денежных средств
           </div>
         </div>
-        <div class="advantages__list_item">
+        <div class="advantages__list_item animation_5">
           <div class="advantages__list-logo">
             <img src="img/advantages/6.png" alt="" />
           </div>
@@ -141,13 +141,13 @@
             Возможность расчётов в криптовалюте
           </div>
         </div>
-        <div class="advantages__list_item">
+        <div class="advantages__list_item animation_5">
           <div class="advantages__list-logo">
             <img src="img/advantages/7.png" alt="" />
           </div>
           <div class="advantages__list-text">Отсутствие преступности</div>
         </div>
-        <div class="advantages__list_item">
+        <div class="advantages__list_item animation_5">
           <div class="advantages__list-logo">
             <img src="img/advantages/8.png" alt="" />
           </div>
@@ -165,10 +165,10 @@
         Estate
       </div>
       <div class="search__criteria">
-        <div class="title search__title">
+        <div class="title search__title animation_5">
           ВЫБЕРИТЕ <span>ПАРАМЕТРЫ ПОИСКА</span>
         </div>
-        <form action="#" class="search__form">
+        <form action="#" class="search__form animation_1">
           <div class="select">
             <select name="type" class="select_type">
               <option value="default">Тип недвижимости</option>
@@ -184,7 +184,7 @@
       </div>
 
       <div class="search__cards">
-        <a class="search__cards_item" href="object.php">
+        <a class="search__cards_item animation_5" href="object.php">
           <div class="search__cards_img">
             <img src="img/list_cards/1.png" alt="" />
           </div>
@@ -193,7 +193,7 @@
             <div class="search__cards_price">от 240 000$</div>
           </div>
         </a>
-        <a class="search__cards_item" href="object.php">
+        <a class="search__cards_item animation_5" href="object.php">
           <div class="search__cards_img">
             <img src="img/list_cards/2.png" alt="" />
           </div>
@@ -202,7 +202,7 @@
             <div class="search__cards_price">от 240 000$</div>
           </div>
         </a>
-        <a class="search__cards_item" href="object.php">
+        <a class="search__cards_item animation_5" href="object.php">
           <div class="search__cards_img">
             <img src="img/list_cards/3.png" alt="" />
           </div>
@@ -211,7 +211,7 @@
             <div class="search__cards_price">от 240 000$</div>
           </div>
         </a>
-        <a class="search__cards_item" href="object.php">
+        <a class="search__cards_item animation_5" href="object.php">
           <div class="search__cards_img">
             <img src="img/list_cards/4.png" alt="" />
           </div>
@@ -220,7 +220,7 @@
             <div class="search__cards_price">от 240 000$</div>
           </div>
         </a>
-        <a class="search__cards_item" href="object.php">
+        <a class="search__cards_item animation_5" href="object.php">
           <div class="search__cards_img">
             <img src="img/list_cards/5.png" alt="" />
           </div>
@@ -229,7 +229,7 @@
             <div class="search__cards_price">от 240 000$</div>
           </div>
         </a>
-        <a class="search__cards_item" href="object.php">
+        <a class="search__cards_item animation_5" href="object.php">
           <div class="search__cards_img">
             <img src="img/list_cards/6.png" alt="" />
           </div>

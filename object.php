@@ -132,12 +132,22 @@
       </div>
     </div>
 
+    <div class="btn object__btn visible-lg">
+      <input class="btn" type="submit" value="Узнать про обьект ">
+    </div>
+
     <div class="object__info">
-      <div class="object__price">Цена стартует от: <span>240 000USD</span></div>
-      <div class="btn object__btn">
-        <input class="btn" type="submit" value="Узнать про обьект ">
+      <div class="object__price hidden-lg">Цена стартует от: <span>240 000USD</span></div>
+      <div class="btn object__btn hidden-lg">
+        <input class="btn" type="submit" value="Узнать про обьект "  data-remodal-target="modal">
       </div>
       <div class="object__characteristics">
+        <div class="visible-lg">
+          <div class="characteristic__item">
+            <div class="characteristics__name">Цена стартует от: </div>
+            <div class="characteristics__value">240 000USD</div>
+          </div>
+        </div>
         <div class="characteristic__item">
           <div class="characteristics__name">Район: </div>
           <div class="characteristics__value">North Cyprus</div>
