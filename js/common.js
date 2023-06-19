@@ -192,7 +192,7 @@ $(document).ready(function () {
     $("header").toggleClass("menu_active");
     $(".mobile_menu").toggleClass("active");
     style = $("header").attr("style");
-    if ($(".mobile_menu").hasClass("active")) {
+    if ($(".mobile_menu").hasClass("active") || scrollTop < 100) {
       $("header").attr("style", style + "; " + "border-radius: 0px !important");
     } else {
       if ($(window).width() < 480) {
