@@ -103,6 +103,10 @@
 	font-size: 28px
 	line-height: 50px
 	color: $teal2	
+.characteristics__name::after
+	content: " "
+	display: inline-block
+	width: 2px
 .characteristics__value
 	font-weight: bold 
 .object__desc
@@ -121,5 +125,10 @@
 	line-height: 25px
 	span
 		color: $mediumtaupe 
+		display: inline-block
+		&::after
+			content: " "
+			display: inline-block
+			width: 5px
 
 
