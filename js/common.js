@@ -105,12 +105,12 @@ $(document).ready(function () {
       if ($(window).width() < 480) {
         header.setAttribute(
           "style",
-          "background-color: #1e6465; background-image: initial; position: fixed; border-radius: 20px 20px 20px 20px; padding-bottom: 15px !important; max-height: 120px"
+          "background-color: #1e6465; background-image: initial; position: fixed; border-radius: 20px 20px 20px 20px; max-height: 120px"
         );
       } else {
         header.setAttribute(
           "style",
-          "background-color: #1e6465; background-image: initial; position: fixed; border-radius: 35px 35px 35px 35px; padding-bottom: 15px !important; max-height: 120px"
+          "background-color: #1e6465; background-image: initial; position: fixed; border-radius: 35px 35px 35px 35px; max-height: 120px"
         );
       }
 
