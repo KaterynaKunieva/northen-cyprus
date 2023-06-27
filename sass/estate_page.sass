@@ -1,11 +1,14 @@
 // ESTATE PAGE 
-.estate, .contacts
+.estate 
 	margin-top: 359px 
 	background-color: $white
-	border-radius: 35px
+	border-radius: 60px
 	position: relative
-	z-index: 2 
+	z-index: 1 
 	margin-top: -50px
+	.search__cards
+		margin: 0px 
+
 
 .banner
 	width: 100%
@@ -18,7 +21,9 @@
 	max-height: 440px
 	height: 100%
 	width: 40%
-	padding: 200px 67px 170px 
+	padding: 196px 0px 166px 67px
+	line-height: 46px
+	letter-spacing: 0.07em
 	color: $white
 	position: absolute
 	z-index: 1
@@ -29,89 +34,240 @@
 .estate__filter
 	padding: 120px 66px 110px 67px 
 .estate__form
-	height: 95px
 	max-width: 1310px
 	width: 100%
 	margin: 0 auto
-	background-color: lightgrey
+	position: relative
+	z-index: 1
+	.estate__filter_top
+		padding: 20px 25px
+		display: flex
+		z-index: 1
+		position: relative
+		align-items: center
+		border-radius: 45px
+		background-color: #fff
+		box-shadow: 0 0 23px 4px rgba(0, 0, 0, 0.3)
+		.filter_btn	
+			width: 286px
+			margin-left: auto
+			text-align: center
+			color: #fefefe
+			text-transform: uppercase
+			font-weight: 700
+			font-size: 26px
+			line-height: 54px
+			border-radius: 27px
+			background-color: #a1827c
+		.show_more_filter
+			margin-left: 33px
+		.select
+			margin-right: 26px
+	.estate__filter_content
+		position: absolute
+		top: 100%
+		left: 50px
+		width: calc(100% - 100px)
+		border-radius: 0 0 60px 60px
+		background-color: #ffffff
+		box-shadow: 0 0 23px 4px rgba(0, 0, 0, 0.3)
+		.filter_content_wrap
+			display: flex
+			flex-wrap: wrap
+			padding: 24px 0
+			.filter_content_column
+				width: 33.33%
+				padding: 0 22px
+				margin-bottom: 35px
+			.filter_content_title
+				color: #a1827c
+				font-size: 22px
+				line-height: 20px
+				margin-bottom: 12px
+			.rang_select
+				display: flex
+				margin: 0 -22px
+				.itm
+					width: calc(50% - 44px)
+					margin: 0 22px
+					position: relative
+					.cur
+						position: absolute
+						line-height: 100%
+						right: 0
+						top: 6px
+						color: #a1827c
+						font-size: 18px
+						line-height: 17px
+					input
+						width: 100%
+						border: none
+						color: #000
+						font-size: 18px
+						font-family: inherit
+						padding-bottom: 10px
+						border-bottom: 1px solid #949494
+						&::-webkit-input-placeholder
+							color: #006666
+						&:-moz-placeholder
+							color: #006666
+						&::-moz-placeholder
+							color: #006666
+						&:-ms-input-placeholder
+							color: #006666
+						&:focus-visible
+							outline: initial
+					&:first-child
+						&:before
+							content: ''
+							right: -35px
+							top: 35%
+							width: 25px
+							height: 1px
+							position: absolute
+							border-bottom: 2px dashed #a1827c
+			.select_street
+				border: none
+				font-size: 18px
+				width: 212px
+				color: #006666
+			#object_id
+				font-size: 18px
+				width: 100%
+				border: none
+				color: #006666
+				&:focus-visible
+					outline: initial
+			.rooms_select
+				display: flex
+				justify-content: space-between
+				padding-top: 5px
+				input
+					width: 24px
+					height: 24px
+					margin: 0
+					position: relative
+					top: -2px
+					margin-right: 8px
+				label
+					font-size: 18px
+					display: flex
+					color: #006666
+					line-height: 13px
+					margin-right: 5px
+					align-items: center
+			.reset_filter
+				font-weight: 700
+				font-size: 18px
+				color: #006666
+				padding: 0 22px
+				position: relative
+				top: -5px
+
 .estate__cards
-	margin-top: 113px
+	margin-top: 200px
 
 .estate__pagination
 	margin: 0 auto
 	display: flex
 	justify-content: space-between
-	margin-top: 80px
-	max-width: 520px
+	margin-top: 61px
+	justify-content: center
 	flex-wrap: wrap
-.pagination__item 
-	margin: 0 1px
-	a 
-		font-size: 29px 
-		line-height: 36px 
-		font-weight: bold
-		color: $teal2
+	max-width: 39%
+	h2
+		display: none 
+.page-numbers
+	font-size: 29px 
+	line-height: 36px 
+	font-weight: bold
+	margin: 0 auto
+	color: $teal2
+	&.current
+		color: #a1827c
+	&:visited
+		color: #066
+	&:first-child
+		margin-left: 0
+	&:last-child
+		margin-right: 0
+
 
 .estate__recomendations
-	padding: 90px 59px 50px 68px
+	padding: 63px 65px 50px 68px
 	background-color: $teal2
-	border-radius: 0px 0px 30px 30px 
-	margin-top: -35px
+	border-radius: 30px 
+	margin-top: -7px
 	position: relative
 	min-width: 0
 	z-index: 1
 .recomendations__header
-	max-width: 100%
-	width: 1307px
+	max-width: 100% 
 	display: flex 
 	align-items: baseline
 	margin: 0 auto
-	margin-bottom: 44px	
+	margin-bottom: 39px	
 .recomendations__title 
 	max-width: 40%
 	font-size: 28px
 	line-height: 36px
 	font-weight: bold
 	color: $white
+	letter-spacing: 0.03em
 .recomendations__line 
 	display: inline-block 
 	margin-left: auto
 	margin-right: 0
-	max-width: 60% 
-	width: 60%
+	max-width: 61% 
+	width: 61%
 	height: 7px
 	background-color: rgba(255, 255, 255, 0.59)
-	border-radius:5px
+	border-radius: 5px
 .recomendation__items
-	max-width: 100%
-	width: 1300px
-	display: flex 
-	min-width: 0
-	justify-content: space-between
-	align-items: center
-	margin: 0 auto
-.recomendation__img 
-	width: 320px 
-	height: 320px
-	max-width: 100%
-	max-height: 100%
-	// margin: 0 5px
-	img 
-		width: 100%
-		height: 100%
-		object-fit: cover
-		border-radius: 15px 
+	width: 100% 
+	display: flex  
+	margin: 0 auto 
+	.search__cards_item 
+		width: 321px
+		height: 320px
+		max-width: 100%
+		max-height: 100%
+		margin: 0 5px!important 
+		img 
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 15px
+			max-height: initial
+		.search__cards_text
+			top: 0
+			-webkit-box-orient: vertical
+			-webkit-box-direction: normal
+			-ms-flex-direction: column
+			flex-direction: column
+			height: 100%
+			-webkit-box-align: center
+			-ms-flex-align: center
+			align-items: center
+			padding: 40% 0 22px 0
+			.search__cards_title
+				font-size: 24px
+				line-height: 30px
+				text-align: center
+			.search__cards_price
+				align-self: flex-end
+				font-size: 20px
+				line-height: 27px
+				margin-right: 18px
 
 // Slider styles
-.recomendation__items
+.recomendation__items 
 	.slick-list
 		max-width: 1307px
 		margin: 0 auto !important
 	.slick-slide
-		width: 325px 
-	.recomendation__img img
-		width: 320px 
-		height: 320px  
+		width: 325px  
+		
 // .owl-stage-outer
 // 	width: 1325px
 // 	margin: 0 auto 

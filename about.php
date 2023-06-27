@@ -28,7 +28,6 @@ for (let i = 0; i < menu_link.length; i++) {
           С нашей командой работают одни из лучших застройщиков Кипра, Турции, Бали, Испании и других стран. Мы
           предлагаем широкий спектр элитных апартаментов, вилл, коттеджей в солнечных странах возле моря.
         </p>
-        <br>
         <p>Наличие многолетней практики ведения переговоров с застройщиками и знание ценовой политики на мировом рынке
           недвижимости позволяют нам гарантировать нашим клиентам выбор лучшего объекта для инвестирования и достижения
           наилучшей цены.
@@ -100,9 +99,8 @@ for (let i = 0; i < menu_link.length; i++) {
         </div>
       </div>
 
-      <div class="founders__about_img">
-        <img src="img/founders/1.png" alt="founders photo">
-      </div>
+
+      <img class="founders__about_img" src="img/founders/1.png" alt="founders photo">
     </div>
     <div class="family__companies">
       <div class="family__companies_founder">

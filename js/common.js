@@ -100,17 +100,17 @@ $(document).ready(function () {
 
   fixingMenu = function () {
     var scrollTop = $(window).scrollTop();
-    if (scrollTop > 100) {
+    if (scrollTop > 10) {
       header.removeAttribute("class");
       if ($(window).width() < 480) {
         header.setAttribute(
           "style",
-          "background-color: #1e6465; background-image: initial; position: fixed; border-radius: 20px 20px 20px 20px; max-height: 120px"
+          "background: initial; background-color: #006666; position: fixed; border-radius: 0px 0px 20px 20px; max-height: 120px"
         );
       } else {
         header.setAttribute(
           "style",
-          "background-color: #1e6465; background-image: initial; position: fixed; border-radius: 35px 35px 35px 35px; max-height: 120px"
+          "background: initial; background-color: #006666; position: fixed; border-radius: 0px 0px 35px 35px; max-height: 120px"
         );
       }
 
@@ -219,15 +219,36 @@ $(document).ready(function () {
   });
 
   $(".recomendation__items").slick({
-    slidesToScroll: 2,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     arrows: false,
     adaptiveHeight: true,
-    variableWidth: true,
+    variableWidth: false,
     infinite: true,
     draggable: true,
     swipeToSlide: true,
     // autoplay: true,
     // autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   slides = $(window).width() < 1100 ? 7 : 11;
@@ -242,8 +263,8 @@ $(document).ready(function () {
     infinite: true,
     pauseOnFocus: true,
     draggable: true,
-    centerMode: false,
-    variableWidth: false,
+    centerMode: true,
+    variableWidth: true,
     autoplay: false,
     autoplaySpeed: 5000,
     focusOnSelect: true,
@@ -296,6 +317,43 @@ $(document).ready(function () {
           name
       );
     });
+  });
+
+  jQuery("body").on("click", ".search__form .select_btn", function (e) {
+    e.preventDefault();
+    var term_id = $(".search__form .select_type").val();
+    $.ajax({
+      type: "POST",
+      url: myajax.url,
+      data: {
+        action: "get_objects",
+        term_id: term_id,
+      },
+      success: function (data) {
+        jQuery(".search__cards").html(data);
+      },
+    });
+  });
+
+  jQuery("body").on("click", ".search__form .select_btn", function (e) {
+    e.preventDefault();
+    var term_id = $(".search__form .select_type").val();
+    $.ajax({
+      type: "POST",
+      url: myajax.url,
+      data: {
+        action: "get_objects",
+        term_id: term_id,
+      },
+      success: function (data) {
+        jQuery(".search__cards").html(data);
+      },
+    });
+  });
+
+  $(".show_more_filter").on("click", function (e) {
+    $(".estate__filter_content").slideToggle();
+    return false;
   });
 
   $(".animation_1").animated("fadeIn");

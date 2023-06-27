@@ -79,7 +79,7 @@
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/remodal.min.js"></script>
 <script type="text/javascript" src="js/intlTelInput.min.js"></script>
-<script src="js/common.js?9"></script>
+<script src="js/common.js?11"></script>
 
 </body>
 

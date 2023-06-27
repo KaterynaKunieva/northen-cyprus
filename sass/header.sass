@@ -8,31 +8,31 @@ body
 	overflow-x: hidden
 
 .container 
-	padding-left: 54px 
-	padding-right: 57px
+	padding-left: 169px  
+	padding-right: 160px
 	height: 100%	
 
 
-/* HEADER
+/* HEADER */
 
 header
 	display: flex
-	justify-content: space-between
-	align-items: center
-	position: absolute
+	justify-content: space-between 
+	position: fixed
 	z-index: 4
 	padding: 10px 58px 0px 92px	
 	width: 100%
+	transition: all 0.8s
 	background: linear-gradient(180deg, #006264, transparent)
 
 .header__about
 	padding: 10px 58px 145px 92px	
 
 .header__contacts
-	background: #1e6465 
+	background: #006666 
 	.header__social 
 		i
-			background-color: #1e6465 
+			background-color: #006666 
 			&::before
 				color: #fff
 		.fa-youtube
@@ -40,11 +40,13 @@ header
 			font-size: 21px
 			background-color: #fff
 			&::before
-				color: #1e6465
+				color: #006666
 
 .head__menu ul li a 
+	white-space: nowrap
+	letter-spacing: 0.08em
 	&.current-menu-item 
-		color: #1e6465 !important
+		color: #006666 !important
 .header__estate, .header__contacts, .header__object 
 	.head__menu ul li a 
 		&:hover,
@@ -53,7 +55,7 @@ header
 
 
 .header__logo
-	max-width: 140px
+	max-width: 160px
 	max-height: 120px
 	padding: 10px
 	margin: -10px 
@@ -63,17 +65,16 @@ header
 	img
 		max-height: 100px
 		height: 100% 
-		max-width: 140px
-		width: 100%
+		width: 140px 
 
 .head__menu
 	margin-left: auto 
+	padding-top: 45px
 
 .head__menu ul
 	display: flex
 	justify-content: space-between
-	align-items: center
-	max-width: 580px
+	align-items: center 
 	> li
 		margin-left: 38px
 		> a
@@ -82,7 +83,7 @@ header
 			color: #fff
 			font-weight: bold
 			&:hover
-				color: #1e6465	
+				color: #006666	
 
 .mobile_menu 
 	position: absolute
@@ -103,7 +104,7 @@ header
 	>ul 
 		border-radius: 0 0 35px 35px 
 		overflow-y: hidden
-		background-color: #1e6465   
+		background-color: #006666   
 		>li 
 			display: block 
 			position: relative
@@ -133,12 +134,13 @@ header
 					color: #a1827c 
 
 .menu_active 
-	background-color: #1e6465 !important
+	background-color: #006666 !important
 	transition: all 0.3s
 
 .header__socials
 	position: relative
 	margin-left: 36px 
+	margin-top: 25px
 
 .header__phone
 	display: block 
@@ -154,7 +156,7 @@ header
 	display: none
 	flex-direction: column 
 	align-items: center
-	top: 100%
+	top: 60%
 	left: 0
 	width: 100%
 	text-align: center 
@@ -203,16 +205,15 @@ header
 /* FIRST PAGE
 
 .main_head
-	max-height: 100vh	
+	height: 100vh
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
-	width: 100%
-	min-height: 850px
+	width: 100% 
 
 .main__content
 	height: 100%
-	padding: 363px 115px 168px 
+	padding-top: 47vh 
 
 .main__title
 	width: 490px
@@ -223,7 +224,7 @@ header
 .main__btn
 	height: 56px
 	width: 253px
-	padding: 18px 24px 20px
+	padding: 21px 20px 20px
 	background-color: #a7857e
 	border: 1px solid #a7857e
 	border-radius: 28px	

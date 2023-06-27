@@ -56,8 +56,14 @@
 		width: 88px
 		height: 88px
 		object-fit: cover
-		margin: 30px 7px 0px 
+		margin: 30px 5px 0px 
 		border-radius: 10px
+		transition: all 0.4s
+	.item
+		cursor: pointer
+		&.slick-current
+			img
+				filter: brightness(0.5)
 
 .object__info
 	display: flex
@@ -95,7 +101,7 @@
 .object__characteristics
 	width: 526px
 	height: 349px
-	padding: 34px 128px 45px 59px 
+	padding: 34px 60px 45px 
 	background-color: $white
 	border-radius: 70px
 .characteristic__item

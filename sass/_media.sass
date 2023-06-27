@@ -133,7 +133,6 @@
 	.estate 
 		border-radius: 35px 
 	.estate__form
-		max-width: 736px
 		width: 100%
 	.estate__filter
 		padding: 192px 0px 55px 0
@@ -164,21 +163,22 @@
 		.search__cards_price
 			align-self: flex-end
 			margin-right: 18px
-	.estate__pagination
+	.pagination
 		margin-top: 49px
 		max-width: 281px
-	.pagination__item a
-		font-size: 17px 
+		.nav-links
+			.page-numbers
+				font-size: 17px
 	.banner, .contacts__banner
 		height: 178px
-		background-color: #1e6465
+		background-color: #006666
 		background-image: initial !important
 		z-index: -1 
 	.estate__title
 		position: absolute
 		top: 1px
 		z-index: 3
-		color: #1e6465
+		color: #006666
 		font-size: 36px 
 		max-width: 510px
 		width: 100%
@@ -208,8 +208,7 @@
 		max-width: 100% !important
 		width: 100%	
 		.family__companies_founder
-			display: flex 
-			margin-bottom: 32px !important
+			display: flex  
 	.reverse	
 		flex-direction: row-reverse 
 
@@ -312,7 +311,7 @@
 						font-size: 59px 
 	.footer__btn-phone 
 		height: 65px 
-		width: 50% 
+		width: 45% 
 		margin-right: 0
 		margin-left: auto
 		font-size: 31px 
@@ -347,7 +346,7 @@
 		position: relative
 		margin-top: 80px
 		padding-left: 13px
-		padding-bottom: 0px
+		padding-bottom: 75px 
 	.family__companies-first_line
 		position: absolute
 		width: 100%
@@ -379,7 +378,7 @@
 
 	// ESTATE
 	.recomendations__line 
-		max-width: 50%
+		max-width: 60%
 		width: 50%
 	.recomendations__title
 		max-width: 50%
@@ -432,7 +431,7 @@
 				border-radius: 50%
 				padding: 8px
 				background-color: #fff !important
-				color: #1e6465 !important
+				color: #006666 !important
 			.contacts__title
 				margin-bottom: 75px
 		
@@ -516,6 +515,10 @@
 	.desc__text
 		font-size: 26px
 		letter-spacing: 0
+	.estate__form .estate__filter_content .filter_content_wrap .filter_content_column
+		padding: 0 15px
+	.estate__form .estate__filter_content .filter_content_wrap .filter_content_column
+		width: 50%
 
 @media only screen and (max-width: 930px)
 	// HEADER 
@@ -539,7 +542,16 @@
 		margin: 0 !important
 	.toggle__mnu 
 		background-color: transparent
-		border: none	
+		border: none
+	.estate__form .estate__filter_top
+		flex-wrap: wrap
+		justify-content: space-between
+		.select
+			width: 48%
+			margin: 0 0 20px
+		.filter_btn
+			width: 60%
+			margin-left: 0
 
 @media only screen and (max-width: 890px)
 	// MAIN 
@@ -583,6 +595,7 @@
 		margin-bottom: 40px !important
 	.about__company_p_text
 		max-width: 100%
+		text-align: justify
 	.founders__about_img
 		img 
 			max-width: 100%
@@ -591,7 +604,7 @@
 	.founders__about_cards
 		max-width: 40%
 	.family__companies-first_line
-		font-size: 19px
+		font-size: 19px 
 	.founders__about_p 
 		line-height: 1.1em
 	
@@ -667,6 +680,8 @@
 		input
 			width: 600px
 			height: 100px
+	.estate__form .estate__filter_content .filter_content_wrap .filter_content_column
+		width: 100%
 
 @media only screen and (max-width: 730px) 
 	.header__logo
@@ -794,6 +809,8 @@
 			font-size: 20px 
 		.family__companies_p
 			font-size: 17px !important  
+	.family__companies
+		padding-bottom: 0px
 	
 	.contacts
 		padding: 136px 40px 65px !important
@@ -916,7 +933,7 @@
 
 @media only screen and (max-width: 620px)
 	.about__list-text
-		font-size: 13px 
+		font-size: 12px 
 		max-width: 220px
 	.text__bg-about
 		top: -5%
@@ -969,6 +986,7 @@
 		margin-bottom: 14px
 	.more__btn
 		height: 41px
+		line-height: 64px
 		width: 205px
 		border-radius: 20.5px
 		font-size: 15px
@@ -977,12 +995,13 @@
 	// Footer
 	.footer 
 		padding: 60px 15px 58px 20px !important
-	.footer__btn-phone
-		width: 210px
+	.footer__btn-phone 
 		height: 40px
+		width: 55%
 		font-size: 20px
 		line-height: 39px
 		border-radius: 18px
+		margin-left: 25px
 	.footer__bigger-list
 		width: 48%
 		margin-right: 0
@@ -1014,6 +1033,7 @@
 		height: 3px
 	.estate__recomendations
 		padding: 60px 6px 27px 
+		margin-top: -65px
 	.recomendations__header
 		margin-bottom: 18px 
 
@@ -1021,10 +1041,6 @@
 		font-size: 14px
 		line-height: 18px
 
-	.founders__about_title
-		font-size: 16px
-		line-height: 15px
-		margin-bottom: 12px
 	.founders__about_p
 		font-size: 12px !important
 	.founders__about_cards
@@ -1048,21 +1064,6 @@
 		.family__companies_p
 			font-size: 12px !important  
 			line-height: 17px !important 
-		.family__companies-col
-			&:first-child
-				.family__companies_img
-					max-height: 213px 
-					max-width: 230px 
-					picture, img
-						min-height: 213px !important
-						min-width: 230px !important
-			&:last-child
-				.family__companies_img
-					max-height: 244px 
-					max-width: 194px 
-					picture, img
-						min-height: 244px !important
-						min-width: 194px !important
 			.family__companies_founder
 				margin-bottom: 0 !important
 		.reverse
@@ -1070,7 +1071,21 @@
 	.founders__title
 		font-size: 28px
 		top: 40px
-
+	.family__companies-col
+		&:first-child
+			.family__companies_img
+				max-height: 213px !important
+				max-width: 230px !important
+				picture, img
+					min-height: 213px !important
+					min-width: 230px !important
+		&:last-child
+			.family__companies_img
+				max-height: 244px !important
+				max-width: 194px !important
+				picture, img
+					min-height: 244px !important
+					min-width: 194px !important
 	.contacts__title
 		font-size: 35px 
 	.contact_type, .contact_value
@@ -1129,7 +1144,7 @@
 		justify-content: space-between
 		margin-left: 24px !important
 	.footer__nav-item   
-		margin-left: 0 !important
+		margin-left: 17px !important
 		margin-bottom: 0 !important
 		width: 50% !important   
 	.footer__bigger 
@@ -1137,7 +1152,7 @@
 	.footer__light 
 		padding: 71px 13px 50px 20px !important
 	.footer__bigger
-		margin-top: 50px !important 
+		margin-top: 60px !important 
 
 	.object__btn
 		//bottom: 44% 
@@ -1159,13 +1174,13 @@
 	.estate__cards
 		margin-top: 47px
 
-	.estate__pagination
+	.pagination
 		margin-top: 31px
 		max-width: 190px
-	.pagination__item
-		a 
-			font-size: 11px
-			line-height: 13px
+		.nav-links
+			.page-numbers
+				font-size: 11px
+				line-height: 13px
 	.estate__filter
 		padding-bottom: 0
 
@@ -1201,13 +1216,12 @@
 	.about__company_card_img
 		margin-bottom: 16px 
 
-
 	.founders__title
 		font-size: 27px 
 		top: 40px
 		left: 10px
 	.founders__about_title
-		font-size: 13px
+		font-size: 11px
 		line-height: 15px
 		margin-bottom: 8px
 	.founders__about_p
@@ -1223,7 +1237,7 @@
 	.family__companies-first_line
 		font-size: 13px
 		margin-bottom: 0
-		left: 0
+		left: 0 
 	.family__companies_img
 		max-height: 214px
 		max-width: 186px
@@ -1235,8 +1249,7 @@
 		line-height: 16px
 		margin-bottom: 15px
 	.family__companies_img img
-		margin-right: 10px
-		margin-bottom: 10px
+		margin-right: 10px 
 		height: 220px
 		min-width: 190px
 		width: 190px 
@@ -1251,24 +1264,11 @@
 			font-size: 11px !important
 			line-height: 15px !important
 		.family__companies-col
-			margin-bottom: 0 !important  
+			margin-bottom: 24px !important  
 		.family__companies_founder
 			margin-left: 0 !important
-		.family__companies-col
-			&:first-child
-				.family__companies_img
-					max-height: 213px 
-					max-width: 230px 
-					picture, img
-						min-height: 213px !important
-						min-width: 230px !important
-			&:last-child
-				.family__companies_img
-					max-height: 244px 
-					max-width: 194px 
-					picture, img
-						min-height: 244px !important
-						min-width: 194px !important
+		.family__companies-col 
+			&:last-child 
 				.family__companies_text
 					margin-left: 16px
 
@@ -1304,7 +1304,7 @@
 			&:last-child
 				margin-bottom: 0
 	.contacts__map
-		margin-top: 21px
+		margin-top: 21px !important
 		max-height: 363px
 		max-width: 415px
 		border-radius: 70px
@@ -1381,34 +1381,138 @@
 		top: -32px
 	.mobile_menu 
 		top: 96px !important
-
-
+	.founders
+		padding: 120px 15px 30px
 
 @media only screen and (max-width: 480px)
+	.container
+		padding: 0px 10px 0px  !important
 	header
 		padding: 10px 15px!important 
 	.main__content 
 		padding-left: 0!important
 		padding-right: 0!important 
-		
 	.main__title
 		width: 100%!important
 		margin-bottom: 40px!important
 		font-size: 28px!important
-		line-height: 32px!important
-	.about__list_item
-		width: 100%
-		max-width: 100%!important
+		line-height: 32px!important 
+	.about
+		padding: 42px 0px 45px
+	.about__list-title
+		font-size: 12px !important
+		line-height: 12px !important
+		max-width: 143px
+		min-width: 120px 
+		height: 22px
+		padding: 7px 6px 8px
+		border-radius: 10px
+	.about__list-text
+		font-size: 8px 
+		line-height: 9px
+		max-width: 105px
+	.about__list-logo
+		max-height: 35px
+		height: 35px
+		width: 40px 
+	.about__list
+		margin-bottom: 20px
+		margin-top: 32px
+	.about__list_item 
+		margin-bottom: 25px
+	.text__bg-about
+		top: -9%
+	.about__stat-number 
+		font-size: 42px
+		line-height: 35px !important
+	.about__stat-bg
+		font-size: 87px !important
+		line-height: 54px
+	.about__stat-text
+		font-size: 11px
+		line-height: 12px
+		max-width: 105px
+	.about__stat_item.medium 
+		.about__stat-number
+			line-height: 23px !important
+		.about__stat-bg
+			font-size: 82px !important
+			line-height: 51px
+	.about__stat_item.small
+		.about__stat-number
+			line-height: 27px !important
+		.about__stat-bg
+			font-size: 64px !important
+			line-height: 40px
 	.advantages
-		border-radius: 20px
+		border-radius: 30px
+		padding: 27px 0px 32px !important
+	.advantages__title 
+		font-size: 19px
+		line-height: 22px
+	// .advantages__list
+	// 	margin: 30px 0px 0px!important
+	// 	.advantages__list_item
+	// 		margin: 0 0px 12px!important
+	// 		min-width: initial
+	// 		min-width: initial
+	// 		width: 100% !important
+	// 		max-width: initial
 	.advantages__list
-		margin: 30px 0px 0!important
-		.advantages__list_item
-			margin: 0 0px 12px!important
-			min-width: initial
-			min-width: initial
-			width: 100% !important
-			max-width: initial
+		margin-top: 30px !important
+	.advantages__list-text
+		font-size: 10px!important
+	.advantages__list-logo
+		max-width: 46px !important
+		height: 50px!important
+		padding-left: 9px
+		padding-right: 3px
+		border-right: 1px solid #8eb1b2
+		img
+			height: initial
+			max-height: 31px 
+			max-width: 33px
+	.advantages__list_item 
+		min-width: 146px
+		max-width: 146px
+		height: 60px !important
+		border-radius: 15px
+		margin-bottom: 8px !important
+		margin-top: 8px !important
+		&:nth-child(2n)
+			margin-left: 4px !important
+		&:nth-child(2n+1)
+			margin-right: 4px !important
+		&:nth-last-child(1), &:nth-last-child(1)
+			margin-bottom: 0
+		&:nth-child(1), &:nth-child(2)
+			margin-top: 0
+	.search
+		padding: 55px 0px 18px 0px !important
+	.text__bg-search
+		top: -6.5% !important
+	.select
+		width: 92px
+		height: 20px 
+		margin-right: 11px 
+		select
+			font-size: 7px
+			line-height: 18px
+		.icon 
+			right: 6px
+			&::before, &::after
+				width: 3px 
+			&::before
+				top: 5px
+			&::after
+				left: 2px
+	.select_type, .select_region
+		border: 1px solid #006666
+	.select_btn
+		height: 20px
+		width: 82px
+		font-size: 7px
+		line-height: 18px
 	.search__cards
 		a
 			margin-left: 2px !important
@@ -1417,7 +1521,66 @@
 		img
 			border-radius: 20px!important
 	.search__title
-		width: 100%
+		width: 210px
+		font-size: 18px
+		margin-bottom: 13px
+	.search__cards_img, .search__cards_img img
+		border-radius: 13px !important 
+	.search__cards_item
+		margin: -0.5px 0px !important
+	.search__criteria
+		margin-bottom: 10px !important 
+	.search__cards_price, .search__cards_title
+		font-size: 13px
+	.estate
+		.search__cards_text
+			padding-top: 72px 
+			padding-bottom: 10px
+			.search__cards_price
+				font-size: 10px 
+			.search__cards_title
+				font-size: 13px
+	.more__btn
+		margin-top: 11px !important
+		font-size: 10px
+		padding: 0
+		width: 136px
+		height: 27px
+		line-height: 27px
+	.object__name
+		font-size: 21px
+		margin-bottom: 8px
+	.object__code
+		font-size: 8px
+	.text__bg_object
+		top: -75px
+	.slider
+		margin-top: 15px
+		margin-bottom: 25px  
+	.object  
+		.gallery_items
+			padding-right: 5px 
+			padding-left: 5px 
+			max-height: 310px 
+			.slick-list
+				height:  310px
+				.slick-slide
+					height:  310px
+					border-radius: 30px
+					img
+						height:  310px
+						border-radius: 30px
+		.gallery_thubn 
+			.slick-track
+				height: 42px
+				.slick-slide
+					margin: 5px 2px 
+					height: 42px
+					width: 42px
+					border-radius: 4px
+					img
+						height: 42px
+						border-radius: 4px 
 	.object__code, .object__name
 		margin-left: 0
 		padding: 0 15px
@@ -1430,14 +1593,21 @@
 			width: 100%
 			height: auto
 			padding: 15px 20px
-			font-size: 20px
+			font-size: 16px
+			border-radius: 18px
 	.object__info
-		margin: 30px 15px 0
-		padding: 30px 15px
-		border-radius: 20px
+		margin: 13px 12px 0
+		padding: 20px 8px
+		border-radius: 30px
 	.object__characteristics
-		margin: 0 0 25px
+		margin: 0 0 20px
 		border-radius: 0px
+	.characteristics__name
+		font-size: 16px
+	.characteristics__value
+		font-size: 17px
+	.characteristic__item
+		padding: 0px 14px 
 	.characteristic__item, .object__price
 		font-size: 18px
 		line-height: 32px
@@ -1445,27 +1615,19 @@
 		border-radius: 20px
 		padding: 40px 0 20px
 	.object__desc
-		padding: 0
-		background-color: transparent
-		.desc__title
-			margin-bottom: 10px
+		padding: 10px 14px 
+		border-radius: 30px
+		.desc__title 
+			font-size: 16px
+		.desc__text 
+			font-size: 11px
+
 	.footer__nav
 		margin: 0!important
 	.footer
-		padding: 60px 15px 30px!important
-	.footer__nav
-		display: block
-	.footer__nav-item
-		width: 100%!important
-		margin-bottom: 20px!important
-	.footer__bigger
-		margin-top: 20px!important
-		display: block
-	.footer__bigger-list
-		width: 100%
-		margin-bottom: 30px
+		padding: 60px 15px 30px!important 
 	.footer__btn-phone
-		width: 100%
+		margin-left: 24px
 	.about__company
 		padding: 150px 15px 20px!important
 	.about__company_card
@@ -1474,54 +1636,163 @@
 	.about__company_card_img img
 		border-radius: 20px
 	.founders
-		padding: 120px 15px 30px
-	.founders__about
-		display: block
-		.founders__about_cards
-			max-width: 100%
-			margin: 0 0 30px
+		padding-bottom: 20px
 	.founders__about_img
 		img
 			border-radius: 20px
-	.family__companies_img
-		max-width: 100%
-		border-radius: 20px
-		img
-			max-width: 100%
-			margin: 0 0 20px
+
+	.family__companies
+		margin-top: 25px
+		padding-top: 20px
+	.family__companies_img 
+		border-radius: 15px
+		max-height: 146px
+		max-width: 129px
+		img, picture
+			max-width: 100% 
 			width: 100%
+			height: 146px
 			min-width: 100%
-			border-radius: 20px
-	.family__companies-col:first-child .family__companies_img img, .family__companies-col:first-child .family__companies_img picture
-		border-radius: 20px
-	.family__companies-row .family__companies-col:last-child .family__companies_text
-		margin-left: 0
-	.family__companies-col:last-child .family__companies_img
-		max-width: 100%!important
-		border-radius: 20px
-	.family__companies-col:last-child .family__companies_img img, .family__companies-col:last-child .family__companies_img picture
-		border-radius: 20px
-	.family__companies-row .family__companies_text
-		margin-right: 0
-		margin-bottom: 20px
-	.family__companies-col:first-child .family__companies_img
-		max-width: 100%!important
-		border-radius: 20px
-	.family__companies-col .family__companies_founder
-		display: block
+			border-radius: 15px
+	.family__companies-col
+		.family__companies_p
+			font-size: 7px !important
+			line-height: 10px !important
+		.family__companies_title
+			font-size: 9px
+			margin-bottom: 0px
+		.family__companies_img, .family__companies_img img, .family__companies_img picture
+			border-radius: 15px
+		&:first-child 
+			margin-bottom: 15px !important
+			.family__companies_text
+				margin-right: 5px !important 
+			.family__companies_img
+				max-height: 143px !important
+				max-width: 155px !important
+				border-radius: 15px
+				picture, img 
+					height: 143px !important
+					min-height: 143px !important
+					min-width: 155px !important
+					border-radius: 15px
+		&:last-child 
+			.family__companies_text
+				margin-left: 5px !important
+			.family__companies_img
+				max-height: 162px !important
+				max-width: 129px !important
+				border-radius: 15px
+				picture, img 
+					height: 162px !important
+					min-height: 162px !important
+					min-width: 129px !important
+					border-radius: 15px
+
 	.estate
-		border-radius: 20px
-	.estate .search__cards_img, .estate .search__cards_item
-		width: 100%!important
-		max-width: 100%!important
-	.estate__recomendations
+		border-radius: 13px
+		margin-top: -70px
+		padding: 40px 0px 23px !important
+		.search__cards_item, .search__cards_img 
+			max-height: 156px!important
+			height: 156px!important
+			max-width: 157px!important
+			width: 157px !important
+			margin: 0!important
+			img
+				max-height: 156px!important
+				max-width: 157px!important
+		.search__cards_item 
+			margin-bottom: 2px !important
+			&:nth-last-child(1), &:nth-last-child(2) 
+				margin-bottom: 0!important
+	.estate__title 
+		font-size: 15px
+		max-width: 180px
+		top: 120px !important
+	.estate__form
+		width: 100%
+		.estate__filter_top
+			padding: 20px 15px
+			border-radius: 20px
+			.filter_btn
+				width: 77%
+				font-size: 15px
+				line-height: 30px
+				border-radius: 15px
+			.show_more_filter
+				img
+					width: 30px
+			.show_more_filter
+				margin-left: 10px
+	.estate__form .estate__filter_content
+		width: calc(100% - 40px)
+		left: 20px
 		border-radius: 0 0 20px 20px
+	.estate__cards
+		margin-top: 30px
+	.text__bg_estate
+		top: -65px 
+	.pagination
+		margin-top: 20px
+		width: 125px
+		.nav-links
+			.page-numbers
+				font-size: 7px
+				line-height: 9px
+	.estate__recomendations
+		border-radius: 0 0 13px 13px
+		margin-top: -50px
+		padding: 30px 4px 18px
+	.recomendations__title
+		font-size: 12px
+		line-height: 15px
+	.recomendations__line
+		width: 57%
+	.recomendation__items 
+		.slick-slide
+			height: calc(100vw - 30px)
+			img
+				border-radius: 6px
+		.slick-list
+			height: 104px
 	.contacts
-		border-radius: 20px
+		border-radius: 30px
 		margin-top: -90px
-		padding: 60px 15px 20px!important
-	.contacts__map img
-		border-radius: 20px
+		padding: 60px 15px 9px!important
+	.contacts__title 
+		font-size: 18px
+		margin-bottom: 30px
+	.text__bg_contacts
+		top: -65px
+	.contacts__map 
+		margin-top: 15px !important
+		max-height: 240px !important
+		max-width: 278px !important
+		border-radius: 30px
+		img
+			border-radius: 30px
+			height: 240px !important
+			width: 278px !important
+	.contact_type
+		font-size: 11px
+		line-height: 21px
+	.contact_value
+		font-size: 11px
+		line-height: 14px
+		margin-left: 0 !important
+	.contacts__coordinates
+		margin-bottom: 30px !important
+	.social__item
+		margin-bottom: 6px 
+		a
+			max-width: 21px
+			max-height: 21px
+			margin-right: 8px !important
+			img
+				max-width: 21px
+				max-height: 21px
+
 	body .remodal-wrapper .remodal .modal_content
 		padding: 20px 15px
 	body .remodal-wrapper .remodal .modal_content .modal_logo img
@@ -1552,7 +1823,153 @@
 		.gallery_items
 			.slick-list, .slick-slide, .slick-slide img
 				height: 360px
-		.gallery_thubn
-			.slick-slide 
-				height: 50px
-				
+	.founders__about_p
+		font-size: 8px !important
+	.founders__about_cards
+		margin-right: 10px !important
+	.founders__about_img, .founders__about_img img
+		max-height: 340px !important
+	.family__companies_p
+		font-size: 7px
+		line-height: 11px
+	.family__companies_title
+		font-size: 9px
+		line-height: 11px
+	.family__companies-first_line
+		font-size: 8px
+		left: 10px 
+	.inside
+		margin-top: -11px
+	.footer__bigger
+		margin-top: 40px !important
+
+@media only screen and (max-width: 415px)
+	.footer__nav-item
+		width: 100%!important 
+	.footer__nav-title
+		font-size: 11px !important
+		line-height: 17px
+	.footer__nav-list
+		ul
+			li 
+				height: 17px
+				a
+					font-size: 9px !important
+					line-height: 17px !important
+					height: 100% 
+					display: block
+	.footer__btn-phone 
+		height: 27px
+		font-size: 13px
+		line-height: 26px
+		border-radius: 8px
+	.footer__bigger-list
+		ul
+			li
+				max-width: 28px
+				max-height: 28px
+				margin: 0 5px 
+				a
+					max-width: 28px
+					max-height: 28px 
+	.founders__about_p
+		font-size: 8px !important
+	.founders__about_title
+		font-size: 9px
+		line-height: 10px
+		margin-bottom: 7px 
+
+@media only screen and (max-width: 320px)
+	header, .header__about
+		padding: 10px 20px 8px !important  
+	.mobile_menu 
+		top: 66px !important
+	.mobile_menu
+		ul
+			li
+				&:first-child a
+					border-top: 4px solid #9ebcbd !important
+					margin-top: 13px !important
+					padding-top: 28px !important
+				&:last-child a
+					padding-bottom: 27px !important
+				a
+					font-size: 15px !important
+					line-height: 29px !important
+					letter-spacing: 0.08em !important
+					width: 85% !important
+	.sandwich
+		width: 23px !important  
+	.sw-topper
+		top: 12px
+	.sw-footer
+		top: 13px
+	.sw-topper, .sw-bottom, .sw-footer
+		height:  3px !important
+		width: 23px !important
+		margin-bottom: 3px !important
+		&:last-child
+			margin-bottom: 0
+	.header__logo
+		max-width: 60px 
+		max-height: 45px 
+		img
+			max-width: 60px !important
+			max-height: 45px !important
+	.header__phone
+		img
+			max-width: 20px !important
+			max-height: 20px !important 
+	.text__bg-about-page
+		top: -30px !important
+	.about__company_p_title 
+		font-size: 16px
+		line-height: 9px
+		margin-bottom: 16px
+	.about__company_p_text
+		font-size: 9px
+		line-height: 11px
+	.about__company
+		padding: 92px 17px 12px 20px !important
+	.about__company_card
+		border-radius: 15px
+		padding: 15px 17px 12px 19px !important
+		margin-bottom: 12px
+		&:last-child
+			margin-bottom: 0
+	.about__company_card_img, .about__company_card_img img 
+		border-radius: 15px
+	.about__company_card_text, .about__company_card_text p 
+		font-size: 9px
+		line-height: 12px
+	.about__company_card_img
+		margin-bottom: 9px
+	.founders
+		padding: 95px 5px 20px 5px
+	.founders__title 
+		font-size: 18px 
+		max-width: 150px
+		top: 28px
+		left: 14px
+		span
+			margin-top: 7px
+	.footer 
+		padding: 30px 3px !important
+	.footer__btn-phone
+		margin-left: 16px
+	.founders__about_p
+		font-size: 7px !important
+	.founders__about_img, .founders__about_img img 
+		max-height: 320px !important
+	.family__companies_img
+		max-width: 127px
+		max-height: 145px
+		img
+			width: 127px
+			height: 145px
+	.family__companies_title
+		margin-bottom: 8px
+	.about__title 
+		font-size: 18px
+		line-height: 23px
+		

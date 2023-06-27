@@ -110,20 +110,21 @@
         </div>
         <div class="estate__pagination">
           <?php
-            $amount_of_pages = 50;  
-            for($page = 1; $page <= $amount_of_pages; $page++){ 
-              if($page == 5){ 
-                echo "<div class='pagination__item'><a href=''>...</a></div>";
-                $page = $amount_of_pages - 5;
-              } 
-              echo "<div class='pagination__item'><a href=''>".$page."</a></div>";
-              
+            $amount_of_pages = 50;
+            echo '<span aria-current="page" class="page-numbers current">1</span>';
+            for ($page = 2; $page <= $amount_of_pages; $page++) {
+              if ($page == 6) {
+                echo "<a class='page-numbers' style = 'margin: 0px -6px' href=''>...</a>";
+                $page = $amount_of_pages - 4;
+              }
+              echo "<a class='page-numbers' href='http://localhost/FAMILY_wp/estate/page/".$page."/'>".$page."</a>";
             }
           ?>
         </div>
       </div>
     </div>
   </div>
+
   <div class="estate__recomendations">
     <div class="recomendations__header">
       <div class="recomendations__title">Рекомендуем к просмотру</div>
@@ -131,42 +132,90 @@
     </div>
     <!-- owl-carousel owl-theme -->
     <div class="recomendation__items">
-      <div class="recomendation__img">
-        <img src="img/recomendations/1.jpg">
-      </div>
-      <div class="recomendation__img">
-        <img src="img/recomendations/2.jpg">
-      </div>
-      <div class="recomendation__img">
-        <img src="img/recomendations/3.jpg">
-      </div>
-      <div class="recomendation__img">
-        <img src="img/recomendations/4.jpg">
-      </div>
-      <div class="recomendation__img">
-        <img src="img/recomendations/1.jpg">
-      </div>
-      <div class="recomendation__img">
-        <img src="img/recomendations/2.jpg">
-      </div>
-      <div class="recomendation__img">
-        <img src="img/recomendations/3.jpg">
-      </div>
-      <div class="recomendation__img">
-        <img src="img/recomendations/4.jpg">
-      </div>
-      <div class="recomendation__img">
-        <img src="img/recomendations/1.jpg">
-      </div>
-      <div class="recomendation__img">
-        <img src="img/recomendations/2.jpg">
-      </div>
-      <div class="recomendation__img">
-        <img src="img/recomendations/3.jpg">
-      </div>
-      <div class="recomendation__img">
-        <img src="img/recomendations/4.jpg">
-      </div>
+      <a class="search__cards_item" href="object.php">
+        <img src="img/recomendations/1.jpg" alt="" />
+        <div class="search__cards_text">
+          <div class="search__cards_title">Palm Homes</div>
+          <div class="search__cards_price">от 240 000$</div>
+        </div>
+      </a>
+      <a class="search__cards_item" href="object.php">
+        <img src="img/recomendations/2.jpg" alt="" />
+        <div class="search__cards_text">
+          <div class="search__cards_title">Palm Homes</div>
+          <div class="search__cards_price">от 240 000$</div>
+        </div>
+      </a>
+      <a class="search__cards_item" href="object.php">
+        <img src="img/recomendations/3.jpg" alt="" />
+        <div class="search__cards_text">
+          <div class="search__cards_title">Palm Homes</div>
+          <div class="search__cards_price">от 240 000$</div>
+        </div>
+      </a>
+      <a class="search__cards_item" href="object.php">
+        <img src="img/recomendations/4.jpg" alt="" />
+        <div class="search__cards_text">
+          <div class="search__cards_title">Palm Homes</div>
+          <div class="search__cards_price">от 240 000$</div>
+        </div>
+      </a>
+      <a class="search__cards_item" href="object.php">
+        <img src="img/recomendations/1.jpg" alt="" />
+        <div class="search__cards_text">
+          <div class="search__cards_title">Palm Homes</div>
+          <div class="search__cards_price">от 240 000$</div>
+        </div>
+      </a>
+      <a class="search__cards_item" href="object.php">
+        <img src="img/recomendations/2.jpg" alt="" />
+        <div class="search__cards_text">
+          <div class="search__cards_title">Palm Homes</div>
+          <div class="search__cards_price">от 240 000$</div>
+        </div>
+      </a>
+      <a class="search__cards_item" href="object.php">
+        <img src="img/recomendations/3.jpg" alt="" />
+        <div class="search__cards_text">
+          <div class="search__cards_title">Palm Homes</div>
+          <div class="search__cards_price">от 240 000$</div>
+        </div>
+      </a>
+      <a class="search__cards_item" href="object.php">
+        <img src="img/recomendations/4.jpg" alt="" />
+        <div class="search__cards_text">
+          <div class="search__cards_title">Palm Homes</div>
+          <div class="search__cards_price">от 240 000$</div>
+        </div>
+      </a>
+      <a class="search__cards_item" href="object.php">
+        <img src="img/recomendations/1.jpg" alt="" />
+        <div class="search__cards_text">
+          <div class="search__cards_title">Palm Homes</div>
+          <div class="search__cards_price">от 240 000$</div>
+        </div>
+      </a>
+      <a class="search__cards_item" href="object.php">
+        <img src="img/recomendations/2.jpg" alt="" />
+        <div class="search__cards_text">
+          <div class="search__cards_title">Palm Homes</div>
+          <div class="search__cards_price">от 240 000$</div>
+        </div>
+      </a>
+      <a class="search__cards_item" href="object.php">
+        <img src="img/recomendations/3.jpg" alt="" />
+        <div class="search__cards_text">
+          <div class="search__cards_title">Palm Homes</div>
+          <div class="search__cards_price">от 240 000$</div>
+        </div>
+      </a>
+      <a class="search__cards_item" href="object.php">
+        <img src="img/recomendations/4.jpg" alt="" />
+        <div class="search__cards_text">
+          <div class="search__cards_title">Palm Homes</div>
+          <div class="search__cards_price">от 240 000$</div>
+        </div>
+      </a>
     </div>
   </div>
 

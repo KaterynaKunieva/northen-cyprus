@@ -1,17 +1,15 @@
-.main_head
-	background-image: url("../img/main_bg.png"), radial-gradient(circle at 1% 24%, #c9ebfb -17%, #73acc7 62%)
 
-/* ABOUT
+
+/* ABOUT */
 .about
 	position: relative
-	padding-top: 152px
+	padding-top: 144px
 	padding-bottom: 93px 
 	width: 100%
 	height: 100%
 
 .about__title
-	width: 215px
-	margin-left: 107px
+	width: 215px 
 	color: $dustyrose
 	line-height: 53px
 	> span
@@ -20,7 +18,7 @@
 
 .about__list 
 	width: 100%
-	margin: 109px auto 170px 
+	margin: 93px auto 170px 
 	display: flex
 	justify-content: space-between
 	text-align: center
@@ -30,8 +28,7 @@
 	display: flex
 	flex-direction: column
 	align-items: center	
-	width: 50%
-	margin-bottom: 30px
+	width: 25% 
 	text-align: center
 
 .about__list-logo
@@ -52,27 +49,31 @@
 .about__list-title
 	text-transform: uppercase
 	height: 45px
-	min-width: 247px
-	padding: 13px 20px
-	margin: 20px auto
+	min-width: 248px
+	padding: 13px 18px
+	margin: 11px auto
 	background-color: $teal2
 	border-radius: 22.5px 
 	font-size: 24px
 	font-weight: bold
 	line-height: 25px
 	color: $white
+	&:first-child
+		margin-left: 0
+	&:last-child
+		margin-right: 0
+
 
 .about__list-text
 	color: $teal2
 	font-size: 17px
 	line-height: 19px
-	width: 245px
+	width: 250px
 	margin: 0 auto
 
 .about__stat 
 	display: flex
-	justify-content: space-between
-	align-items: center		
+	justify-content: space-between 
 	max-height: 40%
 
 .about__stat_item
@@ -83,6 +84,11 @@
 	max-height: 150px
 	height: 100%
 	margin: 0 auto 
+	&:first-child
+		margin-left: 0
+	&:last-child
+		margin-right: 0
+
 
 .about__stat-bg
 	position: absolute
@@ -92,46 +98,51 @@
 	font-weight: 800
 	text-align: center
 	top: 5px
-	width: 210%
+	white-space: nowrap
+	max-width: 210%
 	font-size: 185px
 	line-height: 116px
+
+.about__stat-text
+	font-size: 24px
+	line-height: 25px
+	color: $teal2
+	width: 230px  
+	text-align: center 
+	margin-left: -25px
 
 .about__stat_item.medium
 	.about__stat-bg
 		font-size: 175px
 		line-height: 109px 
+	.about__stat-text
+		width: 270px
 
 .about__stat_item.small
 	.about__stat-bg
 		font-size: 139px
 		line-height: 87px  
 	.about__stat-text
-		max-width: 370px
+		width: 370px
 
 
 .about__stat-number
 	font-size: 90px
 	line-height: 76px
 	font-weight: 800
-	color: $mediumtaupe
-
-.about__stat-text
-	font-size: 24px
-	line-height: 25px
-	color: $teal2
-	max-width: 255px 
-	width: 100%
-	text-align: center
+	color: $mediumtaupe 
+	height: 76px
 
 
-/* ADVANTAGES
+
+/* ADVANTAGES */
 
 .advantages
 	width: 100%
-	padding: 72px 104px 97px 109px 
+	padding: 70px 0px calc( 93px - 23px ) 
 	background: url("../img/advantages/bg.png") $teal2
 	@include positioning-bg-center 
-	border-radius: 40px 
+	border-radius: 60px 
 
 .advantages__title
 	font-size: 50px
@@ -144,22 +155,21 @@
 		display: block
 
 .advantages__list	
-	margin: 83px auto 0px 
-	max-width: 1100px
+	margin-top: calc( 61px -  20px) 
 	width: 100%
 	display: flex
 	flex-wrap: wrap 
 	justify-content: center	
-	
 .advantages__list_item
 	display: flex
 	align-items: center
-	width: 518px
+	width: calc(50% - 2em)
+	margin: 1em 
 	height: 93px
 	background-color: $white
 	border-radius: 35px 
 	padding: 0 25px	
-	margin: 22px 0
+	margin: 20px 37px
 	&:nth-child(2n)
 		margin-right: 0 
 		margin-left: auto
@@ -191,10 +201,10 @@
 	font-size: 22px
 	text-align: center
 
-/* SEARCH
+/* SEARCH */
 
 .search
-	padding-top: 252px
+	padding-top: 250px
 	padding-bottom: 70px 
 	position: relative 
 
@@ -202,6 +212,7 @@
 	display: flex 
 	align-items: center
 	flex-wrap: wrap
+	margin-right: 58px
 
 .search__criteria
 	display: flex
@@ -210,8 +221,7 @@
 	margin: 0 auto
 	margin-bottom: 72px 
 
-.search__title
-	margin-left: 115px	
+.search__title 
 	color: $dustyrose
 	width: 490px
 	line-height: 100%
@@ -255,7 +265,7 @@
 			transform: rotate(-55deg) 
 			background-color: $teal2	
 			
-.select_type 
+.select_type, .select_region
 	width: 100% 
 	min-height: 47px 
 	height: 100%
@@ -287,30 +297,26 @@
 	font-size: 17px
 	line-height: 43px
 
-.search__cards
-	max-width: 1307px 
-	width: 100%
+.search__cards  
 	display: flex
 	flex-wrap: wrap 
 	justify-content: center
-	align-items: center 
-	margin: 0 auto
+	align-items: stretch 
+	margin: -3px 58px
 
 .search__cards_item	 
-	position: relative
-	max-height: 360px
-	height: 100% 
-	max-width: 650px
-	width: 100% 
+	position: relative 
+	min-height: 100% 
+	width: calc( 50% - 3px ) 
+	aspect-ratio: 9/5
 	margin: 3px
 	border-radius: 6px	 
-	img
-		max-height: 360px
-		height: 100% 
-		max-width: 650px
-		width: 100% 
+	img 
+		object-fit: cover
+		height: 100%
+		width: 100%
 		transition: 0.2s 
-		border-radius: 30px
+		border-radius: 30px 
 	&:nth-child(2n)
 		margin-right: 0
 	&:nth-child(2n+1)
@@ -320,16 +326,20 @@
 			filter: brightness(50%) 
 		> .search__cards_text
 			z-index: 2
+
+.search__cards_img
+	width: 100%
+	height: 100%
 		
 .search__cards_text
 	position: absolute
 	z-index: -1
-	top: 85%
+	top: 86%
 	display: flex
 	width: 100%
 	justify-content: space-between
 	padding-left: 33px
-	padding-right: 20px
+	padding-right: 22px
 	color: $white
 	font-size: 28px
 	font-weight: bold
@@ -338,12 +348,15 @@
 
 .more__btn
 	display: block
-	width: 321px
+	width: 324px
 	height: 64px
+	line-height: 64px
 	background-color: $mediumtaupe
 	border-radius: 32px 
 	margin: 0 auto
-	margin-top: 78px
+	margin-top: 73px
 	text-transform: uppercase
 	font-size: 24px
-	color: $white 
+	color: $white!important
+	&:visited
+		color: $white

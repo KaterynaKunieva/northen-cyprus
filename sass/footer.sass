@@ -3,8 +3,8 @@
 .footer 
 	width: 100%
 	height: 350px
-	padding: 123px 60px 71px 56px
-	background: url("../img/waves_bg_founders.png")
+	padding: 124px 39px 71px 56px
+	background: url("../img/waves_bg_footer.jpg")  
 	@include positioning-bg-center  
 	display: flex
 	justify-content: space-between
@@ -15,16 +15,19 @@
 	padding: 153px 60px 71px 56px 
 	margin-top: -60px 
 	&.footer__light 
-		padding: 97px 60px 68px 57px 
+		padding: 119px 39px 75px 59px
 
 .footer__nav-title, .footer__bigger-title
 	text-transform: uppercase
 	letter-spacing: 0.08em
+	white-space: nowrap
+	font-size: 21px
+	line-height: 31px
 	
 .footer__nav
 	display: flex
 	justify-content: center
-	width: 50%
+	width: 56.5%
 
 .footer__nav-item
 	width: 100% 
@@ -45,14 +48,25 @@
 	&::before
 		color: $teal2
 
+
+.footer__bigger
+	display: flex
+	width: 230px
+	flex-direction: column
+	align-items: center 
+.footer__bigger-title
+	margin-bottom: 14px
+	margin-top: 3px
 .footer__bigger, .footer__nav-item ul a
 	color: $white
 	font-weight: bold
 	font-size: 18px
 	line-height: 31px
+	.footer__bigger-title
+		letter-spacing: 0.02em
 
 .footer__light
-	background-color: $gainsboro
+	background: url("../img/waves_bg_footer-light.jpg") $gainsboro 
 	padding: 63px 60px 68px 57px 
 	.footer__bigger-list img
 		filter: initial
@@ -65,14 +79,21 @@
 	.footer__phone
 		display: block
 		color: $teal2 
-.footer__bigger
-	display: flex
-	width: 230px
-	flex-direction: column
-	align-items: center
+		margin-top: 6px
+		letter-spacing: 0.04em
+	.footer__btn-phone
+		margin-top: 9px
 
-.footer__bigger-title
-	margin-bottom: 21px
+.footer__contacts
+	.footer__bigger-title
+		margin-bottom: 13px
+		margin-top: -4px
+	.footer__btn-phone
+		margin-top: 6px
+	.footer__light
+		padding: 63px 60px 68px 57px 
+	.footer__phone 
+		margin-top: 6px
 
 .footer__bigger-list
 	ul
@@ -81,7 +102,7 @@
 		justify-content: center
 		align-items: center
 		
-		li 
+		li
 			margin: 0 6px
 			text-align: center
 			max-width: 37px 
@@ -91,9 +112,11 @@
 			&:last-child
 				margin-right: 0
 	a 
-		display: block
-		max-width: 100%
-		max-height: 100%
+		display: flex
+		width: 100%
+		max-height: 37px
+		height: 100%
+		align-items: center
 	i 
 		color: $white 
 		width: 37px
@@ -107,9 +130,6 @@
 		width: 100%
 		height: 100%
 		filter: brightness(0) invert(1)
-		position: relative
-		top: 50%
-		transform: translateY(-50%)
 	.fa-facebook-f, .fa-instagram
 		&::before
 			font-size: 20px 
@@ -120,12 +140,12 @@
 	display: none
 
 .footer__btn-phone
-	width: 100%
+	width: 80%
 	height: 36px
 	background-color: $mediumtaupe
 	border-radius: 18px
 	color: $white 
 	line-height: 35px
 	letter-spacing: 0.04em
-	margin-top: 22px
+	margin-top: 40px
 
